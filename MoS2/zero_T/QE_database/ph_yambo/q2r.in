@@ -1,0 +1,6 @@
+&input
+    fildyn='MoS2.dyn.xml'
+    zasr='crystal', 
+    flfrc='MoS2.fc'
+/
+~              

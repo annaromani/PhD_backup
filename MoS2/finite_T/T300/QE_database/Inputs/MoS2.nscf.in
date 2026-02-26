@@ -1,0 +1,37 @@
+ &control
+    calculation = 'nscf'
+    restart_mode='from_scratch',
+    prefix='MoS2',
+    pseudo_dir = '../pseudo/',
+    outdir='./tmp/',
+    verbosity='high',
+    wf_collect=.true.
+ /
+ &system
+    ibrav=  4,
+    celldm(1)=5.94774857
+    celldm(3)=6.72523384
+    nat=  3,
+    ntyp= 2,
+    ecutwfc = 80.0,
+    assume_isolated='2D'
+    force_symmorphic=.true. 
+    nbnd=200
+    ecutrho = 800.0
+/
+ &electrons
+    diagonalization='david'
+    startingpot='file'
+    mixing_mode = 'plain'
+    mixing_beta = 0.2
+    conv_thr =  1.0d-15
+ /
+ATOMIC_SPECIES
+Mo 95.95 Mo.pbesol.dojo.upf
+S 32.065 S.pbesol.dojo.upf
+ATOMIC_POSITIONS (crystal)
+Mo  0.333333300   0.666666600   0.500000000 0 0 0
+S   0.666666667   0.333333333   0.573633020 0 0 1
+S   0.666666667   0.333333333   0.426366980 0 0 1
+K_POINTS automatic
+6 6 1 0 0 0

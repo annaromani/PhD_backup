@@ -1,0 +1,124 @@
+dipoles
+gw0
+HF_and_locXC
+ppa
+StdoHash = 40.000000 
+Nelectro = 64.000000 
+ElecTemp = 0.000000 eV
+BoseTemp = 0.000000 eV
+OccTresh = 0.000010 
+NLogCPUs = 0.000000 
+MEM_tresh = 103400.000000 Kb
+FFTGvecs = 10343.000000 RL
+X_and_IO_nCPU_LinAlg_INV = -1.000000 
+X_Threads = 0.000000 
+DIP_Threads = 0.000000 
+SE_Threads = 0.000000 
+EXXRLvcs = 100 Ry
+VXCRLvcs = 8 Ry
+XfnQP_INTERP_NN = 1.000000 
+XfnQP_INTERP_shells = 20.000000 
+XfnQP_up_Wv_E = 0.000000 eV
+XfnQP_up_Wv_dos = 0.000000 eV
+XfnQP_up_Wc_E = 0.000000 eV
+XfnQP_up_Wc_dos = 0.000000 eV
+XfnQP_dn_Wv_E = 0.000000 eV
+XfnQP_dn_Wv_dos = 0.000000 eV
+XfnQP_dn_Wc_E = 0.000000 eV
+XfnQP_dn_Wc_dos = 0.000000 eV
+NGsBlkXp = 9 Ry
+CGrdSpXp = 100.000000 
+PPAPntXp = 27.211380 eV
+XTermEn = 40.000000 eV
+GfnQP_INTERP_NN = 1.000000 
+GfnQP_INTERP_shells = 20.000000 
+GfnQP_up_Wv_E = 0.000000 eV
+GfnQP_up_Wv_dos = 0.000000 eV
+GfnQP_up_Wc_E = 0.000000 eV
+GfnQP_up_Wc_dos = 0.000000 eV
+GfnQP_dn_Wv_E = 0.000000 eV
+GfnQP_dn_Wv_dos = 0.000000 eV
+GfnQP_dn_Wc_E = 0.000000 eV
+GfnQP_dn_Wc_dos = 0.000000 eV
+BoseCut = 0.100000 
+GDamping = 0.100000 eV
+dScStep = 0.100000 eV
+GTermEn = 40.817080 eV
+SCEtresh = 0.010000 eV
+DBsIOoff =     'none'
+DBsFRAGpm =     'none'
+PAR_def_mode = 'balanced'
+Chimod =  'HARTREE'
+ChiLinAlgMod =  'LIN_SYS'
+XfnQPdb =     'none'
+XfnQP_DbGd_INTERP_mode =       'NN'
+XTermKind =     'none'
+kind =       'BG'
+GfnQPdb =     'none'
+GfnQP_DbGd_INTERP_mode =       'NN'
+GTermKind =     'none'
+DysSolver =        'n'
+XfnQP_up_Z = (1.000000,0.000000) 
+XfnQP_dn_Z = (1.000000,0.000000) 
+GfnQP_up_Z = (1.000000,0.000000) 
+GfnQP_dn_Z = (1.000000,0.000000) 
+% XfnQP_up_E
+ 0.0 | 1.0 | 1.0 |   
+%
+% XfnQP_up_Wv
+ 0.0 | 0.0 | 0.0 |   
+%
+% XfnQP_up_Wc
+ 0.0 | 0.0 | 0.0 |   
+%
+% XfnQP_dn_E
+ 0.0 | 1.0 | 1.0 |   
+%
+% XfnQP_dn_Wv
+ 0.0 | 0.0 | 0.0 |   
+%
+% XfnQP_dn_Wc
+ 0.0 | 0.0 | 0.0 |   
+%
+% QpntsRXp
+ 1 | 32 |   
+%
+% BndsRnXp
+ 1 | 100 |   
+%
+% EhEngyXp
+ -1.000000 | -1.000000 |  eV 
+%
+% GfnQP_up_E
+ 0.0 | 1.0 | 1.0 |   
+%
+% GfnQP_up_Wv
+ 0.0 | 0.0 | 0.0 |   
+%
+% GfnQP_up_Wc
+ 0.0 | 0.0 | 0.0 |   
+%
+% GfnQP_dn_E
+ 0.0 | 1.0 | 1.0 |   
+%
+% GfnQP_dn_Wv
+ 0.0 | 0.0 | 0.0 |   
+%
+% GfnQP_dn_Wc
+ 0.0 | 0.0 | 0.0 |   
+%
+% GbndRnge
+ 1 | 160 |   
+%
+% QPkrange
+ 1 | 32 | 30 | 35 |   
+%
+% QPerange
+ 1 | 32 | 0.0 | -1.000000 |   
+%
+DIP_CPU =    '2 8 2'
+DIP_ROLEs =    'k c v'
+X_and_IO_CPU = '8 1 2 8 1'
+X_and_IO_ROLEs = 'q g k c v'
+SE_CPU =    '4 6 2'
+SE_ROLEs =   'q qp b'

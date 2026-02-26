@@ -1,0 +1,11 @@
+Calculate the correction to the band structure induced by the electron-phonon:
+prerequisites
+SAVE dir with ndb.gkkp_* (and ndb.PH_doublegrid if double grid) 
+
+output:
+ndb.QP at various temperature stored in QP_elphi/T* using SAVE but hiding ndb.PH_Double_Grid
+
+with double grid at QP_elphi/DG/
+
+
+

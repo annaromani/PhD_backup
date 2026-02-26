@@ -1,0 +1,250 @@
+#                                                                     
+#  ____  ____     _       ____    ____  ______      ___               
+# |_  _||_  _|   / \     |_   \  /   _||_   _ \   ."   `.             
+#   \ \  / /    / _ \      |   \/   |    | |_) | /  .-.  \            
+#    \ \/ /    / ___ \     | |\  /| |    |  __". | |   | |            
+#    _|  |_  _/ /   \ \_  _| |_\/_| |_  _| |__) |\  `-"  /            
+#   |______||____| |____||_____||_____||_______/  `.___."             
+#                                                                     
+#                                                                     
+#                                                                     
+# Version 5.3.0 Revision 23935 Hash (prev commit) 901c81cc91          
+#                      Branch is 5.3                                  
+#             MPI+SLK+SLEPC+HDF5_MPI_IO Build                         
+#                 http://www.yambo-code.eu                            
+#
+# Absorption @ Q(1):   1.00000000      0.00000000      0.00000000    [q->0 direction]
+#
+# [GEN] GF Energies                               : Perdew, Burke & Ernzerhof SOL(X)+Perdew, Burke & Ernzerhof SOL(C)
+# [GEN] Green`s Function                          : Resonant
+#
+# [GEN] Gauge                                     : Length
+# [GEN] [r,Vnl] included                          : yes
+#
+# DIP band range                                  :   28   38
+# DIP band range limits                           :   32   33
+# DIP e/h energy range                            :  -1.00000000     -1.00000000    [eV]
+# RL vectors in the sum                           :   4447
+# [r,Vnl] included                                : yes
+# Bands ordered                                   : yes
+# Direct v evaluation                             : no
+# Approach used                                   : G-space v
+# Dipoles computed                                : R V P [G-space]
+# Wavefunctions                                   : Perdew, Burke & Ernzerhof SOL(X)+Perdew, Burke & Ernzerhof SOL(C)
+#
+#
+# [FineGd] Brillouin Symmetry  mode               : mixed
+# [FineGd] Fine Grid  BZ mapped mode              : BZ
+# [FineGd] Fine Grid IBZ mapped mode              : IBZ
+# [FineGd] Bands                                  :  200
+# [FineGd] Number of pts (Energy grid)            :  288
+# [FineGd] Number of pts (fine+coarse, IBZ-map)   :  273
+# [FineGd] Number of pts (fine+coarse, BZ-map)    :  2952
+#
+#
+# [K] Identifier                                  :   5739
+# [K] Dimension                                   :  12960
+# [K] Bands                                       :   28   38
+# [K] Exchange res                                : yes
+# [K] Correlation res                             : yes
+# [K] Kernel`s coupling                           : no
+# [K] Exchange cpl                                : no
+# [K] Correlation cpl                             : no
+# [K] W interaction is bare                       : no
+# [K] ALDA kernel in R-space                      : no
+# [K] RL vectors exchange                         :  117
+# [K] RL vectors correlation                      :  117
+# [K] E/h energy range                            :  -1.00000000     -1.00000000    [eV]
+# [K] Coupling range                              :   100.000000      100.000000    [o/o]
+# [W] Interaction is diagonal                     : no
+# [W] Matrix size                                 :  117
+# [W] Bands                                       :    1  120
+# [W] e/h energy range                            :  -1.00000000     -1.00000000    [eV]
+# [W] Poles                                       :   100.000000    [o/o]
+# [W] RL vectors in the sum                       :   4447
+# [W] [r,Vnl] included                            : yes
+# [W] Field direction                             :  0.999999975E-5   0.00000000      0.00000000   
+# [W] Coulomb Cutoff                              : none
+# [W] Hxc Kernel                                  : HARTREE
+# [RIM] RL components col                         : 0
+# [RIM] Random points col                         : 0
+# [SOC] Perturbative SOC                          : no
+# [X] Response Kind                               : BAR
+#
+# Diamagnetic term                                
+# Ao                                              :  -60.1995697    [nel]
+# A                                               :  -60.6621323    [nel]
+#
+#    E[1] [eV]          Im(eps)            Re(eps)            Im(eps_o)          Re(eps_o)
+#
+        0.050000           0.085229           3.086022           0.057302           2.736240
+        0.079798           0.087584           3.111653           0.058571           2.753454
+        0.109596           0.090042           3.137993           0.059885           2.771049
+        0.139394           0.092612           3.165076           0.061247           2.789041
+        0.169192           0.095299           3.192934           0.062658           2.807443
+        0.198990           0.098112           3.221602           0.064122           2.826270
+        0.228788           0.101058           3.251118           0.065640           2.845538
+        0.258586           0.104146           3.281523           0.067217           2.865264
+        0.288384           0.107386           3.312859           0.068856           2.885466
+        0.318182           0.110788           3.345172           0.070558           2.906161
+        0.347980           0.114364           3.378511           0.072329           2.927370
+        0.377778           0.118126           3.412928           0.074172           2.949112
+        0.407576           0.122087           3.448481           0.076090           2.971410
+        0.437374           0.126263           3.485228           0.078089           2.994286
+        0.467172           0.130669           3.523232           0.080174           3.017765
+        0.496970           0.135323           3.562567           0.082348           3.041872
+        0.526768           0.140246           3.603303           0.084619           3.066636
+        0.556566           0.145457           3.645524           0.086991           3.092083
+        0.586364           0.150983           3.689316           0.089471           3.118247
+        0.616162           0.156848           3.734771           0.092067           3.145157
+        0.645960           0.163083           3.781993           0.094785           3.172851
+        0.675758           0.169720           3.831094           0.097635           3.201363
+        0.705555           0.176796           3.882193           0.100624           3.230736
+        0.735354           0.184352           3.935422           0.103763           3.261010
+        0.765151           0.192434           3.990923           0.107063           3.292229
+        0.794949           0.201094           4.048855           0.110535           3.324445
+        0.824747           0.210390           4.109390           0.114192           3.357706
+        0.854545           0.220390           4.172718           0.118049           3.392069
+        0.884343           0.231170           4.239046           0.122120           3.427595
+        0.914141           0.242816           4.308608           0.126423           3.464348
+        0.943939           0.255428           4.381658           0.130978           3.502398
+        0.973737           0.269122           4.458482           0.135805           3.541818
+        1.003535           0.284033           4.539398           0.140928           3.582693
+        1.033333           0.300318           4.624763           0.146373           3.625110
+        1.063131           0.318161           4.714976           0.152171           3.669165
+        1.092929           0.337782           4.810487           0.158355           3.714964
+        1.122727           0.359443           4.911808           0.164962           3.762622
+        1.152525           0.383461           5.019520           0.172036           3.812266
+        1.182323           0.410221           5.134284           0.179626           3.864032
+        1.212121           0.440200           5.256859           0.187788           3.918076
+        1.241919           0.473992           5.388119           0.196588           3.974564
+        1.271717           0.512355           5.529068           0.206100           4.033685
+        1.301515           0.556264           5.680864           0.216415           4.095645
+        1.331313           0.607009           5.844829           0.227635           4.160681
+        1.361111           0.666324           6.022465           0.239886           4.229053
+        1.390909           0.736597           6.215394           0.253316           4.301054
+        1.420707           0.821187           6.425212           0.268109           4.377020
+        1.450505           0.924853           6.653072           0.284486           4.457330
+        1.480303           1.054220           6.898612           0.302728           4.542414
+        1.510101           1.217559           7.157631           0.323187           4.632771
+        1.539899           1.421457           7.418262           0.346321           4.728967
+        1.569697           1.659454           7.660374           0.372731           4.831651
+        1.599495           1.897936           7.875515           0.403227           4.941565
+        1.629293           2.101479           8.104866           0.438924           5.059524
+        1.659091           2.296107           8.415059           0.481395           5.186384
+        1.688889           2.554934           8.824312           0.532904           5.322907
+        1.718687           2.937658           9.299831           0.596740           5.469423
+        1.748485           3.473161           9.785941           0.677582           5.624988
+        1.778283           4.146180           10.22099           0.781418           5.785553
+        1.808081           4.888898           10.59566           0.913220           5.940769
+        1.837879           5.681612           11.01419           1.068425           6.072471
+        1.867677           6.682993           11.57684           1.220093           6.167671
+        1.897475           8.160580           12.20061           1.331863           6.250080
+        1.927273           10.34605           12.56761           1.409317           6.373303
+        1.957071           13.27105           12.08265           1.504514           6.559737
+        1.986869           16.36944           9.976557           1.664172           6.782391
+        2.016666           18.19851           6.149109           1.902306           6.988766
+        2.046464           17.68346           2.116107           2.186456           7.122607
+        2.076262           15.70780          -0.441344           2.432506           7.172673
+        2.106061           13.82106          -1.518142           2.573131           7.219493
+        2.135859           12.59723          -2.037528           2.641604           7.373107
+        2.165657           11.71871          -2.648298           2.741663           7.675181
+        2.195455           10.70257          -3.337119           2.964858           8.088940
+        2.225252           9.473699          -3.756280           3.356811           8.544495
+        2.255050           8.298989          -3.779247           3.921725           8.968636
+        2.284848           7.341747          -3.557248           4.628263           9.304461
+        2.314646           6.579650          -3.201650           5.425098           9.530253
+        2.344444           6.017159          -2.725072           6.265727           9.682334
+        2.374242           5.712643          -2.181090           7.207217           9.855882
+        2.404040           5.683869          -1.681025           8.475311           10.01258
+        2.433838           5.880345          -1.325863           10.22585           9.802867
+        2.463636           6.237183          -1.168971           12.20442           8.720678
+        2.493434           6.710804          -1.278795           13.65178           6.617874
+        2.523232           7.161235          -1.781086           13.93352           4.148431
+        2.553030           7.267711          -2.636600           13.26561           2.144938
+        2.582828           6.862880          -3.483220           12.24818           0.839892
+        2.612626           6.152436          -4.011774           11.26811           0.070141
+        2.642424           5.418474          -4.200409           10.46659          -0.411939
+        2.672222           4.821434          -4.177815           9.789083          -0.801275
+        2.702020           4.388896          -4.104404           9.098733          -1.112219
+        2.731818           4.034045          -4.083976           8.398657          -1.216835
+        2.761616           3.651325          -4.096129           7.855600          -1.098407
+        2.791414           3.225493          -4.062615           7.566314          -0.909341
+        2.821212           2.804660          -3.947871           7.475996          -0.801617
+        2.851010           2.434058          -3.768953           7.461152          -0.821372
+        2.880808           2.122542          -3.560888           7.446658          -0.916759
+        2.910606           1.859317          -3.337692           7.442718          -1.032284
+        2.940404           1.646188          -3.102876           7.513731          -1.175798
+        2.970202           1.487606          -2.872017           7.671443          -1.471462
+        3.000000           1.375344          -2.663938           7.741553          -2.005723
+# 
+# 01/21/2026 at 11:21 yambo @ nid001166 [start]
+# 01/21/2026 at 11:54                   [end]
+#  
+# Timing   [Min/Max/Average]: 32m-53s/32m-54s/32m-53s
+#
+# .-Input file  yambo_run.in
+# | setup                            # [R] Initialization
+# | rim_cut                          # [R] Coulomb potential
+# | optics                           # [R] Linear Response optical properties
+# | dipoles                          # [R] Oscillator strenghts (or dipoles)
+# | bss                              # [R] BSE solver
+# | bse                              # [R][BSE] Bethe Salpeter Equation.
+# | em1s                             # [R][Xs] Statically Screened Interaction
+# | ElecTemp= 0.258520E-4      eV    # Electronic Temperature
+# | #DegFix                        # Force the code to impose the energy levels to respect their degeneracy
+# | FFTGvecs=  35              Ry    # [FFT] Plane-waves
+# | DIP_CPU= "4.4.2"                 # [PARALLEL] CPUs for each role
+# | DIP_ROLEs= "v.c.k"               # [PARALLEL] CPUs roles (k,c,v)
+# | X_and_IO_CPU= "32 1 1 2 1"       # [PARALLEL] CPUs for each role
+# | X_and_IO_ROLEs= "q g k c v"      # [PARALLEL] CPUs roles (q,g,k,c,v)
+# | BS_CPU= "8.4"                    # [PARALLEL] CPUs for each role
+# | BS_ROLEs= "eh.k"                 # [PARALLEL] CPUs roles (k,eh,t)
+# | BS_nCPU_LinAlg_INV= 16           # [PARALLEL] CPUs for Linear Algebra (if -1 it is automatically set)
+# | BS_nCPU_LinAlg_DIAGO= 16         # [PARALLEL] CPUs for Linear Algebra (if -1 it is automatically set)
+# | RandQpts=0                       # [RIM] Number of random q-points in the BZ
+# | RandGvec= 1                RL    # [RIM] Coulomb interaction RS components
+# | CUTGeo= "none"                   # [CUT] Coulomb Cutoff geometry: box/cylinder/sphere/ws/slab X/Y/Z/XY..
+# | % CUTBox
+# |  0.000000 | 0.000000 | 0.000000 |        # [CUT] [au] Box sides
+# | %
+# | CUTRadius= 0.000000              # [CUT] [au] Sphere/Cylinder radius
+# | CUTCylLen= 0.000000              # [CUT] [au] Cylinder length
+# | CUTwsGvec= 0.000000              # [CUT] WS cutoff: number of G to be modified
+# | Chimod= "HARTREE"                # [X] IP/Hartree/ALDA/LRC/PF/BSfxc
+# | BSKmod= "SEX"                    # [BSE] IP/Hartree/HF/ALDA/SEX/BSfxc
+# | BSEmod= "resonant"               # [BSE] resonant/retarded/coupling
+# | BSSmod= "d"                      # [BSS] (h)aydock/(d)iagonalization/(s)lepc/(i)nversion/(t)ddft`
+# | % DipBands
+# |   28 |  38 |                         # [DIP] Bands range for dipoles
+# | %
+# | BSENGexx= 3                Ry    # [BSK] Exchange components
+# | BSENGBlk= 3                Ry    # [BSK] Screened interaction block size [if -1 uses all the G-vectors of W(q,G,Gp)]
+# | #WehCpl                        # [BSK] eh interaction included also in coupling
+# | % BSEQptR
+# |  1 | 1 |                             # [BSK] Transferred momenta range
+# | %
+# | % BSEBands
+# |   28 |  38 |                         # [BSK] Bands range
+# | %
+# | % BEnRange
+# |  0.050000 | 3.000000 |         eV    # [BSS] Energy range
+# | %
+# | % BDmRange
+# |  0.100000 | 0.100000 |         eV    # [BSS] Damping range
+# | %
+# | BEnSteps= 100                    # [BSS] Energy steps
+# | % BLongDir
+# |  1.000000 | 0.000000 | 0.000000 |        # [BSS] [cc] Electric Field versor
+# | %
+# | BSEprop= " abs"                  # [BSS] Can be any among abs/jdos/kerr/asymm/anHAll/magn/dich/photolum/esrt
+# | BSEdips= "none"                  # [BSS] Can be "trace/none" or "xy/xz/yz" to define off-diagonal rotation plane
+# | WRbsWF                         # [BSS] Write to disk excitonic the WFs
+# | % BndsRnXs
+# |    1 | 120 |                         # [Xs] Polarization function bands
+# | %
+# | NGsBlkXs= 3                Ry    # [Xs] Response block size
+# | GrFnTpXs= "R"                    # [Xs] Green`s function (T)ordered,(R)etarded,(r)senant,(a)ntiresonant [T, R, r, Ta, Ra]
+# | % LongDrXs
+# |  0.100000E-4 |  0.00000    |  0.00000    # [Xs] [cc] Electric Field
+# | %

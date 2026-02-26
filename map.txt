@@ -1,0 +1,1215 @@
+.
+ |-- map.txt
+ |-- NiI2
+ |--  |-- yambo
+ |--  |--  |-- DFT
+ |--  |--  |--  |-- 40x0x40
+ |--  |--  |--  |--  |-- database
+ |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |-- 6x6x6
+ |--  |--  |--  |--  |-- bse_run_gw
+ |--  |--  |--  |--  |--  |-- r-bse+gw_setup_rim_cut_optics_dipoles_bss_bse_em1s
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s_07
+ |--  |--  |--  |--  |--  |-- r-bse+gw_setup_rim_cut_optics_dipoles_bss_bse_em1s_01
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s_01
+ |--  |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |--  |-- o-bse+gw.eps_q1_diago_bse
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s_06
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s_05
+ |--  |--  |--  |--  |--  |-- yambo_run.in
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s_04
+ |--  |--  |--  |--  |--  |-- o.eps_q1_diago_bse_gw
+ |--  |--  |--  |--  |--  |-- o.eel_q1_diago_bse_gw
+ |--  |--  |--  |--  |--  |-- o.eel_q1_diago_bse
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s_02
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s
+ |--  |--  |--  |--  |--  |-- o.eps_q1_diago_bse
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s_03
+ |--  |--  |--  |--  |--  |-- o-bse+gw.eel_q1_diago_bse
+ |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |--  |-- BSEconv_plot.png
+ |--  |--  |--  |--  |-- gw_run
+ |--  |--  |--  |--  |--  |-- r_HF_and_locXC_gw0_ppa_el_el_corr_05
+ |--  |--  |--  |--  |--  |-- r_HF_and_locXC_gw0_ppa_el_el_corr_06
+ |--  |--  |--  |--  |--  |-- r_HF_and_locXC_gw0_ppa_el_el_corr_01
+ |--  |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |--  |-- r_HF_and_locXC_gw0_ppa_el_el_corr_02
+ |--  |--  |--  |--  |--  |-- o.qp_02
+ |--  |--  |--  |--  |--  |-- yambo_run.in
+ |--  |--  |--  |--  |--  |-- r_HF_and_locXC_gw0_ppa_el_el_corr_03
+ |--  |--  |--  |--  |--  |-- r_HF_and_locXC_gw0_ppa_el_el_corr_04
+ |--  |--  |--  |--  |--  |-- o.qp_01
+ |--  |--  |--  |--  |--  |-- o.qp
+ |--  |--  |--  |--  |--  |-- r_HF_and_locXC_gw0_ppa_el_el_corr
+ |--  |--  |--  |--  |-- input_tmp.in
+ |--  |--  |--  |--  |-- conv_BSE_i
+ |--  |--  |--  |--  |--  |-- BSENGexx_00003
+ |--  |--  |--  |--  |--  |--  |-- r-BSENGexx_00003_setup_optics_dipoles_bss_bse_em1s
+ |--  |--  |--  |--  |--  |--  |-- o-BSENGexx_00003.eps_q1_inv_bse
+ |--  |--  |--  |--  |--  |--  |-- BSENGexx_00003.in
+ |--  |--  |--  |--  |--  |--  |-- o-BSENGexx_00003.eel_q1_inv_bse
+ |--  |--  |--  |--  |--  |-- BSENGBlk_00005
+ |--  |--  |--  |--  |--  |--  |-- o-BSENGBlk_00005.eps_q1_inv_bse
+ |--  |--  |--  |--  |--  |--  |-- r-BSENGBlk_00005_setup_optics_dipoles_bss_bse_em1s
+ |--  |--  |--  |--  |--  |--  |-- BSENGBlk_00005.in
+ |--  |--  |--  |--  |--  |--  |-- o-BSENGBlk_00005.eel_q1_inv_bse
+ |--  |--  |--  |--  |--  |-- BSENGBlk_00003.in
+ |--  |--  |--  |--  |--  |-- BSENGexx_00009
+ |--  |--  |--  |--  |--  |--  |-- o-BSENGexx_00009.eel_q1_inv_bse
+ |--  |--  |--  |--  |--  |--  |-- o-BSENGexx_00009.eps_q1_inv_bse
+ |--  |--  |--  |--  |--  |--  |-- BSENGexx_00009.in
+ |--  |--  |--  |--  |--  |--  |-- r-BSENGexx_00009_setup_optics_dipoles_bss_bse_em1s
+ |--  |--  |--  |--  |--  |-- BSEBands_23_42
+ |--  |--  |--  |--  |--  |--  |-- o-bse+gw.gw_run-SAVE-spin-up.data_02
+ |--  |--  |--  |--  |--  |--  |-- r-bse+gw_setup_optics_dipoles_bss_bse_em1s_02
+ |--  |--  |--  |--  |--  |--  |-- o-bse+gw.gw_run-SAVE-spin-up.data
+ |--  |--  |--  |--  |--  |--  |-- BSEBands_23_42+gw.in
+ |--  |--  |--  |--  |--  |--  |-- o-bse+gw.gw_run-SAVE-spin-dn.data_01
+ |--  |--  |--  |--  |--  |--  |-- o-bse+gw.gw_run-SAVE-spin-up.fit_01
+ |--  |--  |--  |--  |--  |--  |-- o-BSEBands_23_42.eel_q1_inv_bse
+ |--  |--  |--  |--  |--  |--  |-- o-bse+gw.gw_run-SAVE-spin-up.fit_02
+ |--  |--  |--  |--  |--  |--  |-- o-bse+gw.gw_run-SAVE-spin-dn.fit_02
+ |--  |--  |--  |--  |--  |--  |-- r_setup
+ |--  |--  |--  |--  |--  |--  |-- r-bse+gw_setup_optics_dipoles_bss_bse_em1s_01
+ |--  |--  |--  |--  |--  |--  |-- BSEBands_23_42.in
+ |--  |--  |--  |--  |--  |--  |-- r-BSEBands_23_42_setup_optics_dipoles_bss_bse_em1s
+ |--  |--  |--  |--  |--  |--  |-- o-bse+gw.gw_run-SAVE-spin-dn.fit_01
+ |--  |--  |--  |--  |--  |--  |-- r-BSEBands_23_42_setup_optics_dipoles_bss_bse_em1s_01
+ |--  |--  |--  |--  |--  |--  |-- o-BSEBands_23_42.eps_q1_inv_bse
+ |--  |--  |--  |--  |--  |--  |-- o-bse+gw.gw_run-SAVE-spin-dn.fit
+ |--  |--  |--  |--  |--  |--  |-- o-bse+gw.gw_run-SAVE-spin-dn.data
+ |--  |--  |--  |--  |--  |--  |-- o-bse+gw.gw_run-SAVE-spin-up.data_01
+ |--  |--  |--  |--  |--  |--  |-- o-bse+gw.gw_run-SAVE-spin-dn.data_02
+ |--  |--  |--  |--  |--  |--  |-- o-bse+gw.gw_run-SAVE-spin-up.fit
+ |--  |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |--  |--  |--  |-- r-bse+gw_setup_optics_dipoles_bss_bse_em1s
+ |--  |--  |--  |--  |--  |-- BSEBands_28_38
+ |--  |--  |--  |--  |--  |--  |-- o-BSEBands_28_38.eel_q1_inv_bse
+ |--  |--  |--  |--  |--  |--  |-- BSEBands_28_38.in
+ |--  |--  |--  |--  |--  |--  |-- o-BSEBands_28_38.eps_q1_inv_bse
+ |--  |--  |--  |--  |--  |--  |-- r-BSEBands_28_38_setup_optics_dipoles_bss_bse_em1s
+ |--  |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |--  |-- BSEBands_27_39
+ |--  |--  |--  |--  |--  |--  |-- o-BSEBands_27_39.eel_q1_inv_bse
+ |--  |--  |--  |--  |--  |--  |-- BSEBands_27_39.in
+ |--  |--  |--  |--  |--  |--  |-- o-BSEBands_27_39.eps_q1_inv_bse
+ |--  |--  |--  |--  |--  |--  |-- r-BSEBands_27_39_setup_optics_dipoles_bss_bse_em1s
+ |--  |--  |--  |--  |--  |-- BSEBands_28_38.in
+ |--  |--  |--  |--  |--  |-- BSEBands_29_37
+ |--  |--  |--  |--  |--  |--  |-- r-BSEBands_29_37_setup_optics_dipoles_bss_bse_em1s
+ |--  |--  |--  |--  |--  |--  |-- o-BSEBands_29_37.eel_q1_inv_bse
+ |--  |--  |--  |--  |--  |--  |-- o-BSEBands_29_37.eps_q1_inv_bse
+ |--  |--  |--  |--  |--  |--  |-- BSEBands_29_37.in
+ |--  |--  |--  |--  |--  |-- BSEBands_23_42.in
+ |--  |--  |--  |--  |--  |-- BSEBands_30_36.in
+ |--  |--  |--  |--  |--  |-- BSEBands_30_36
+ |--  |--  |--  |--  |--  |--  |-- BSEBands_30_36.in
+ |--  |--  |--  |--  |--  |--  |-- r-BSEBands_30_36_setup_optics_dipoles_bss_bse_em1s
+ |--  |--  |--  |--  |--  |--  |-- o-BSEBands_30_36.eps_q1_inv_bse
+ |--  |--  |--  |--  |--  |--  |-- o-BSEBands_30_36.eel_q1_inv_bse
+ |--  |--  |--  |--  |--  |-- BSENGBlk_00009.in
+ |--  |--  |--  |--  |--  |-- BSENGBlk_00005.in
+ |--  |--  |--  |--  |--  |-- BSENGBlk_00007
+ |--  |--  |--  |--  |--  |--  |-- o-BSENGBlk_00007.eps_q1_inv_bse
+ |--  |--  |--  |--  |--  |--  |-- o-BSENGBlk_00007.eel_q1_inv_bse
+ |--  |--  |--  |--  |--  |--  |-- BSENGBlk_00007.in
+ |--  |--  |--  |--  |--  |--  |-- r-BSENGBlk_00007_setup_optics_dipoles_bss_bse_em1s
+ |--  |--  |--  |--  |--  |-- BSENGBlk_00003
+ |--  |--  |--  |--  |--  |--  |-- BSENGBlk_00003.in
+ |--  |--  |--  |--  |--  |--  |-- o-BSENGBlk_00003.eps_q1_inv_bse
+ |--  |--  |--  |--  |--  |--  |-- r-BSENGBlk_00003_setup_optics_dipoles_bss_bse_em1s
+ |--  |--  |--  |--  |--  |--  |-- o-BSENGBlk_00003.eel_q1_inv_bse
+ |--  |--  |--  |--  |--  |-- BSENGBlk_00009
+ |--  |--  |--  |--  |--  |--  |-- BSENGBlk_00009.in
+ |--  |--  |--  |--  |--  |--  |-- o-BSENGBlk_00009.eel_q1_inv_bse
+ |--  |--  |--  |--  |--  |--  |-- o-BSENGBlk_00009.eps_q1_inv_bse
+ |--  |--  |--  |--  |--  |--  |-- r-BSENGBlk_00009_setup_optics_dipoles_bss_bse_em1s
+ |--  |--  |--  |--  |--  |-- BSENGexx_00003.in
+ |--  |--  |--  |--  |--  |-- BSEBands_27_39.in
+ |--  |--  |--  |--  |--  |-- BSENGBlk_00007.in
+ |--  |--  |--  |--  |--  |-- BSEBands_29_37.in
+ |--  |--  |--  |--  |--  |-- BSENGexx_00007
+ |--  |--  |--  |--  |--  |--  |-- r-BSENGexx_00007_setup_optics_dipoles_bss_bse_em1s
+ |--  |--  |--  |--  |--  |--  |-- o-BSENGexx_00007.eel_q1_inv_bse
+ |--  |--  |--  |--  |--  |--  |-- o-BSENGexx_00007.eps_q1_inv_bse
+ |--  |--  |--  |--  |--  |--  |-- BSENGexx_00007.in
+ |--  |--  |--  |--  |--  |-- BSENGexx_00007.in
+ |--  |--  |--  |--  |--  |-- BSEBands_25_40.in
+ |--  |--  |--  |--  |--  |-- BSENGexx_00005.in
+ |--  |--  |--  |--  |--  |-- BSENGexx_00009.in
+ |--  |--  |--  |--  |--  |-- BSENGexx_00005
+ |--  |--  |--  |--  |--  |--  |-- o-BSENGexx_00005.eps_q1_inv_bse
+ |--  |--  |--  |--  |--  |--  |-- o-BSENGexx_00005.eel_q1_inv_bse
+ |--  |--  |--  |--  |--  |--  |-- r-BSENGexx_00005_setup_optics_dipoles_bss_bse_em1s
+ |--  |--  |--  |--  |--  |--  |-- BSENGexx_00005.in
+ |--  |--  |--  |--  |--  |-- BSEBands_25_40
+ |--  |--  |--  |--  |--  |--  |-- o-bse+gw.eel_q1_inv_bse_01
+ |--  |--  |--  |--  |--  |--  |-- r-bse+gw_setup_optics_dipoles_bss_bse_em1s_04
+ |--  |--  |--  |--  |--  |--  |-- o-bse+gw.gw_run-SAVE-spin-up.data_02
+ |--  |--  |--  |--  |--  |--  |-- r-bse+gw_setup_optics_dipoles_bss_bse_em1s_02
+ |--  |--  |--  |--  |--  |--  |-- o-bse+gw.gw_run-SAVE-spin-up.data
+ |--  |--  |--  |--  |--  |--  |-- r-bse+gw_setup_optics_dipoles_bss_bse_em1s_06
+ |--  |--  |--  |--  |--  |--  |-- o-bse+gw.gw_run-SAVE-spin-dn.data_01
+ |--  |--  |--  |--  |--  |--  |-- o-bse+gw.gw_run-SAVE-spin-up.fit_01
+ |--  |--  |--  |--  |--  |--  |-- r-bse+gw_setup_optics_dipoles_bss_bse_em1s_05
+ |--  |--  |--  |--  |--  |--  |-- o-bse+gw.gw_run-SAVE-spin-up.fit_02
+ |--  |--  |--  |--  |--  |--  |-- o-bse+gw.gw_run-SAVE-spin-dn.fit_02
+ |--  |--  |--  |--  |--  |--  |-- r-bse+gw_setup_optics_dipoles_bss_bse_em1s_01
+ |--  |--  |--  |--  |--  |--  |-- o-bse+gw.gw_run-SAVE-spin-dn.fit_01
+ |--  |--  |--  |--  |--  |--  |-- o-bse+gw.gw_run-SAVE-spin-dn.fit
+ |--  |--  |--  |--  |--  |--  |-- o-bse+gw.gw_run-SAVE-spin-dn.data
+ |--  |--  |--  |--  |--  |--  |-- r-bse+gw_setup_optics_dipoles_bss_bse_em1s_03
+ |--  |--  |--  |--  |--  |--  |-- o-bse+gw.eps_q1_inv_bse_01
+ |--  |--  |--  |--  |--  |--  |-- o-bse+gw.gw_run-SAVE-spin-dn.fit_03
+ |--  |--  |--  |--  |--  |--  |-- r-BSEBands_25_40_setup_optics_dipoles_bss_bse_em1s
+ |--  |--  |--  |--  |--  |--  |-- o-BSEBands_25_40.eps_q1_inv_bse
+ |--  |--  |--  |--  |--  |--  |-- o-bse+gw.gw_run-SAVE-spin-up.data_01
+ |--  |--  |--  |--  |--  |--  |-- o-bse+gw.gw_run-SAVE-spin-dn.data_02
+ |--  |--  |--  |--  |--  |--  |-- o-bse+gw.gw_run-SAVE-spin-up.fit
+ |--  |--  |--  |--  |--  |--  |-- bse+gw.in
+ |--  |--  |--  |--  |--  |--  |-- o-bse+gw.gw_run-SAVE-spin-up.data_03
+ |--  |--  |--  |--  |--  |--  |-- BSEBands_25_40.in
+ |--  |--  |--  |--  |--  |--  |-- o-bse+gw.gw_run-SAVE-spin-dn.data_03
+ |--  |--  |--  |--  |--  |--  |-- o-BSEBands_25_40.eel_q1_inv_bse
+ |--  |--  |--  |--  |--  |--  |-- o-bse+gw.gw_run-SAVE-spin-up.fit_03
+ |--  |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |--  |--  |--  |-- r-bse+gw_setup_optics_dipoles_bss_bse_em1s
+ |--  |--  |--  |--  |-- info
+ |--  |--  |--  |--  |-- database
+ |--  |--  |--  |--  |--  |-- r_setup
+ |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |-- 14x14x14
+ |--  |--  |--  |--  |-- bse_run_i_B28-38
+ |--  |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |--  |-- yambo_run.in
+ |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |-- screen.in
+ |--  |--  |--  |--  |-- database
+ |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |-- 10x10x10
+ |--  |--  |--  |--  |-- bse_run_i_B28-38
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s_01
+ |--  |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s_06
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s_05
+ |--  |--  |--  |--  |--  |-- yambo_run.in
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s_04
+ |--  |--  |--  |--  |--  |-- o.eel_q1_haydock_bse
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s_02
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s
+ |--  |--  |--  |--  |--  |-- o.eps_q1_haydock_bse
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s_03
+ |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |--  |-- info
+ |--  |--  |--  |--  |-- database
+ |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |-- DFT_mv_smearing
+ |--  |--  |--  |-- kpoint_convergence
+ |--  |--  |--  |--  |-- o-10x10x10.eps_q1_diago_bse
+ |--  |--  |--  |--  |-- o-6x6x6.eps_q1_diago_bse
+ |--  |--  |--  |--  |-- info
+ |--  |--  |--  |-- 8x8x8
+ |--  |--  |--  |--  |-- gw_run
+ |--  |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |--  |-- yambo_run.in
+ |--  |--  |--  |--  |--  |-- r_HF_and_locXC_gw0_ppa_el_el_corr
+ |--  |--  |--  |--  |-- bse_run_hydoc_28_38
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s_01
+ |--  |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |--  |-- yambo_run.in
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s_02
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s_03
+ |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |--  |-- bse_run_slepc_22_42
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s_01
+ |--  |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |--  |-- yambo_run.in
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s_02
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s
+ |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |--  |-- database
+ |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |--  |-- bse_run_hydoc_22_40
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s_01
+ |--  |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |--  |-- yambo_run.in
+ |--  |--  |--  |--  |--  |-- o.eel_q1_haydock_bse
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s_02
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s
+ |--  |--  |--  |--  |--  |-- o.eps_q1_haydock_bse
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s_03
+ |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |-- 50x50x50
+ |--  |--  |--  |--  |-- database
+ |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |-- 6x6x6
+ |--  |--  |--  |--  |-- gw_conv
+ |--  |--  |--  |--  |--  |-- NGsBlkXp_00003.in
+ |--  |--  |--  |--  |--  |-- GbndRnge_00130.in
+ |--  |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |--  |-- NGsBlkXp_00009.in
+ |--  |--  |--  |--  |--  |-- NGsBlkXp_00007.in
+ |--  |--  |--  |--  |--  |-- NGsBlkXp_00005.in
+ |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |--  |--  |-- NGsBlkXp.png
+ |--  |--  |--  |--  |-- field_dir_modulation
+ |--  |--  |--  |--  |--  |-- LongDrXs_3_1_0
+ |--  |--  |--  |--  |--  |--  |-- r-LongDrXs_3_1_0_setup_optics_dipoles_bss_bse_em1s_ppa_01
+ |--  |--  |--  |--  |--  |--  |-- r-LongDrXs_3_1_0_setup_optics_dipoles_bss_bse_em1s_ppa
+ |--  |--  |--  |--  |--  |--  |-- o-LongDrXs_3_1_0.eel_q1_haydock_bse
+ |--  |--  |--  |--  |--  |--  |-- o-LongDrXs_3_1_0.eps_q1_haydock_bse
+ |--  |--  |--  |--  |--  |--  |-- LongDrXs_3_1_0.in
+ |--  |--  |--  |--  |--  |-- LongDrXs_1_3_0.in
+ |--  |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |--  |-- LongDrXs_2_1_0
+ |--  |--  |--  |--  |--  |--  |-- LongDrXs_2_1_0.in
+ |--  |--  |--  |--  |--  |--  |-- r-LongDrXs_2_1_0_setup_optics_dipoles_bss_bse_em1s_ppa
+ |--  |--  |--  |--  |--  |--  |-- o-LongDrXs_2_1_0.eel_q1_haydock_bse
+ |--  |--  |--  |--  |--  |--  |-- o-LongDrXs_2_1_0.eps_q1_haydock_bse
+ |--  |--  |--  |--  |--  |-- LongDrXs_1_3_0
+ |--  |--  |--  |--  |--  |--  |-- r-LongDrXs_1_3_0_setup_optics_dipoles_bss_bse_em1s_ppa
+ |--  |--  |--  |--  |--  |--  |-- LongDrXs_1_3_0.in
+ |--  |--  |--  |--  |--  |--  |-- o-LongDrXs_1_3_0.eel_q1_haydock_bse
+ |--  |--  |--  |--  |--  |--  |-- o-LongDrXs_1_3_0.eps_q1_haydock_bse
+ |--  |--  |--  |--  |--  |-- LongDrXs_1_1_0
+ |--  |--  |--  |--  |--  |--  |-- o-LongDrXs_1_1_0.eel_q1_haydock_bse
+ |--  |--  |--  |--  |--  |--  |-- LongDrXs_1_1_0.in
+ |--  |--  |--  |--  |--  |--  |-- o-LongDrXs_1_1_0.eps_q1_haydock_bse
+ |--  |--  |--  |--  |--  |--  |-- r-LongDrXs_1_1_0_setup_optics_dipoles_bss_bse_em1s_ppa
+ |--  |--  |--  |--  |--  |-- LongDrXs_2_1_0.in
+ |--  |--  |--  |--  |--  |-- LongDrXs_1_1_0.in
+ |--  |--  |--  |--  |--  |-- LongDrXs_3_1_0.in
+ |--  |--  |--  |--  |--  |-- LongDrXs_1_2_0
+ |--  |--  |--  |--  |--  |--  |-- o-LongDrXs_1_2_0.eps_q1_haydock_bse
+ |--  |--  |--  |--  |--  |--  |-- r-LongDrXs_1_2_0_setup_optics_dipoles_bss_bse_em1s_ppa
+ |--  |--  |--  |--  |--  |--  |-- LongDrXs_1_2_0.in
+ |--  |--  |--  |--  |--  |--  |-- o-LongDrXs_1_2_0.eel_q1_haydock_bse
+ |--  |--  |--  |--  |--  |-- LongDrXs_0_1_0.in
+ |--  |--  |--  |--  |--  |-- LongDrXs_1_2_0.in
+ |--  |--  |--  |--  |--  |-- LongDrXs_0_1_0
+ |--  |--  |--  |--  |--  |--  |-- o-LongDrXs_0_1_0.eel_q1_haydock_bse
+ |--  |--  |--  |--  |--  |--  |-- r-LongDrXs_0_1_0_setup_optics_dipoles_bss_bse_em1s_ppa
+ |--  |--  |--  |--  |--  |--  |-- LongDrXs_0_1_0.in
+ |--  |--  |--  |--  |--  |--  |-- r-LongDrXs_0_1_0_setup_optics_dipoles_bss_bse_em1s_ppa_01
+ |--  |--  |--  |--  |--  |--  |-- o-LongDrXs_0_1_0.eps_q1_haydock_bse
+ |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |--  |-- gw_run
+ |--  |--  |--  |--  |--  |-- yambo_run.in
+ |--  |--  |--  |--  |--  |-- o.qp
+ |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |-- field_dir_modulation_2
+ |--  |--  |--  |--  |--  |-- BLongDir_2_1_0.in
+ |--  |--  |--  |--  |--  |-- BLongDir_1_3_0
+ |--  |--  |--  |--  |--  |--  |-- o-BLongDir_1_3_0.eel_q1_haydock_bse
+ |--  |--  |--  |--  |--  |--  |-- o-BLongDir_1_3_0.eps_q1_haydock_bse
+ |--  |--  |--  |--  |--  |--  |-- r-BLongDir_1_3_0_setup_optics_dipoles_bss_bse_em1s_ppa
+ |--  |--  |--  |--  |--  |--  |-- BLongDir_1_3_0.in
+ |--  |--  |--  |--  |--  |-- BLongDir_1_1_0
+ |--  |--  |--  |--  |--  |--  |-- o-BLongDir_1_1_0.eel_q1_haydock_bse
+ |--  |--  |--  |--  |--  |--  |-- BLongDir_1_1_0.in
+ |--  |--  |--  |--  |--  |--  |-- r-BLongDir_1_1_0_setup_optics_dipoles_bss_bse_em1s_ppa
+ |--  |--  |--  |--  |--  |--  |-- o-BLongDir_1_1_0.eps_q1_haydock_bse
+ |--  |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |--  |-- BLongDir_1_3_0.in
+ |--  |--  |--  |--  |--  |-- BLongDir_1_1_0.in
+ |--  |--  |--  |--  |--  |-- BLongDir_2_1_0
+ |--  |--  |--  |--  |--  |--  |-- BLongDir_2_1_0.in
+ |--  |--  |--  |--  |--  |--  |-- o-BLongDir_2_1_0.eel_q1_haydock_bse
+ |--  |--  |--  |--  |--  |--  |-- r-BLongDir_2_1_0_setup_optics_dipoles_bss_bse_em1s_ppa
+ |--  |--  |--  |--  |--  |--  |-- o-BLongDir_2_1_0.eps_q1_haydock_bse
+ |--  |--  |--  |--  |--  |-- BLongDir_1_2_0
+ |--  |--  |--  |--  |--  |--  |-- o-BLongDir_1_2_0.eps_q1_haydock_bse
+ |--  |--  |--  |--  |--  |--  |-- o-BLongDir_1_2_0.eel_q1_haydock_bse
+ |--  |--  |--  |--  |--  |--  |-- r-BLongDir_1_2_0_setup_optics_dipoles_bss_bse_em1s_ppa
+ |--  |--  |--  |--  |--  |--  |-- BLongDir_1_2_0.in
+ |--  |--  |--  |--  |--  |-- BLongDir_3_1_0
+ |--  |--  |--  |--  |--  |--  |-- BLongDir_3_1_0.in
+ |--  |--  |--  |--  |--  |--  |-- r-BLongDir_3_1_0_setup_optics_dipoles_bss_bse_em1s_ppa
+ |--  |--  |--  |--  |--  |-- BLongDir_3_1_0.in
+ |--  |--  |--  |--  |--  |-- BLongDir_1_2_0.in
+ |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |--  |-- bse_conv
+ |--  |--  |--  |--  |--  |-- BSEBands_32_33
+ |--  |--  |--  |--  |--  |--  |-- r-BSEBands_32_33_setup_optics_dipoles_bss_bse_em1s_01
+ |--  |--  |--  |--  |--  |--  |-- o-BSEBands_32_33.eps_q1_diago_bse
+ |--  |--  |--  |--  |--  |--  |-- BSEBands_32_33.in
+ |--  |--  |--  |--  |--  |--  |-- r-BSEBands_32_33_setup_optics_dipoles_bss_bse_em1s_04
+ |--  |--  |--  |--  |--  |--  |-- r-BSEBands_32_33_setup_optics_dipoles_bss_bse_em1s_05
+ |--  |--  |--  |--  |--  |--  |-- r-BSEBands_32_33_setup_optics_dipoles_bss_bse_em1s
+ |--  |--  |--  |--  |--  |--  |-- r-BSEBands_32_33_setup_optics_dipoles_bss_bse_em1s_06
+ |--  |--  |--  |--  |--  |--  |-- r-BSEBands_32_33_setup_optics_dipoles_bss_bse_em1s_02
+ |--  |--  |--  |--  |--  |--  |-- o-BSEBands_32_33.eel_q1_diago_bse
+ |--  |--  |--  |--  |--  |--  |-- r-BSEBands_32_33_setup_optics_dipoles_bss_bse_em1s_03
+ |--  |--  |--  |--  |--  |-- BSEBands_28_38
+ |--  |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |--  |-- bse_run_22_42
+ |--  |--  |--  |--  |--  |-- o.eps_q1_haydock_bse_dg50
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s_ppa_03
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s_ppa_07
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s_ppa_11
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s_ppa_09
+ |--  |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s_ppa_02
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s_ppa_13
+ |--  |--  |--  |--  |--  |-- ypp.in
+ |--  |--  |--  |--  |--  |-- r_kpts_map_02
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s_ppa_10
+ |--  |--  |--  |--  |--  |-- o.eel_q1_haydock_bse_dg50
+ |--  |--  |--  |--  |--  |-- yambo_run.in
+ |--  |--  |--  |--  |--  |-- o.eel_q1_haydock_bse
+ |--  |--  |--  |--  |--  |-- r_kpts_map_03
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s_ppa_06
+ |--  |--  |--  |--  |--  |-- o.eps_q1_haydock_bse
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s_ppa_08
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s_ppa_01
+ |--  |--  |--  |--  |--  |-- r_kpts_map_04
+ |--  |--  |--  |--  |--  |-- r_kpts_map
+ |--  |--  |--  |--  |--  |-- r_kpts_map_01
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s_ppa_05
+ |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s_ppa
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s_ppa_04
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s_ppa_12
+ |--  |--  |--  |--  |-- bse_screen_conv
+ |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |--  |-- bse_run_28_38
+ |--  |--  |--  |--  |--  |-- o.eps_q1_haydock_bse_dg50
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s_07
+ |--  |--  |--  |--  |--  |-- o.gw_run__-SAVE-spin-up.fit
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s_01
+ |--  |--  |--  |--  |--  |-- ypp.in
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s_06
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s_05
+ |--  |--  |--  |--  |--  |-- o.eel_q1_haydock_bse_dg50
+ |--  |--  |--  |--  |--  |-- yambo_run.in
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s_04
+ |--  |--  |--  |--  |--  |-- o.gw_run__-SAVE-spin-dn.data
+ |--  |--  |--  |--  |--  |-- o.gw_run__-SAVE-spin-dn.fit
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s_21
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s_02
+ |--  |--  |--  |--  |--  |-- o.eps_q1_diago_bse_coarsegrid
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s
+ |--  |--  |--  |--  |--  |-- o.eps_q1_haydock_bse_dg50_qp
+ |--  |--  |--  |--  |--  |-- o.gw_run__-SAVE-spin-up.data
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s_03
+ |--  |--  |--  |--  |--  |-- o.eel_q1_haydock_bse_dg50_qp
+ |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |--  |-- info
+ |--  |--  |--  |--  |-- database
+ |--  |--  |--  |--  |--  |-- r_setup_01
+ |--  |--  |--  |--  |--  |-- r_setup
+ |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |--  |-- bse_run_22_42_slepc
+ |--  |--  |--  |--  |--  |-- exc_2.02eV
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_weights_at_166
+ |--  |--  |--  |--  |--  |--  |-- r_excitons_avehole_wavefunction_01
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_2d_173.xsf
+ |--  |--  |--  |--  |--  |--  |-- r_excitons_avehole_wavefunction_26
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_2d_166.xsf
+ |--  |--  |--  |--  |--  |--  |-- o-Ni2_hole.exc_qpt1_2d_172.xsf
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_3d_232.xsf
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_weights_at_165
+ |--  |--  |--  |--  |--  |--  |-- r_excitons_amplitude
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_2d_161.xsf
+ |--  |--  |--  |--  |--  |--  |-- r_excitons_avehole_wavefunction_05
+ |--  |--  |--  |--  |--  |--  |-- o-Ni2_hole.exc_qpt1_2d_163.xsf
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_weights_at_231
+ |--  |--  |--  |--  |--  |--  |-- r_excitons_avehole_wavefunction_20
+ |--  |--  |--  |--  |--  |--  |-- r-Ni2_hole_excitons_wavefunction_02
+ |--  |--  |--  |--  |--  |--  |-- r_excitons_avehole_wavefunction_19
+ |--  |--  |--  |--  |--  |--  |-- r_excitons_avehole_wavefunction_02
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_amplitude_at_231
+ |--  |--  |--  |--  |--  |--  |-- r_excitons_avehole_wavefunction_04
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_weights_at_164
+ |--  |--  |--  |--  |--  |--  |-- r-Ni2_hole_excitons_wavefunction_01
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_amplitude_at_165
+ |--  |--  |--  |--  |--  |--  |-- r_excitons_avehole_wavefunction_16
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_weights_at_232
+ |--  |--  |--  |--  |--  |--  |-- o-Ni2_hole.exc_qpt1_2d_164.xsf
+ |--  |--  |--  |--  |--  |--  |-- o.eps_q1_slepc_bse_2.02eV
+ |--  |--  |--  |--  |--  |--  |-- r_excitons_wavefunction_05
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_amplitude_at_162
+ |--  |--  |--  |--  |--  |--  |-- r_excitons_avehole_wavefunction_25
+ |--  |--  |--  |--  |--  |--  |-- r_excitons_avehole_wavefunction_06
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_weights_at_163
+ |--  |--  |--  |--  |--  |--  |-- r_excitons_wavefunction_08
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_weights_at_173
+ |--  |--  |--  |--  |--  |--  |-- r_excitons_avehole_wavefunction_03
+ |--  |--  |--  |--  |--  |--  |-- o-Ni2_hole.exc_qpt1_2d_166.xsf
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_3d_178.xsf
+ |--  |--  |--  |--  |--  |--  |-- r-avehole_excitons_avehole_wavefunction
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_amplitude_at_167
+ |--  |--  |--  |--  |--  |--  |-- r_excitons_avehole_wavefunction_15
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_3d_172.xsf
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_amplitude_at_166
+ |--  |--  |--  |--  |--  |--  |-- r_excitons_avehole_wavefunction_10
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_amplitude_at_172
+ |--  |--  |--  |--  |--  |--  |-- r_excitons_avehole_wavefunction_13
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_3d_173.xsf_01
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_2d_172.xsf
+ |--  |--  |--  |--  |--  |--  |-- o-Ni2_hole.exc_qpt1_2d_161.xsf
+ |--  |--  |--  |--  |--  |--  |-- r_excitons_avehole_wavefunction_14
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_2d_167.xsf
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_amplitude_at_163
+ |--  |--  |--  |--  |--  |--  |-- r_excitons_wavefunction_04
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_3d_172.xsf_01
+ |--  |--  |--  |--  |--  |--  |-- r_excitons_avehole_wavefunction_17
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_2d_162.xsf
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_E_sorted
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_3d_172.xsf_02
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_amplitude_at_173
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_weights_at_177
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_weights_at_178
+ |--  |--  |--  |--  |--  |--  |-- o-Ni2_hole.exc_qpt1_2d_167.xsf
+ |--  |--  |--  |--  |--  |--  |-- r_excitons_amplitude_02
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_I_sorted
+ |--  |--  |--  |--  |--  |--  |-- r_excitons_wavefunction_03
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_amplitude_at_177
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_weights_at_161
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_2d_163.xsf
+ |--  |--  |--  |--  |--  |--  |-- r_excitons_avehole_wavefunction
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_3d_173.xsf
+ |--  |--  |--  |--  |--  |--  |-- r_excitons_avehole_wavefunction_09
+ |--  |--  |--  |--  |--  |--  |-- o-Ni2_hole.exc_qpt1_2d_173.xsf
+ |--  |--  |--  |--  |--  |--  |-- r_excitons_avehole_wavefunction_18
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_amplitude_at_232
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_weights_at_162
+ |--  |--  |--  |--  |--  |--  |-- r-Ni2_hole_excitons_wavefunction_03
+ |--  |--  |--  |--  |--  |--  |-- r_excitons_wavefunction_07
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_amplitude_at_161
+ |--  |--  |--  |--  |--  |--  |-- r_excitons_avehole_wavefunction_11
+ |--  |--  |--  |--  |--  |--  |-- r_excitons_avehole_wavefunction_08
+ |--  |--  |--  |--  |--  |--  |-- r_excitons_wavefunction_06
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_weights_at_172
+ |--  |--  |--  |--  |--  |--  |-- o-Ni2_hole.exc_qpt1_2d_165.xsf
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_3d_232.xsf_01
+ |--  |--  |--  |--  |--  |--  |-- r_excitons_avehole_wavefunction_24
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_3d_231.xsf
+ |--  |--  |--  |--  |--  |--  |-- r_excitons_avehole_wavefunction_21
+ |--  |--  |--  |--  |--  |--  |-- r_excitons_avehole_wavefunction_23
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_amplitude_at_178
+ |--  |--  |--  |--  |--  |--  |-- r_excitons_avehole_wavefunction_12
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_weights_at_167
+ |--  |--  |--  |--  |--  |--  |-- o-Ni2_hole.exc_qpt1_2d_162.xsf
+ |--  |--  |--  |--  |--  |--  |-- r-Ni2_hole_excitons_wavefunction
+ |--  |--  |--  |--  |--  |--  |-- r_excitons_amplitude_01
+ |--  |--  |--  |--  |--  |--  |-- r_excitons_avehole_wavefunction_22
+ |--  |--  |--  |--  |--  |--  |-- r_excitons_wavefunction_01
+ |--  |--  |--  |--  |--  |--  |-- r_excitons_wavefunction_09
+ |--  |--  |--  |--  |--  |--  |-- r_excitons_wavefunction_02
+ |--  |--  |--  |--  |--  |--  |-- r_excitons_amplitude_03
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_2d_165.xsf
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_2d_164.xsf
+ |--  |--  |--  |--  |--  |--  |-- r_excitons_wavefunction
+ |--  |--  |--  |--  |--  |--  |-- r_excitons_avehole_wavefunction_07
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_3d_177.xsf
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_amplitude_at_164
+ |--  |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |--  |-- ypp.in
+ |--  |--  |--  |--  |--  |-- yambo_run.in
+ |--  |--  |--  |--  |--  |-- kspaceplot.png
+ |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |-- 14x14x14
+ |--  |--  |--  |--  |-- bse_kgrid_conv
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s_01
+ |--  |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |--  |-- yambo_run.in
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s_02
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s
+ |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |--  |-- bse_run_haydock_28_38
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s_01
+ |--  |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |--  |-- yambo_run.in
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s_02
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s
+ |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |--  |-- database
+ |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |-- 10x10x10
+ |--  |--  |--  |--  |-- bse_run_28-38
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s_01
+ |--  |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |--  |-- yambo_run.in
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s
+ |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |--  |-- bse_run
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s_01
+ |--  |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |--  |-- yambo_run.in
+ |--  |--  |--  |--  |--  |-- o.eel_q1_diago_bse
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s_02
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s
+ |--  |--  |--  |--  |--  |-- o.eps_q1_diago_bse
+ |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |--  |-- tmp
+ |--  |--  |--  |--  |--  |-- NiI2.save
+ |--  |--  |--  |--  |--  |--  |-- r_setup
+ |--  |--  |--  |--  |-- gw_conv_kgrid
+ |--  |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |--  |-- yambo_run.in
+ |--  |--  |--  |--  |--  |-- r_HF_and_locXC_gw0_ppa_el_el_corr
+ |--  |--  |--  |--  |-- gw_converged
+ |--  |--  |--  |--  |--  |-- pp
+ |--  |--  |--  |--  |--  |--  |-- r-pp_HF_and_locXC_gw0_ppa_el_el_corr_01
+ |--  |--  |--  |--  |--  |--  |-- r-pp_HF_and_locXC_gw0_ppa_el_el_corr
+ |--  |--  |--  |--  |--  |--  |-- o-pp.qp
+ |--  |--  |--  |--  |--  |--  |-- r-pp_HF_and_locXC_gw0_ppa_el_el_corr_02
+ |--  |--  |--  |--  |--  |--  |-- yambo_ppa.in
+ |--  |--  |--  |--  |--  |--  |-- r-pp_HF_and_locXC_gw0_ppa_el_el_corr_03
+ |--  |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |--  |-- yambo_ppa.in
+ |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |--  |-- database
+ |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |-- DFT+U
+ |--  |--  |--  |-- 8x8x8
+ |--  |--  |--  |--  |-- bse_run_haydock_22_42
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s_01
+ |--  |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |--  |-- yambo_run.in
+ |--  |--  |--  |--  |--  |-- o.eel_q1_haydock_bse
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s_02
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s
+ |--  |--  |--  |--  |--  |-- o.eps_q1_haydock_bse
+ |--  |--  |--  |--  |--  |-- o.eel_q1_haydock_bse_withscissor
+ |--  |--  |--  |--  |--  |-- o.eps_q1_haydock_bse_withscissor
+ |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |--  |-- database
+ |--  |--  |--  |--  |--  |-- r_setup
+ |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |--  |-- bse_run_22_42_slepc
+ |--  |--  |--  |--  |--  |-- 1.05eV
+ |--  |--  |--  |--  |--  |--  |-- r_excitons_avehole_wavefunction_01
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_weights_at_52
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_amplitude_at_51
+ |--  |--  |--  |--  |--  |--  |-- o-1.05eV.eps_q1_slepc_bse_60exciton
+ |--  |--  |--  |--  |--  |--  |-- r_excitons_amplitude
+ |--  |--  |--  |--  |--  |--  |-- 50_interpolated.png
+ |--  |--  |--  |--  |--  |--  |-- 50_['x', 'z']_kspaceplot.png
+ |--  |--  |--  |--  |--  |--  |-- yambo_run.in_1.05eV
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_weights_at_51
+ |--  |--  |--  |--  |--  |--  |-- r_excitons_avehole_wavefunction_02
+ |--  |--  |--  |--  |--  |--  |-- 48_['x', 'z']_kspaceplot.png
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_amplitude_at_50
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_weights_at_46
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_amplitude_at_48
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_amplitude_at_47
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_weights_at_54
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_amplitude_at_46
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_weights_at_47
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_3d_50.xsf
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_amplitude_at_44
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_weights_at_49
+ |--  |--  |--  |--  |--  |--  |-- ypp.in
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_3d_51.xsf
+ |--  |--  |--  |--  |--  |--  |-- r_excitons_avehole_wavefunction_03
+ |--  |--  |--  |--  |--  |--  |-- r-1.05eV_setup_rim_cut_optics_dipoles_bss_bse_em1s
+ |--  |--  |--  |--  |--  |--  |-- r-1.05eV_setup_rim_cut_optics_dipoles_bss_bse_em1s_03
+ |--  |--  |--  |--  |--  |--  |-- r_excitons
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_3d_49.xsf
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_amplitude_at_52
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_amplitude_at_54
+ |--  |--  |--  |--  |--  |--  |-- bash_ypp.in
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_weights_at_44
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_3d_48.xsf
+ |--  |--  |--  |--  |--  |--  |-- r-1.05eV_setup_rim_cut_optics_dipoles_bss_bse_em1s_02
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_amplitude_at_45
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_3d_47.xsf
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_E_sorted
+ |--  |--  |--  |--  |--  |--  |-- r_excitons_amplitude_02
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_I_sorted
+ |--  |--  |--  |--  |--  |--  |-- r-1.05eV_setup_rim_cut_optics_dipoles_bss_bse_em1s_01
+ |--  |--  |--  |--  |--  |--  |-- r_excitons_avehole_wavefunction
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_amplitude_at_49
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_amplitude_at_53
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_weights_at_45
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_amplitude_at_43
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_weights_at_43
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_weights_at_50
+ |--  |--  |--  |--  |--  |--  |-- o-1.05eV.eps_q1_slepc_bse_13exciton
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_weights_at_48
+ |--  |--  |--  |--  |--  |--  |-- r_excitons_amplitude_01
+ |--  |--  |--  |--  |--  |--  |-- r_excitons_amplitude_03
+ |--  |--  |--  |--  |--  |--  |-- r_excitons_01
+ |--  |--  |--  |--  |--  |--  |-- o.exc_qpt1_weights_at_53
+ |--  |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |--  |--  |--  |-- 48_interpolated.png
+ |--  |--  |--  |--  |--  |-- 1.08eV
+ |--  |--  |--  |--  |--  |--  |-- o-1.08eV.eps_q1_slepc_bse
+ |--  |--  |--  |--  |--  |--  |-- r-1.08eV_setup_rim_cut_optics_dipoles_bss_bse_em1s
+ |--  |--  |--  |--  |--  |--  |-- yambo_run.in_1.08eV
+ |--  |--  |--  |--  |--  |-- 1.5eV
+ |--  |--  |--  |--  |--  |--  |-- r-1.5eV_setup_rim_cut_optics_dipoles_bss_bse_em1s
+ |--  |--  |--  |--  |--  |--  |-- r-1.5eV_setup_rim_cut_optics_dipoles_bss_bse_em1s_01
+ |--  |--  |--  |--  |--  |--  |-- yambo_run.in_1.5eV
+ |--  |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |--  |-- yambo_run.in
+ |--  |--  |--  |--  |--  |-- 1.02eV
+ |--  |--  |--  |--  |--  |--  |-- yambo_run.in_1.02eV
+ |--  |--  |--  |--  |--  |--  |-- o-1.02eV.eps_q1_slepc_bse
+ |--  |--  |--  |--  |--  |--  |-- r-1.02eV_setup_rim_cut_optics_dipoles_bss_bse_em1s
+ |--  |--  |--  |--  |--  |-- 1.45eV
+ |--  |--  |--  |--  |--  |--  |-- r-1.45eV_setup_rim_cut_optics_dipoles_bss_bse_em1s
+ |--  |--  |--  |--  |--  |--  |-- r-1.45eV_setup_rim_cut_optics_dipoles_bss_bse_em1s_01
+ |--  |--  |--  |--  |--  |--  |-- yambo_run.in_1.45eV
+ |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |-- 6x6x6
+ |--  |--  |--  |--  |-- bse_run_haydock_22_42
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s_01
+ |--  |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |--  |-- yambo_run.in
+ |--  |--  |--  |--  |--  |-- r_setup_rim_cut_optics_dipoles_bss_bse_em1s
+ |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |--  |-- gw_run
+ |--  |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |--  |-- yambo_run.in
+ |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |--  |--  |-- r_HF_and_locXC_gw0_ppa_el_el_corr
+ |--  |--  |--  |--  |-- database
+ |--  |--  |--  |--  |--  |-- r_setup
+ |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |-- 10x10x10
+ |--  |--  |--  |--  |-- database
+ |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |-- qe
+ |--  |--  |-- DFT
+ |--  |--  |--  |-- scf
+ |--  |--  |--  |--  |-- NiI2.scf.in
+ |--  |--  |--  |-- info
+ |--  |--  |--  |-- nscf
+ |--  |--  |--  |--  |-- 40x40x40
+ |--  |--  |--  |--  |--  |-- NiI2.nscf_.in
+ |--  |--  |--  |--  |--  |-- tmp
+ |--  |--  |--  |--  |--  |--  |-- NiI2.save.tar.zst
+ |--  |--  |--  |--  |--  |--  |-- NiI2.save
+ |--  |--  |--  |--  |--  |-- NiI2.bands.in
+ |--  |--  |--  |--  |--  |-- NiI2.bandsx.in
+ |--  |--  |--  |--  |-- 4x4x4
+ |--  |--  |--  |--  |--  |-- NiI2.nscf.in
+ |--  |--  |--  |--  |--  |-- tmp
+ |--  |--  |--  |--  |--  |--  |-- NiI2.save.tar.zst
+ |--  |--  |--  |--  |--  |--  |-- NiI2.save
+ |--  |--  |--  |--  |-- 6x6x6
+ |--  |--  |--  |--  |--  |-- NiI2.nscf.in
+ |--  |--  |--  |--  |--  |-- tmp
+ |--  |--  |--  |--  |--  |--  |-- NiI2.save.tar.zst
+ |--  |--  |--  |--  |--  |--  |-- NiI2.save
+ |--  |--  |--  |--  |--  |-- NiI2.bands.in
+ |--  |--  |--  |--  |--  |-- NiI2.bandsx.in
+ |--  |--  |--  |--  |-- 14x14x14
+ |--  |--  |--  |--  |--  |-- NiI2.nscf.in
+ |--  |--  |--  |--  |--  |-- tmp
+ |--  |--  |--  |--  |--  |--  |-- NiI2.save.tar.zst
+ |--  |--  |--  |--  |--  |--  |-- NiI2.save
+ |--  |--  |--  |--  |--  |-- NiI2.bands.in
+ |--  |--  |--  |--  |--  |-- NiI2.bandsx.in
+ |--  |--  |--  |--  |-- 10x10x10
+ |--  |--  |--  |--  |--  |-- NiI2.nscf_.in
+ |--  |--  |--  |--  |--  |-- NiI2.nscf.in
+ |--  |--  |--  |--  |--  |-- tmp
+ |--  |--  |--  |--  |--  |--  |-- NiI2.save.tar.zst
+ |--  |--  |--  |--  |--  |--  |-- NiI2.save
+ |--  |--  |--  |--  |--  |-- NiI2.bands.in
+ |--  |--  |--  |--  |--  |-- NiI2.bandsx.in
+ |--  |--  |-- DFT_mv_smearing
+ |--  |--  |--  |-- scf
+ |--  |--  |--  |--  |-- tmp
+ |--  |--  |--  |--  |--  |-- NiI2.save.tar.zst
+ |--  |--  |--  |--  |--  |-- NiI2.save
+ |--  |--  |--  |--  |--  |--  |-- r_setup
+ |--  |--  |--  |--  |-- NiI2_scf.in
+ |--  |--  |--  |-- nscf
+ |--  |--  |--  |--  |-- 50x50x50
+ |--  |--  |--  |--  |--  |-- NiI2_nscf.in
+ |--  |--  |--  |--  |--  |-- tmp
+ |--  |--  |--  |--  |--  |--  |-- NiI2.save.tar.zst
+ |--  |--  |--  |--  |-- 6x6x6
+ |--  |--  |--  |--  |--  |-- NiI2_bands_two_panels_EF.png
+ |--  |--  |--  |--  |--  |-- tmp_sspp
+ |--  |--  |--  |--  |--  |--  |-- NiI2.save.tar.zst
+ |--  |--  |--  |--  |--  |--  |-- NiI2.save
+ |--  |--  |--  |--  |--  |-- NiI2_bands.in
+ |--  |--  |--  |--  |--  |-- NiI2_plotbands.in
+ |--  |--  |--  |--  |--  |-- NiI2_nscf.in
+ |--  |--  |--  |--  |--  |-- NiI2_bands_and_pdos.png
+ |--  |--  |--  |--  |--  |-- NiI2_proj.in
+ |--  |--  |--  |--  |--  |-- NiI2_RGB_bands.png
+ |--  |--  |--  |--  |--  |-- NiI2_bands_elementmap.png
+ |--  |--  |--  |--  |--  |-- tmp
+ |--  |--  |--  |--  |--  |--  |-- NiI2.save.tar.zst
+ |--  |--  |--  |--  |--  |--  |-- NiI2.save
+ |--  |--  |--  |--  |--  |--  |-- proj.in
+ |--  |--  |--  |--  |--  |-- NiI2_pdos_two_panels.png
+ |--  |--  |--  |--  |--  |-- NiI2_bands_orbitalmap.png
+ |--  |--  |--  |--  |--  |-- info
+ |--  |--  |--  |--  |--  |-- NiI2_scf.in
+ |--  |--  |--  |--  |--  |-- NiI2_nscf_sspp.in
+ |--  |--  |--  |--  |--  |-- NiI2_bands_pp.in
+ |--  |--  |--  |--  |-- 14x14x14
+ |--  |--  |--  |--  |--  |-- NiI2_nscf.in
+ |--  |--  |--  |--  |--  |-- tmp
+ |--  |--  |--  |--  |--  |--  |-- NiI2.save.tar.zst
+ |--  |--  |--  |--  |--  |--  |-- NiI2.save
+ |--  |--  |--  |--  |-- 10x10x10
+ |--  |--  |--  |--  |--  |-- NiI2_nscf.in
+ |--  |--  |--  |--  |--  |-- tmp
+ |--  |--  |--  |--  |--  |--  |-- NiI2.save.tar.zst
+ |--  |--  |-- DFT+U
+ |--  |--  |--  |-- scf
+ |--  |--  |--  |--  |-- NiI2_hp.in
+ |--  |--  |--  |--  |-- NiI2.scf.in
+ |--  |--  |--  |--  |-- tmp
+ |--  |--  |--  |--  |--  |-- NiI2.save.tar.zst
+ |--  |--  |--  |-- Ubbard_convergence
+ |--  |--  |--  |--  |-- NiI2.scf.insulator.in
+ |--  |--  |--  |--  |-- NiI2.scf.insulator.out
+ |--  |--  |--  |--  |-- NiI2_hp.in
+ |--  |--  |--  |--  |-- NiI2.scf.in
+ |--  |--  |--  |--  |-- tmp
+ |--  |--  |--  |--  |--  |-- NiI2.save.tar.zst
+ |--  |--  |--  |--  |--  |-- HP
+ |--  |--  |--  |--  |--  |--  |-- NiI2.save.tar.zst
+ |--  |--  |--  |--  |-- info
+ |--  |--  |--  |--  |-- NiI2.scf5.49.in
+ |--  |--  |--  |-- nscf
+ |--  |--  |--  |--  |-- 8x8x8
+ |--  |--  |--  |--  |--  |-- NiI2_bands_two_panels_EF.png
+ |--  |--  |--  |--  |--  |-- NiI2_bands.in
+ |--  |--  |--  |--  |--  |-- NiI2.nscf.in
+ |--  |--  |--  |--  |--  |-- NiI2_proj.in
+ |--  |--  |--  |--  |--  |-- tmp
+ |--  |--  |--  |--  |--  |--  |-- NiI2.save.tar.zst
+ |--  |--  |--  |--  |--  |--  |-- NiI2.save
+ |--  |--  |--  |--  |--  |-- NiI2_pdos_two_panels.png
+ |--  |--  |--  |--  |--  |-- NiI2_bands_pp.in
+ |--  |--  |--  |--  |-- 6x6x6
+ |--  |--  |--  |--  |--  |-- NiI2.nscf.in
+ |--  |--  |--  |--  |--  |-- tmp
+ |--  |--  |--  |--  |--  |--  |-- NiI2.save.tar.zst
+ |--  |--  |--  |--  |-- 10x10x10
+ |--  |--  |--  |--  |--  |-- NiI2.nscf.in
+ |--  |--  |--  |--  |--  |-- tmp
+ |--  |--  |--  |--  |--  |--  |-- NiI2.save.tar.zst
+ |--  |--  |--  |--  |--  |--  |-- NiI2.save
+ |--  |-- STORE_REPORT.txt
+ |-- MoS2
+ |--  |-- STORE_REPORT.txt
+ |--  |-- info
+ |--  |-- zero_T
+ |--  |--  |-- QE_database
+ |--  |--  |--  |-- scf_database
+ |--  |--  |--  |--  |-- tmp
+ |--  |--  |--  |--  |--  |-- MoS2.save.tar.zst
+ |--  |--  |--  |--  |-- MoS2.scf.in
+ |--  |--  |--  |-- ph_yambo
+ |--  |--  |--  |--  |-- MoS2.dyn4.xml
+ |--  |--  |--  |--  |-- MoS2.dyn3.xml
+ |--  |--  |--  |--  |-- MoS2.dyn5.xml
+ |--  |--  |--  |--  |-- input_tmp.in
+ |--  |--  |--  |--  |-- _ph0.tar.zst
+ |--  |--  |--  |--  |-- MoS2.ph_q.in
+ |--  |--  |--  |--  |-- elph_dir.tar.zst
+ |--  |--  |--  |--  |-- _ph0
+ |--  |--  |--  |--  |--  |-- MoS2.save.tar.zst
+ |--  |--  |--  |--  |-- MoS2.save
+ |--  |--  |--  |--  |--  |-- r_gkkp_gkkp_dg
+ |--  |--  |--  |--  |--  |-- r_bzgrids_Q_grid
+ |--  |--  |--  |--  |--  |-- ypp_dg.in
+ |--  |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |--  |-- ypp.in
+ |--  |--  |--  |--  |--  |-- r_setup
+ |--  |--  |--  |--  |--  |-- r_gkkp_gkkp_dg_01
+ |--  |--  |--  |--  |--  |-- r_gkkp_gkkp_db
+ |--  |--  |--  |--  |--  |-- r_gkkp_gkkp_db_01
+ |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |--  |-- matdyn.in
+ |--  |--  |--  |--  |-- MoS2.dyn0
+ |--  |--  |--  |--  |-- MoS2.dyn2.xml
+ |--  |--  |--  |--  |-- MoS2.save.tar.zst
+ |--  |--  |--  |--  |-- q2r.in
+ |--  |--  |--  |--  |-- MoS2.dyn7.xml
+ |--  |--  |--  |--  |-- MoS2.dyn6.xml
+ |--  |--  |--  |--  |-- MoS2.dyn1.xml
+ |--  |--  |--  |-- ph_dvscf
+ |--  |--  |--  |--  |-- MoS2.dyn4.xml
+ |--  |--  |--  |--  |-- MoS2.dyn3.xml
+ |--  |--  |--  |--  |-- MoS2.dyn5.xml
+ |--  |--  |--  |--  |-- input_tmp.in
+ |--  |--  |--  |--  |-- _ph0.tar.zst
+ |--  |--  |--  |--  |-- MoS2.ph_q.in
+ |--  |--  |--  |--  |-- _ph0
+ |--  |--  |--  |--  |--  |-- MoS2.save.tar.zst
+ |--  |--  |--  |--  |-- MoS2.dyn2.xml
+ |--  |--  |--  |--  |-- MoS2.save.tar.zst
+ |--  |--  |--  |--  |-- MoS2.dyn7.xml
+ |--  |--  |--  |--  |-- MoS2.dyn6.xml
+ |--  |--  |--  |--  |-- MoS2.dyn1.xml
+ |--  |--  |--  |-- nscf_6_6_1
+ |--  |--  |--  |--  |-- tmp
+ |--  |--  |--  |--  |--  |-- MoS2.save
+ |--  |--  |--  |--  |--  |--  |-- r_bzgrids_Q_grid
+ |--  |--  |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |--  |--  |-- ypp.in
+ |--  |--  |--  |--  |--  |--  |-- r_setup
+ |--  |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |--  |--  |-- MoS2.save.tar.zst
+ |--  |--  |--  |--  |-- MoS2.nscf.in
+ |--  |--  |--  |-- info
+ |--  |--  |--  |-- nscf_18_18_1_x_dg
+ |--  |--  |--  |--  |-- tmp
+ |--  |--  |--  |--  |--  |-- MoS2.save
+ |--  |--  |--  |--  |--  |--  |-- r_bzgrids_Q_grid
+ |--  |--  |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |--  |--  |-- ypp.in
+ |--  |--  |--  |--  |--  |--  |-- r_setup
+ |--  |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |--  |--  |-- MoS2.save.tar.zst
+ |--  |--  |--  |--  |-- MoS2.nscf.in
+ |--  |--  |-- QP_elph
+ |--  |--  |--  |-- T150
+ |--  |--  |--  |--  |-- o-T150.qp
+ |--  |--  |--  |--  |-- T150.in
+ |--  |--  |--  |--  |-- r-T150_gw0_dyson_el_ph_corr
+ |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |-- T300
+ |--  |--  |--  |--  |-- r-T300_gw0_dyson_el_ph_corr
+ |--  |--  |--  |--  |-- T300.in
+ |--  |--  |--  |--  |-- o-T300.qp
+ |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |-- DG
+ |--  |--  |--  |--  |-- T150
+ |--  |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |--  |-- o-T150.qp
+ |--  |--  |--  |--  |--  |-- r_nloptics
+ |--  |--  |--  |--  |--  |-- r-T150_gw0_dyson_el_ph_corr
+ |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |--  |-- T300
+ |--  |--  |--  |--  |--  |-- r-T300_gw0_dyson_el_ph_corr
+ |--  |--  |--  |--  |--  |-- o-T300.qp
+ |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |--  |-- T0
+ |--  |--  |--  |--  |--  |-- r-T0_gw0_dyson_el_ph_corr
+ |--  |--  |--  |--  |--  |-- o-T0.qp
+ |--  |--  |--  |--  |--  |-- QP.in_T0
+ |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |--  |-- QP.in
+ |--  |--  |--  |-- info
+ |--  |--  |--  |-- T0
+ |--  |--  |--  |--  |-- o.eps_q1_ip
+ |--  |--  |--  |--  |-- o.eel_q1_ip
+ |--  |--  |--  |--  |-- o.SAVE.fit
+ |--  |--  |--  |--  |-- o.SAVE.data
+ |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |-- r-T0_gw0_dyson_el_ph_corr
+ |--  |--  |--  |--  |-- o-T0.qp
+ |--  |--  |--  |--  |-- T0.in
+ |--  |--  |--  |--  |-- r_optics_dipoles_chi
+ |--  |--  |--  |--  |-- o.qp
+ |--  |--  |--  |--  |-- r_gw0_dyson_el_ph_corr
+ |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |-- database
+ |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |-- finite_T
+ |--  |--  |-- T150
+ |--  |--  |--  |-- QE_database
+ |--  |--  |--  |--  |-- relax
+ |--  |--  |--  |--  |--  |-- tmp
+ |--  |--  |--  |--  |--  |--  |-- MoS2.save.tar.zst
+ |--  |--  |--  |--  |-- scf_gamma
+ |--  |--  |--  |--  |--  |-- MoS2.scf_relaxed.in
+ |--  |--  |--  |--  |--  |-- MoS2.ph_gamma.in
+ |--  |--  |--  |--  |--  |-- MoS2.dyn
+ |--  |--  |--  |--  |--  |-- tmp
+ |--  |--  |--  |--  |--  |--  |-- MoS2.save.tar.zst
+ |--  |--  |--  |--  |-- scf
+ |--  |--  |--  |--  |--  |-- MoS2.scf_relaxed.in
+ |--  |--  |--  |--  |--  |-- tmp
+ |--  |--  |--  |--  |--  |--  |-- MoS2.save.tar.zst
+ |--  |--  |--  |--  |-- ph_yambo
+ |--  |--  |--  |--  |--  |-- MoS2.dyn4.xml
+ |--  |--  |--  |--  |--  |-- MoS2.dyn3.xml
+ |--  |--  |--  |--  |--  |-- MoS2.dyn5.xml
+ |--  |--  |--  |--  |--  |-- input_tmp.in
+ |--  |--  |--  |--  |--  |-- _ph0.tar.zst
+ |--  |--  |--  |--  |--  |-- elph_dir.tar.zst
+ |--  |--  |--  |--  |--  |-- MoS2.ph_yambo_q.in
+ |--  |--  |--  |--  |--  |-- _ph0
+ |--  |--  |--  |--  |--  |--  |-- MoS2.save.tar.zst
+ |--  |--  |--  |--  |--  |-- MoS2.save
+ |--  |--  |--  |--  |--  |--  |-- r_gkkp_gkkp_dg
+ |--  |--  |--  |--  |--  |--  |-- r_bzgrids_Q_grid
+ |--  |--  |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |--  |--  |-- r_ypp
+ |--  |--  |--  |--  |--  |--  |-- r_setup_01
+ |--  |--  |--  |--  |--  |--  |-- r_ypp_02
+ |--  |--  |--  |--  |--  |--  |-- r_setup
+ |--  |--  |--  |--  |--  |--  |-- r_gkkp_gkkp_dg_01
+ |--  |--  |--  |--  |--  |--  |-- r_ypp_01
+ |--  |--  |--  |--  |--  |--  |-- r_ypp_03
+ |--  |--  |--  |--  |--  |--  |-- r_gkkp_gkkp_db_02
+ |--  |--  |--  |--  |--  |--  |-- r_gkkp_gkkp_db
+ |--  |--  |--  |--  |--  |--  |-- r_gkkp_gkkp_db_01
+ |--  |--  |--  |--  |--  |-- MoS2.dyn0
+ |--  |--  |--  |--  |--  |-- MoS2.dyn2.xml
+ |--  |--  |--  |--  |--  |-- MoS2.save.tar.zst
+ |--  |--  |--  |--  |--  |-- MoS2.dyn7.xml
+ |--  |--  |--  |--  |--  |-- MoS2.dyn6.xml
+ |--  |--  |--  |--  |--  |-- MoS2.dyn1.xml
+ |--  |--  |--  |--  |-- ph_dvscf
+ |--  |--  |--  |--  |--  |-- MoS2.dyn4.xml
+ |--  |--  |--  |--  |--  |-- MoS2.dyn3.xml
+ |--  |--  |--  |--  |--  |-- MoS2.dyn5.xml
+ |--  |--  |--  |--  |--  |-- MoS2.ph_dvscf_q.in
+ |--  |--  |--  |--  |--  |-- input_tmp.in
+ |--  |--  |--  |--  |--  |-- _ph0.tar.zst
+ |--  |--  |--  |--  |--  |-- _ph0
+ |--  |--  |--  |--  |--  |--  |-- MoS2.save.tar.zst
+ |--  |--  |--  |--  |--  |-- MoS2.dyn2.xml
+ |--  |--  |--  |--  |--  |-- MoS2.dyn7.xml
+ |--  |--  |--  |--  |--  |-- MoS2.dyn6.xml
+ |--  |--  |--  |--  |--  |-- MoS2.dyn1.xml
+ |--  |--  |--  |--  |-- ph_dvscf_old
+ |--  |--  |--  |--  |--  |-- MoS2.dyn4
+ |--  |--  |--  |--  |--  |-- MoS2.dyn1
+ |--  |--  |--  |--  |--  |-- MoS2.dyn3
+ |--  |--  |--  |--  |--  |-- MoS2.dyn5
+ |--  |--  |--  |--  |--  |-- MoS2_forced.dyn1
+ |--  |--  |--  |--  |--  |-- MoS2.ph_dvscf_q.in
+ |--  |--  |--  |--  |--  |-- input_tmp.in
+ |--  |--  |--  |--  |--  |-- _ph0.tar.zst
+ |--  |--  |--  |--  |--  |-- MoS2.dyn2
+ |--  |--  |--  |--  |--  |-- _ph0
+ |--  |--  |--  |--  |--  |--  |-- MoS2.save.tar.zst
+ |--  |--  |--  |--  |--  |-- MoS2.dyn6
+ |--  |--  |--  |--  |--  |-- MoS2.dyn7
+ |--  |--  |--  |--  |-- Inputs
+ |--  |--  |--  |--  |--  |-- MoS2.ph_dvscf.in
+ |--  |--  |--  |--  |--  |-- MoS2.relax.in
+ |--  |--  |--  |--  |--  |-- MoS2.ph_yambo.in
+ |--  |--  |--  |--  |--  |-- ypp_dg.in
+ |--  |--  |--  |--  |--  |-- ypp_ph_import.in
+ |--  |--  |--  |--  |--  |-- ypp_find_q.in
+ |--  |--  |--  |--  |--  |-- MoS2.scf.in
+ |--  |--  |--  |--  |--  |-- matdyn.in
+ |--  |--  |--  |--  |--  |-- dynmat.in
+ |--  |--  |--  |--  |--  |-- q2r.in
+ |--  |--  |--  |--  |--  |-- MoS2.nscf.in
+ |--  |--  |--  |--  |-- nscf
+ |--  |--  |--  |--  |--  |-- MoS2.nscf_relaxed.in
+ |--  |--  |--  |--  |--  |-- tmp
+ |--  |--  |--  |--  |--  |--  |-- MoS2.save
+ |--  |--  |--  |--  |--  |--  |-- MoS2.save.tar.zst
+ |--  |--  |--  |-- QP_elph
+ |--  |--  |--  |--  |-- T150
+ |--  |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |--  |-- o.qp
+ |--  |--  |--  |--  |--  |-- r_gw0_dyson_el_ph_corr
+ |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |-- T300
+ |--  |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |--  |-- o.qp
+ |--  |--  |--  |--  |--  |-- r_gw0_dyson_el_ph_corr
+ |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |--  |-- DG
+ |--  |--  |--  |--  |--  |-- T150
+ |--  |--  |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |--  |--  |-- ypp.in
+ |--  |--  |--  |--  |--  |--  |-- r_fixsyms
+ |--  |--  |--  |--  |--  |--  |-- FixSymm
+ |--  |--  |--  |--  |--  |--  |-- o.qp
+ |--  |--  |--  |--  |--  |--  |-- r_gw0_dyson_el_ph_corr
+ |--  |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |--  |-- T300
+ |--  |--  |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |--  |--  |-- r_ypp
+ |--  |--  |--  |--  |--  |--  |-- ypp.in
+ |--  |--  |--  |--  |--  |--  |-- r_fixsyms
+ |--  |--  |--  |--  |--  |--  |-- FixSymm
+ |--  |--  |--  |--  |--  |--  |-- o.qp
+ |--  |--  |--  |--  |--  |--  |-- r_gw0_dyson_el_ph_corr
+ |--  |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |--  |--  |-- T0
+ |--  |--  |--  |--  |--  |--  |-- yambo_nl.in
+ |--  |--  |--  |--  |--  |--  |-- setup.in
+ |--  |--  |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |--  |--  |-- r_fixsyms_01
+ |--  |--  |--  |--  |--  |--  |-- ypp.in
+ |--  |--  |--  |--  |--  |--  |-- r_setup
+ |--  |--  |--  |--  |--  |--  |-- r_fixsyms
+ |--  |--  |--  |--  |--  |--  |-- r_gw0_dyson_el_el_corr
+ |--  |--  |--  |--  |--  |--  |-- FixSymm
+ |--  |--  |--  |--  |--  |--  |-- o.qp
+ |--  |--  |--  |--  |--  |--  |-- r_gw0_dyson_el_ph_corr
+ |--  |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |--  |--  |-- database
+ |--  |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |--  |-- T0
+ |--  |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |--  |-- o.qp
+ |--  |--  |--  |--  |--  |-- r_gw0_dyson_el_ph_corr
+ |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |--  |-- database
+ |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |-- T300
+ |--  |--  |--  |-- QE_database
+ |--  |--  |--  |--  |-- ph_yambo_force_asr
+ |--  |--  |--  |--  |--  |-- MoS2.dyn4.xml
+ |--  |--  |--  |--  |--  |-- MoS2.dyn3.xml
+ |--  |--  |--  |--  |--  |-- MoS2.dyn5.xml
+ |--  |--  |--  |--  |--  |-- input_tmp.in
+ |--  |--  |--  |--  |--  |-- _ph0.tar.zst
+ |--  |--  |--  |--  |--  |-- elph_dir.tar.zst
+ |--  |--  |--  |--  |--  |-- MoS2.ph_yambo_q.in
+ |--  |--  |--  |--  |--  |-- _ph0
+ |--  |--  |--  |--  |--  |--  |-- MoS2.save.tar.zst
+ |--  |--  |--  |--  |--  |-- MoS2.save
+ |--  |--  |--  |--  |--  |--  |-- r_bzgrids_Q_grid
+ |--  |--  |--  |--  |--  |--  |-- r_setup_03
+ |--  |--  |--  |--  |--  |--  |-- r_bzgrids_Q_grid_02
+ |--  |--  |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |--  |--  |-- r_ypp
+ |--  |--  |--  |--  |--  |--  |-- r_setup_02
+ |--  |--  |--  |--  |--  |--  |-- r_setup_01
+ |--  |--  |--  |--  |--  |--  |-- r_setup
+ |--  |--  |--  |--  |--  |--  |-- r_bzgrids_Q_grid_01
+ |--  |--  |--  |--  |--  |--  |-- r_gkkp_gkkp_db
+ |--  |--  |--  |--  |--  |--  |-- r_gkkp_gkkp_db_01
+ |--  |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |--  |--  |-- MoS2_forced.dyn1.xml
+ |--  |--  |--  |--  |--  |-- MoS2.dyn2.xml
+ |--  |--  |--  |--  |--  |-- MoS2.save.tar.zst
+ |--  |--  |--  |--  |--  |-- MoS2.dyn7.xml
+ |--  |--  |--  |--  |--  |-- MoS2.dyn6.xml
+ |--  |--  |--  |--  |--  |-- MoS2.dyn1.xml
+ |--  |--  |--  |--  |-- relax
+ |--  |--  |--  |--  |--  |-- tmp
+ |--  |--  |--  |--  |--  |--  |-- MoS2.save.tar.zst
+ |--  |--  |--  |--  |-- scf
+ |--  |--  |--  |--  |--  |-- MoS2.scf_relaxed.in
+ |--  |--  |--  |--  |--  |-- tmp
+ |--  |--  |--  |--  |--  |--  |-- MoS2.save.tar.zst
+ |--  |--  |--  |--  |-- ph_yambo
+ |--  |--  |--  |--  |--  |-- MoS2.dyn4.xml
+ |--  |--  |--  |--  |--  |-- MoS2.dyn3.xml
+ |--  |--  |--  |--  |--  |-- MoS2.dyn5.xml
+ |--  |--  |--  |--  |--  |-- input_tmp.in
+ |--  |--  |--  |--  |--  |-- _ph0.tar.zst
+ |--  |--  |--  |--  |--  |-- elph_dir.tar.zst
+ |--  |--  |--  |--  |--  |-- MoS2.ph_yambo_q.in
+ |--  |--  |--  |--  |--  |-- _ph0
+ |--  |--  |--  |--  |--  |--  |-- MoS2.save.tar.zst
+ |--  |--  |--  |--  |--  |-- MoS2.save
+ |--  |--  |--  |--  |--  |--  |-- r_gkkp_gkkp_dg
+ |--  |--  |--  |--  |--  |--  |-- r_bzgrids_Q_grid
+ |--  |--  |--  |--  |--  |--  |-- r_setup_03
+ |--  |--  |--  |--  |--  |--  |-- r_bzgrids_Q_grid_02
+ |--  |--  |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |--  |--  |-- r_ypp
+ |--  |--  |--  |--  |--  |--  |-- r_setup_02
+ |--  |--  |--  |--  |--  |--  |-- r_setup_01
+ |--  |--  |--  |--  |--  |--  |-- r_setup
+ |--  |--  |--  |--  |--  |--  |-- r_bzgrids_Q_grid_01
+ |--  |--  |--  |--  |--  |--  |-- r_gkkp_gkkp_db_02
+ |--  |--  |--  |--  |--  |--  |-- r_gkkp_gkkp_db
+ |--  |--  |--  |--  |--  |--  |-- r_gkkp_gkkp_db_01
+ |--  |--  |--  |--  |--  |-- MoS2.dyn0
+ |--  |--  |--  |--  |--  |-- MoS2.dyn2.xml
+ |--  |--  |--  |--  |--  |-- MoS2.save.tar.zst
+ |--  |--  |--  |--  |--  |-- MoS2.dyn7.xml
+ |--  |--  |--  |--  |--  |-- MoS2.dyn6.xml
+ |--  |--  |--  |--  |--  |-- MoS2.dyn1.xml
+ |--  |--  |--  |--  |-- ph_dvscf
+ |--  |--  |--  |--  |--  |-- MoS2.dyn4.xml
+ |--  |--  |--  |--  |--  |-- MoS2.dyn3.xml
+ |--  |--  |--  |--  |--  |-- MoS2.dyn5.xml
+ |--  |--  |--  |--  |--  |-- MoS2.ph_dvscf_q.in
+ |--  |--  |--  |--  |--  |-- input_tmp.in
+ |--  |--  |--  |--  |--  |-- _ph0.tar.zst
+ |--  |--  |--  |--  |--  |-- _ph0
+ |--  |--  |--  |--  |--  |--  |-- MoS2.save.tar.zst
+ |--  |--  |--  |--  |--  |-- MoS2.dyn2.xml
+ |--  |--  |--  |--  |--  |-- MoS2.dyn7.xml
+ |--  |--  |--  |--  |--  |-- MoS2.dyn6.xml
+ |--  |--  |--  |--  |--  |-- MoS2.dyn1.xml
+ |--  |--  |--  |--  |-- Inputs
+ |--  |--  |--  |--  |--  |-- MoS2.ph_dvscf.in
+ |--  |--  |--  |--  |--  |-- MoS2.relax.in
+ |--  |--  |--  |--  |--  |-- MoS2.ph_yambo.in
+ |--  |--  |--  |--  |--  |-- ypp_dg.in
+ |--  |--  |--  |--  |--  |-- ypp_ph_import.in
+ |--  |--  |--  |--  |--  |-- ypp_find_q.in
+ |--  |--  |--  |--  |--  |-- MoS2.scf.in
+ |--  |--  |--  |--  |--  |-- matdyn.in
+ |--  |--  |--  |--  |--  |-- dynmat.in
+ |--  |--  |--  |--  |--  |-- q2r.in
+ |--  |--  |--  |--  |--  |-- MoS2.nscf.in
+ |--  |--  |--  |--  |-- nscf
+ |--  |--  |--  |--  |--  |-- MoS2.nscf_relaxed.in
+ |--  |--  |--  |--  |--  |-- tmp
+ |--  |--  |--  |--  |--  |--  |-- MoS2.save
+ |--  |--  |--  |--  |--  |--  |-- MoS2.save.tar.zst
+ |--  |--  |--  |-- QP_elph
+ |--  |--  |--  |--  |-- T150
+ |--  |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |--  |-- SAVE
+ |--  |--  |--  |--  |--  |--  |-- r_setup
+ |--  |--  |--  |--  |--  |-- o.qp
+ |--  |--  |--  |--  |--  |-- r_gw0_dyson_el_ph_corr
+ |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |--  |-- r_setup
+ |--  |--  |--  |--  |-- T300
+ |--  |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |--  |-- SAVE
+ |--  |--  |--  |--  |--  |--  |-- r_setup
+ |--  |--  |--  |--  |--  |-- o.qp
+ |--  |--  |--  |--  |--  |-- r_gw0_dyson_el_ph_corr
+ |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |--  |-- DG
+ |--  |--  |--  |--  |--  |-- T150
+ |--  |--  |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |--  |--  |-- ypp.in
+ |--  |--  |--  |--  |--  |--  |-- r_fixsyms
+ |--  |--  |--  |--  |--  |--  |-- FixSymm
+ |--  |--  |--  |--  |--  |--  |-- o.qp
+ |--  |--  |--  |--  |--  |--  |-- r_gw0_dyson_el_ph_corr
+ |--  |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |--  |-- T300
+ |--  |--  |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |--  |--  |-- ypp.in
+ |--  |--  |--  |--  |--  |--  |-- r_fixsyms
+ |--  |--  |--  |--  |--  |--  |-- FixSymm
+ |--  |--  |--  |--  |--  |--  |-- o.qp
+ |--  |--  |--  |--  |--  |--  |-- r_gw0_dyson_el_ph_corr
+ |--  |--  |--  |--  |--  |-- T0
+ |--  |--  |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |--  |--  |-- r_ypp
+ |--  |--  |--  |--  |--  |--  |-- ypp.in
+ |--  |--  |--  |--  |--  |--  |-- r_fixsyms
+ |--  |--  |--  |--  |--  |--  |-- FixSymm
+ |--  |--  |--  |--  |--  |--  |-- o.qp
+ |--  |--  |--  |--  |--  |--  |-- r_gw0_dyson_el_ph_corr
+ |--  |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |--  |--  |-- database
+ |--  |--  |--  |--  |-- T0
+ |--  |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |--  |-- r_setup_01
+ |--  |--  |--  |--  |--  |-- r_setup
+ |--  |--  |--  |--  |--  |-- SAVE
+ |--  |--  |--  |--  |--  |--  |-- r_setup
+ |--  |--  |--  |--  |--  |-- o.qp
+ |--  |--  |--  |--  |--  |-- r_gw0_dyson_el_ph_corr
+ |--  |--  |--  |--  |--  |-- SAVE.tar.zst
+ |--  |--  |--  |--  |-- database
+ |--  |--  |--  |--  |--  |-- r_setup_01
+ |--  |--  |--  |--  |--  |-- r_setup
+ |--  |--  |--  |--  |--  |-- SAVE
+ |--  |--  |--  |--  |--  |--  |-- r_setup
+ |--  |--  |--  |--  |--  |-- SAVE.tar.zst

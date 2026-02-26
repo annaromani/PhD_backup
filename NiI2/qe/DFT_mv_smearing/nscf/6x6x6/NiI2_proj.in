@@ -1,0 +1,8 @@
+&projwfc
+  prefix='NiI2',
+  outdir='out_sspp',
+  filproj='NiI2_proj',
+  filpdos= 'NiI2_pdos'  
+Emin=2.0, Emax=8.0, DeltaE=0.02,
+  ngauss=0, degauss=0.005,
+/

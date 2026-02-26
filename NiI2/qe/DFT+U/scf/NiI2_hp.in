@@ -1,0 +1,5 @@
+&inputhp
+   prefix = 'NiI2'
+   outdir = './tmp/'
+   nq1 = 3, nq2 = 3, nq3 = 3
+/

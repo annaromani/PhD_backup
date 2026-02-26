@@ -1,0 +1,37 @@
+#                                                                     
+# ooooo   oooo ..     ooo        ooo ooooooooo.    .oooo.             
+#  `88.   .8" .88.    `88.       .88 `88"   `Y8b  dP"  `Yb            
+#   `88. .8" .8"88.    888b     d"88  88     888 88      88           
+#    `88.8" .8" `88.   8 Y88. .P  88  88oooo888" 88      88           
+#     `88" .88ooo888.  8  `888"   88  88    `88b 88      88           
+#      88 .8"     `88. 8    Y     88  88    .88P `8b    d8"           
+#     o88o88o      888o8          88 o88bood8P"   `Ybod8P"            
+#                                                                     
+#                                                                     
+# Version 5.3.0 Revision 23935 Hash (prev commit) 901c81cc91          
+#                       Branch is 5.3                                 
+#          MPI+OpenMP+SLK+SLEPC+HDF5_MPI_IO Build                     
+#                 http://www.yambo-code.eu                            
+#
+dyson                            # [R] Dyson Equation solver
+gw0                              # [R] GW approximation
+el_ph_corr                       # [R] Electron-Phonon Correlation
+Nelectro= 26.00000               # Electrons number
+ElecTemp= 0.000000         eV    # Electronic Temperature
+BoseTemp=150.000000         Kn    # Bosonic Temperature
+OccTresh= 0.100000E-4            # Occupation treshold (metallic bands)
+MEM_tresh=  51200          Kb    # [MEMORY] Treshold on traced memory allocations/deallocations
+#DegFix                        # Force the code to impose the energy levels to respect their degeneracy
+SE_Threads=0                     # [OPENMP/GW] Number of threads for self-energy
+DysSolver= "n"                   # [GW] Dyson Equation solver ("n","s","g","q")
+% GphBRnge
+   1 | 20 |                         # [ELPH] G[W] bands range
+%
+% ElPhModes
+  1 |  9 |                           # [ELPH] Phonon modes included
+%
+RandQpts=0                       # [RIM] Number of random q-points in the BZ
+#WRgFsq                        # [ELPH] Dump on file gFsq coefficients
+%QPkrange                        # [GW] QP generalized Kpoint/Band indices
+1|7|1|20|
+%

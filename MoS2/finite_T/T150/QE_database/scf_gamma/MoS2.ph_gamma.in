@@ -1,0 +1,10 @@
+normal modes for MoS2
+ &inputph
+  tr2_ph=1.0d-12,
+  prefix='MoS2',
+  outdir='tmp',
+  epsil=.true.,
+  trans=.true., asr=.true.
+  fildyn='MoS2.dyn'
+ /
+ 0.0 0.0 0.0

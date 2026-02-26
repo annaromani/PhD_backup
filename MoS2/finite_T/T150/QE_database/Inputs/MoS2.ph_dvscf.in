@@ -1,0 +1,14 @@
+&inputph
+           verbosity = 'high'
+              tr2_ph = 1e-15
+              prefix = 'MoS2'
+            fildvscf = 'MoS2-dvscf'
+              fildyn = 'MoS2.dyn.xml',
+     electron_phonon = 'dvscf',
+               epsil = .false.
+               trans = .true.
+               ldisp = .false.
+               qplot = .true.
+  	alpha_mix(1) = 0.3
+	     recover = .true.
+/

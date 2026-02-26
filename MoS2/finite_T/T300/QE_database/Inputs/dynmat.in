@@ -1,0 +1,5 @@
+&input
+  fildyn = 'MoS2.dyn1.xml',  ! Your ph.x output file at Gamma
+  asr = 'crystal',            ! The magic fix for 2D materials
+  filout = 'MoS2_forced.dyn1.xml'
+/

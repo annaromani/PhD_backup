@@ -1,0 +1,11 @@
+screening parameter (emls and pp)
+    y['FFTGvecs'] = [35,'Ry']
+    y['NGsBlkXs'] = [9,'Ry']
+    y['BndsRnXs'] = [1,160]
+
+y['EXXRLvcs'] = [140,'Ry']       # Self-energy. Exchange
+y['BndsRnXp'] = [1,120]          # Screening. Number of bands
+y['NGsBlkXp'] = [11,'Ry']        # Cutoff Screening
+y['GbndRnge'] = [1,120]
+y['VXCRLvcs'] = [10, 'Ry']
+

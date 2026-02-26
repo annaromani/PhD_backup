@@ -23,8 +23,9 @@ r-*
 !*.in*
 !o-*
 !o.*
-!*.txt
+!info
 !*.py
 !*.pdf
+!*.png
+!*.jpeg
 !*.sh
-

@@ -1,0 +1,75 @@
+#                                                                     
+#                                                                     
+# Y88b    /   e           e    e      888~~\    ,88~-_                
+#  Y88b  /   d8b         d8b  d8b     888   |  d888   \               
+#   Y88b/   /Y88b       d888bdY88b    888 _/  88888    |              
+#    Y8Y   /  Y88b     / Y88Y Y888b   888  \  88888    |              
+#     Y   /____Y88b   /   YY   Y888b  888   |  Y888   /               
+#    /   /      Y88b /          Y888b 888__/    `88_-~                
+#                                                                     
+#                                                                     
+# Version 5.3.0 Revision 23935 Hash (prev commit) 901c81cc91          
+#                     Branch is 5.3                                   
+#         MPI+OpenMP+SLK+SLEPC+HDF5_MPI_IO Build                      
+#                http://www.yambo-code.eu                             
+#
+# Absorption @ Q(1):  0.707106769     0.707106769      0.00000000    [q->0 direction]
+#
+# [ X ] Hartree size                              :  1
+# [GEN] GF Energies                               : Perdew, Burke & Ernzerhof SOL(X)+Perdew, Burke & Ernzerhof SOL(C)+ E W < SAVE/ndb.QP + @E @W Fit
+# [GEN] Green`s Function                          : T-ordered
+#
+# [GEN] Gauge                                     : Length
+# [GEN] [r,Vnl] included                          : yes
+#
+#    E[1] [eV]          Im(eps)            Re(eps)
+#
+        1.000000           0.620760           5.787601
+        1.272727           0.933453           6.266466
+        1.545455           1.952310           6.897875
+        1.818182           3.188793           5.447153
+        2.090909           2.308102           5.752286
+        2.363636           3.442585           6.782463
+        2.636364           5.897547           5.793634
+        2.909091           5.706800           3.741267
+        3.181818           5.576019           2.850594
+        3.454545           5.394252           2.126863
+        3.727273           5.228110           0.886069
+        4.000000           3.673212           0.277092
+# 
+# 02/16/2026 at 13:59 yambo @ ln02 [start]
+# 02/16/2026 at 13:59              [end]
+#  
+# Timing   [Min/Max/Average]: 37s/37s/37s
+#
+# .-Input file  yambo.in
+# | infver                           # [R] Input file variables verbosity
+# | optics                           # [R] Linear Response optical properties
+# | dipoles                          # [R] Oscillator strenghts (or dipoles)
+# | chi                              # [R][CHI] Dyson equation for Chi.
+# | #DegFix                        # Force the code to impose the energy levels to respect their degeneracy
+# | FFTGvecs= 18321            RL    # [FFT] Plane-waves
+# | DIP_Threads= 256                 # [OPENMP/X] Number of threads for dipoles
+# | X_Threads= 256                   # [OPENMP/X] Number of threads for response functions
+# | Chimod= "IP"                     # [X] IP/Hartree/ALDA/LRC/PF/BSfxc
+# | % DipBands
+# |   1 | 20 |                           # [DIP] Bands range for dipoles
+# | %
+# | DipComputed= "R V P [G-space]"   # [DIP] [default R P V; extra P2 Spin Orb]
+# | % QpntsRXd
+# |  1 | 1 |                             # [Xd] Transferred momenta
+# | %
+# | % BndsRnXd
+# |   1 | 20 |                           # [Xd] Polarization function bands
+# | %
+# | % EnRngeXd
+# |  1.000000 | 4.000000 |         eV    # [Xd] Energy range
+# | %
+# | % DmRngeXd
+# |  0.200000 | 0.200000 |         eV    # [Xd] Damping range
+# | %
+# | ETStpsXd= 12                     # [Xd] Total Energy steps
+# | % LongDrXd
+# |  1.000000 | 1.000000 | 0.000000 |        # [Xd] [cc] Electric Field
+# | %
+# | XfnQPdb= "E W < SAVE/ndb.QP"     # [EXTQP Xd] Database action

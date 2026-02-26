@@ -1,0 +1,7 @@
+&projwfc
+prefix=’NiI2’,
+outdir=’./out/’,
+ngauss=0,
+degauss=0.0,
+Emin=-5.0, Emax=5.0
+/

@@ -1,0 +1,9 @@
+phonon calculation process: (follow tutorial)
+scf on 18x18x1 (scf_database)-> ph.x with q point list, electron_phonon="dvscf" (ph_dvscf) -> OUTPUT:  _ph0, *.dyn* 
+nscf on 6x6x1 (nscf_6x6x1) -> (ph_yambo) with nscf grid on top of  output from ph_dvscf --> OUTPUT: elph_dir -> transfer elph_dir to yambo database (ypp_ph -g g) OUTPUT:ndb.elph_gkkp* 
+douglegrid: in ph_yambo create *dyn0 -> run q2r.x (fourier transform) OUTPUT: *.fc (force constant) -> run matdyn.x (interpolation of frequencies) OUTPUT:*freq -> p2y.x inside *.save -> interpolate phonon in double grid (ypp_ph -d g) OUTPUT: SAVE/ndb.PH_Double_Grid
+
+final destination:
+SAVE with ndb.elph_gkkp and ndb.PH_Double_Grid.
+
+

@@ -1,0 +1,44 @@
+&CONTROL
+  calculation = 'nscf'
+  etot_conv_thr =   3.0000000000d-05
+  forc_conv_thr =   1.0000000000d-04
+  outdir = './tmp/'
+  prefix = 'NiI2'
+  pseudo_dir = './Pseudos/'
+  tprnfor = .true.
+  tstress = .true.
+  verbosity = 'high'
+/
+&SYSTEM
+  degauss =   1.4699723600d-02
+  ecutwfc =   4.9000000000d+01
+  ibrav = 5  
+  A =  14.201
+  cosAB =0.9612
+  nat = 6
+  ntyp = 3
+  nspin = 2
+  occupations = 'smearing'
+  smearing = 'cold'
+  nbnd=200
+  starting_magnetization(2) =   4.0000000000d-01
+  starting_magnetization(3) =   -4.0000000000d-01
+/
+&ELECTRONS
+  conv_thr =   6.0000000000d-10
+  electron_maxstep = 80
+  mixing_beta =   4.0000000000d-01
+/
+ATOMIC_SPECIES
+Ni1     58.6934   Ni_pbesol.upf
+Ni2     58.6934   Ni_pbesol.upf
+I      126.90447 I_pbesol.upf
+ATOMIC_POSITIONS crystal
+Ni1   0.00000  0.00000  0.00000
+Ni2     0.5000000000    0.5000000000    -0.5000000000
+I       0.1302307597    0.1302307597    0.1302307597
+I       0.6302307743    0.6302307743    -0.3697692257
+I       0.3697692257    0.3697692257    -0.6302307743
+I       0.8697692403    -0.1302307597   -0.1302307597
+K_POINTS automatic
+10 10 10 0 0 0

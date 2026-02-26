@@ -1,0 +1,10 @@
+input parameter
+    y['FFTGvecs'] = [35,'Ry']
+    y['NGsBlkXs'] = [3,'Ry']
+    y['BndsRnXs'] = [1,120]
+    y['BSEBands'] = [28,38]
+    y['BEnSteps'] = 50
+    y['BEnRange'] = [[0.05,5.0],'eV']
+    y['BSENGexx'] = [3,'Ry']
+    y['BSENGBlk'] = [3, 'Ry']
+

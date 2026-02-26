@@ -1,0 +1,50 @@
+&CONTROL
+  calculation = 'nscf'
+  prefix      = 'NiI2'
+  outdir      = './tmp/'
+  pseudo_dir  = './Pseudos/'
+  verbosity   = 'high'
+/
+
+&SYSTEM
+  ibrav = 5
+  A     = 14.201
+  cosAB = 0.9612
+  nat   = 6
+  ntyp  = 3
+
+  ecutwfc = 49
+
+  nspin = 2
+  starting_magnetization(1) =  0.6
+  starting_magnetization(2) = -0.6
+  starting_magnetization(3) =  0.0
+
+  occupations = 'fixed'
+  nbnd = 200
+/
+
+&ELECTRONS
+  conv_thr = 1.0d-10
+/
+
+ATOMIC_SPECIES
+Ni1  58.6934    Ni_pbesol.upf
+Ni2  58.6934    Ni_pbesol.upf
+I   126.90447   I_pbesol.upf
+
+ATOMIC_POSITIONS crystal
+Ni1   0.00000  0.00000  0.00000
+Ni2   0.5000000000  0.5000000000 -0.5000000000
+I     0.1302307597  0.1302307597  0.1302307597
+I     0.6302307743  0.6302307743 -0.3697692257
+I     0.3697692257  0.3697692257 -0.6302307743
+I     0.8697692403 -0.1302307597 -0.1302307597
+
+K_POINTS automatic
+10 10 10 0 0 0
+
+HUBBARD ortho-atomic
+U Ni1-3d 6.005
+U Ni2-3d 6.005
+

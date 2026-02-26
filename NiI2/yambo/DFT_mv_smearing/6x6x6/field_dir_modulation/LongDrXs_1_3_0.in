@@ -1,0 +1,183 @@
+em1s
+bse
+optics
+bss
+dipoles
+setup
+ppa
+photolum
+StdoHash = 40.000000 
+Nelectro = 64.000000 
+ElecTemp = 0.000000 eV
+BoseTemp = 0.000000 eV
+OccTresh = 0.000010 
+NLogCPUs = 0.000000 
+MEM_tresh = 103400.000000 Kb
+FFTGvecs = 35 Ry
+DIP_Threads = 0.000000 
+X_and_IO_nCPU_LinAlg_INV = -1.000000 
+X_Threads = 0.000000 
+BS_nCPU_LinAlg_INV = -1 
+BS_nCPU_LinAlg_DIAGO = -1 
+K_Threads = 0.000000 
+DipoleEtresh = 0.000010 eV
+DbGdQsize = -1.000000 
+BSENGexx = 3 Ry
+QShiftOrder = 1.000000 
+BSENGBlk = 3 Ry
+KfnQP_INTERP_NN = 1.000000 
+KfnQP_INTERP_shells = 20.000000 
+KfnQP_up_Wv_E = 0.000000 eV
+KfnQP_up_Wv_dos = 0.000000 eV
+KfnQP_up_Wc_E = 0.000000 eV
+KfnQP_up_Wc_dos = 0.000000 eV
+KfnQP_dn_Wv_E = 0.000000 eV
+KfnQP_dn_Wv_dos = 0.000000 eV
+KfnQP_dn_Wc_E = 0.000000 eV
+KfnQP_dn_Wc_dos = 0.000000 eV
+BoseCut = 0.100000 
+BSKCut = 0.000000 
+BDmERef = 0.000000 eV
+BEnSteps = 100 
+BSHayTrs = -0.020000 
+BSHayItrIO = 100.000000 
+BSHayItrMAX = 1000.000000 
+XfnQP_INTERP_NN = 1.000000 
+XfnQP_INTERP_shells = 20.000000 
+XfnQP_up_Wv_E = 0.000000 eV
+XfnQP_up_Wv_dos = 0.000000 eV
+XfnQP_up_Wc_E = 0.000000 eV
+XfnQP_up_Wc_dos = 0.000000 eV
+XfnQP_dn_Wv_E = 0.000000 eV
+XfnQP_dn_Wv_dos = 0.000000 eV
+XfnQP_dn_Wc_E = 0.000000 eV
+XfnQP_dn_Wc_dos = 0.000000 eV
+NGsBlkXs = 3 Ry
+CGrdSpXs = 100.000000 
+XTermEn = 40.000000 eV
+NGsBlkXp = 773.000000 RL
+CGrdSpXp = 100.000000 
+PPAPntXp = 27.211380 eV
+DBsIOoff =       'BS'
+DBsFRAGpm =     'none'
+PAR_def_mode = 'balanced'
+NonPDirs =     'none'
+Chimod =  'HARTREE'
+ChiLinAlgMod =  'LIN_SYS'
+BSKmod =      'SEX'
+BSEmod = 'resonant'
+Lkind =      'BAR'
+BSSmod =        'h'
+Gauge =   'length'
+KfnQPdb =     'none'
+KfnQP_DbGd_INTERP_mode =       'NN'
+BSKIOmode = '2D_standard'
+BSEprop =      'abs'
+BSEdips =     'none'
+XfnQPdb =     'none'
+XfnQP_DbGd_INTERP_mode =       'NN'
+GrFnTpXs =        'T'
+XTermKind =     'none'
+kind =       'BG'
+KfnQP_up_Z = (1.000000,0.000000) 
+KfnQP_dn_Z = (1.000000,0.000000) 
+DrudeWBS = (0.000000,0.000000) eV
+XfnQP_up_Z = (1.000000,0.000000) 
+XfnQP_dn_Z = (1.000000,0.000000) 
+DrudeWXs = (0.000000,0.000000) eV
+% MolPos
+ 0.0 | 0.0 | 0.0 |   
+%
+% DipBands
+ 1 | 120 |   
+%
+% Qdirection
+ 0.0 | 0.0 | 0.0 |   
+%
+% KfnQP_up_E
+ 0.0 | 1.0 | 1.0 |   
+%
+% KfnQP_up_Wv
+ 0.0 | 0.0 | 0.0 |   
+%
+% KfnQP_up_Wc
+ 0.0 | 0.0 | 0.0 |   
+%
+% KfnQP_dn_E
+ 0.0 | 1.0 | 1.0 |   
+%
+% KfnQP_dn_Wv
+ 0.0 | 0.0 | 0.0 |   
+%
+% KfnQP_dn_Wc
+ 0.0 | 0.0 | 0.0 |   
+%
+% PL_weights
+ 1.0 | 1.0 | 1.0 |   
+%
+% BSEQptR
+ 1 | 1 |   
+%
+% BSEBands
+ 22 | 40 |   
+%
+% BSEEhEny
+ -1.000000 | -1.000000 |  eV 
+%
+% BSehWind
+ 100.0 | 100.0 |   
+%
+% BEnRange
+ 0.05 | 5.0 |  eV 
+%
+% BDmRange
+ 0.1 | 0.1 |  eV 
+%
+% BLongDir
+ 1.0 | 1.0 | 1.0 |   
+%
+% QPropDir
+ 0.0 | 0.0 | 1.0 |   
+%
+% XfnQP_up_E
+ 0.0 | 1.0 | 1.0 |   
+%
+% XfnQP_up_Wv
+ 0.0 | 0.0 | 0.0 |   
+%
+% XfnQP_up_Wc
+ 0.0 | 0.0 | 0.0 |   
+%
+% XfnQP_dn_E
+ 0.0 | 1.0 | 1.0 |   
+%
+% XfnQP_dn_Wv
+ 0.0 | 0.0 | 0.0 |   
+%
+% XfnQP_dn_Wc
+ 0.0 | 0.0 | 0.0 |   
+%
+% QpntsRXs
+ 1 | 1 |   
+%
+% BndsRnXs
+ 1 | 120 |   
+%
+% EhEngyXs
+ -1.000000 | -1.000000 |  eV 
+%
+% LongDrXs
+ 1 | 3 | 0 |   
+%
+% QpntsRXp
+ 1 | 32 |   
+%
+% BndsRnXp
+ 1 | 120 |   
+%
+% EhEngyXp
+ -1.000000 | -1.000000 |  eV 
+%
+% KfnQP_E
+ 1.44 | 1.0 | 1.0 |   
+%

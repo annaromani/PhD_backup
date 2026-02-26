@@ -1,0 +1,32 @@
+static screening parameter 
+    y['FFTGvecs'] = [35,'Ry']
+    y['NGsBlkXs'] = [3,'Ry']
+    y['BndsRnXs'] = [1,120]
+
+bse parameter
+    y['BSEBands'] = [22,42]
+    y['BEnRange'] = [[0.05,3.0],'eV']
+    y['BSENGexx'] = [3,'Ry']
+    y['BSENGBlk'] = [3, 'Ry']
+
+dynamical screenign (pp) parameter:
+y['BndsRnXp'] = [[1,120],'']             # Screening. Number of bands
+y['NGsBlkXp'] = [9,'Ry']   (or 11Ry)             # Cutoff Screening (converged at 9Ry)
+y['EXXRLvcs'] = [140, 'Ry']
+y['VXCRLvcs'] = [10, 'Ry']
+
+
+self_energy parameter:
+y['GbndRnge'] = [[1,190],'']
+
+
+
+for the gw convergebce of NGsXp:
+    y['BndsRnXp'] = [[1,100],'']             # Screening. Number of bands 
+    y['NGsBlkXp'] = [3,'Ry']                # Cutoff Screening (converged at 9Ry)
+    y['GbndRnge'] = [[1,160],'']             # Self-energy. Number of bands (converged at 190
+    y['QPkrange'] = [[1,32,30,35], '' ]
+    y['EXXRLvcs'] = [100, 'Ry']
+    y['VXCRLvcs'] = [8, 'Ry']
+
+

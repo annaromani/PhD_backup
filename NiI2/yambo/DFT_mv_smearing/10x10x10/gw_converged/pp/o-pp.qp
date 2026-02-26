@@ -1,0 +1,92 @@
+#                                                                     
+#                                                                     
+# Y88b    /   e           e    e      888~~\    ,88~-_                
+#  Y88b  /   d8b         d8b  d8b     888   |  d888   \               
+#   Y88b/   /Y88b       d888bdY88b    888 _/  88888    |              
+#    Y8Y   /  Y88b     / Y88Y Y888b   888  \  88888    |              
+#     Y   /____Y88b   /   YY   Y888b  888   |  Y888   /               
+#    /   /      Y88b /          Y888b 888__/    `88_-~                
+#                                                                     
+#                                                                     
+# Version 5.3.0 Revision 23935 Hash (prev commit) 901c81cc91          
+#                     Branch is 5.3                                   
+#            MPI+SLK+SLEPC+HDF5_MPI_IO Build                          
+#                http://www.yambo-code.eu                             
+#
+#
+# GW solver                                       : Newton
+# GW approximation                                : PPA
+# PPA imaginary Energy                            :   27.2113800    [ev]
+# dS/dw steps                                     :  2
+# dS/dw step                                      :  0.100000001    [ev]
+# X G`s                                           :   613 [used]
+# X G`s                                           :   613 [disk]
+# X bands                                         :    1  120
+# X poles                                         :   100.000000    [o/o]
+# X e/h E range                                   :  -1.00000000     -1.00000000    [ev]
+# X Hxc Kernel                                    : HARTREE
+# X BZ energy Double Grid                         : no
+# X Optical Averaged directions                   : none
+# Sc/G bands                                      :    1  190
+# Sc/G damping                                    :  0.100000001    [ev]
+# Sc bands terminator                             : no
+# Sx RL components                                :   5495
+#                                                 
+# QP @ state[ 1 ] K range                         :  1  1
+# QP @ state[ 1 ] b range                         :  25  30
+# GF energies kind                                : Perdew, Burke & Ernzerhof SOL(X)+Perdew, Burke & Ernzerhof SOL(C)
+# GF WF`s kind                                    : Perdew, Burke & Ernzerhof SOL(X)+Perdew, Burke & Ernzerhof SOL(C)
+# Xs energies kind                                : Perdew, Burke & Ernzerhof SOL(X)+Perdew, Burke & Ernzerhof SOL(C)
+# Xs WF`s kind                                    : Perdew, Burke & Ernzerhof SOL(X)+Perdew, Burke & Ernzerhof SOL(C)
+#
+# Vxc  =Perdew, Burke & Ernzerhof SOL(X)+Perdew, Burke & Ernzerhof SOL(C)
+# Vnlxc=Hartree-Fock
+#
+#    K-point            Band               Eo [eV]            E-Eo [eV]          Sc|Eo [eV]         Spin_Pol
+#
+        1                  25                -1.101782           0.634995           8.119226           1
+        1                  25                -1.101690           0.635101           8.119217          -1
+        1                  26                -1.028943          -0.598036           2.278501           1
+        1                  26                -1.028935          -0.598004           2.278505          -1
+        1                  27                -0.955537          -0.625881           2.734486           1
+        1                  27                -0.955581          -0.625893           2.734493          -1
+        1                  28                -0.955537          -0.625924           2.734472           1
+        1                  28                -0.955581          -0.625889           2.734483          -1
+        1                  29                -0.699035          -0.574385           1.772149           1
+        1                  29                -0.698990          -0.574411           1.772159          -1
+        1                  30                -0.699035          -0.574409           1.772136           1
+        1                  30                -0.698990          -0.574432           1.772150          -1
+# 
+# 01/14/2026 at 08:31 yambo @ nid003944 [start]
+# 01/14/2026 at 09:53                   [end]
+#  
+# Timing   [Min/Max/Average]: 01h-22m/01h-22m/01h-22m
+#
+# .-Input file  pp/yambo_ppa.in
+# | HF_and_locXC                     # [R] Hartree-Fock
+# | gw0                              # [R] GW approximation
+# | ppa                              # [R][Xp] Plasmon Pole Approximation for the Screened Interaction
+# | el_el_corr                       # [R] Electron-Electron Correlation
+# | #DegFix                        # Force the code to impose the energy levels to respect their degeneracy
+# | FFTGvecs= 10609            RL    # [FFT] Plane-waves
+# | X_and_IO_CPU= "6.6.10.2.2"       # [PARALLEL] CPUs for each role
+# | X_and_IO_ROLEs= "c.v.k.q.g"      # [PARALLEL] CPUs roles (q,g,k,c,v)
+# | X_and_IO_nCPU_LinAlg_INV=  36    # [PARALLEL] CPUs for Linear Algebra (if -1 it is automatically set)
+# | DIP_CPU= "12.20.6"               # [PARALLEL] CPUs for each role
+# | DIP_ROLEs= "v.c.k"               # [PARALLEL] CPUs roles (k,c,v)
+# | SE_CPU= "4.6.6.10"               # [PARALLEL] CPUs for each role
+# | SE_ROLEs= "b.qp.g.q"             # [PARALLEL] CPUs roles (q,g,qp,b)
+# | EXXRLvcs=  40              Ry    # [XX] Exchange    RL components
+# | VXCRLvcs=  8               Ry    # [XC] XCpotential RL components
+# | % GbndRnge
+# |    1 | 190 |                         # [GW] G[W] bands range
+# | %
+# | GTermKind= "none"                # [GW] GW terminator ("none","BG" Bruneval-Gonze,"BRS" Berger-Reining-Sottile)
+# | GTermEn= 40.81708          eV    # [GW] GW terminator energy (only for kind="BG")
+# | DysSolver= "n"                   # [GW] Dyson Equation solver ("n","s","g","q")
+# | %QPkrange                        # [GW] QP generalized Kpoint/Band indices
+# | 1|1|25|30|
+# | %
+# | %QPerange                        # [GW] QP generalized Kpoint/Energy indices
+# | 1|116| 0.000000|-1.000000|
+# | %

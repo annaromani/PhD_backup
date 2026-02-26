@@ -1,0 +1,6 @@
+&BANDS
+  prefix = 'NiI2'
+  outdir = './out/'
+  filband = 'NiI2_bands.dat'
+/
+

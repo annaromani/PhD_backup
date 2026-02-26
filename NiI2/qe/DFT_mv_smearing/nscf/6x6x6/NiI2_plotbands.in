@@ -1,0 +1,5 @@
+ &bands
+     prefix = 'NiI2',
+     outdir = 'out_sspp',
+     lsym = .TRUE.,
+     filband = 'NiI2.bands.dat',  /

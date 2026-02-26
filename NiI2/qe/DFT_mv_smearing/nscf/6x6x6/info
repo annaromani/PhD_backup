@@ -1,0 +1,3 @@
+nscf in 6x6x6 directory
+-tmp from normal pseudopotentials with cold smearing 
+-tmp_sspp from super soft pseudopotentials usefull for horbital projection on bands
