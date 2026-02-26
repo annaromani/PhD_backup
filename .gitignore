@@ -1,0 +1,30 @@
+# ====================================================================
+# 1. IGNORE HEAVY BINARIES & DATABASES (The "No-Go" Zone)
+# ====================================================================
+SAVE/
+database/
+*.tar.zst
+*.save/
+*.xsf*
+*.wfc*
+ndb.*
+r_*
+STORE_REPORT.txt
+# ====================================================================
+# 2. IGNORE LARGE REPORTS (Keep only the newest or specific ones)
+# ====================================================================
+# Yambo generates many r_* setup and log files. 
+# Usually, you only need the final one.
+r-* 
+# ====================================================================
+# 3. TRACK ESSENTIALS (The "Intelligence" Zone)
+# ====================================================================
+# We want these even if they are in subfolders
+!*.in*
+!o-*
+!o.*
+!*.txt
+!*.py
+!*.pdf
+!*.sh
+
