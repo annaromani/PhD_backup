@@ -1,0 +1,13 @@
+This git repositories is meant to store the input and output file
+It can be usefull for post processign as well. to do so the process is:
+1. use hpc to obtain the output file to postprocess (o* or ndb*)
+2. git add, commit and push to the remote (.gitignore will select only o and in file so for ndb.file we must force the add with git add -f [ndb.*]
+3. to avoid to pull everything in the local laptop we sparse the checkout  before pulling:
+	git sparse-checkout [dir to show and download in local] and select the dir containing the file we want to postprocess
+4. git pull origin master to pull the update from origin repo to master branch in local 
+(nb. since we parsed the checkout only the directory selected at point 3 will be visible; to show another directory rerun git sparse-checkout [another dir])
+5. use postprocessign tools
+6. git add the pdf file or any other postproc output file
+7. git commit -m ""
+8. git push origin master to pust the new postporoc pdf files to the repo. 
+
