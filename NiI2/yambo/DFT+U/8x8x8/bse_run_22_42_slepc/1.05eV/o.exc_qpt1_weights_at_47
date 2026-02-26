@@ -1,0 +1,107 @@
+#                                                                     
+# ooooo   oooo ..     ooo        ooo ooooooooo.    .oooo.             
+#  `88.   .8" .88.    `88.       .88 `88"   `Y8b  dP"  `Yb            
+#   `88. .8" .8"88.    888b     d"88  88     888 88      88           
+#    `88.8" .8" `88.   8 Y88. .P  88  88oooo888" 88      88           
+#     `88" .88ooo888.  8  `888"   88  88    `88b 88      88           
+#      88 .8"     `88. 8    Y     88  88    .88P `8b    d8"           
+#     o88o88o      888o8          88 o88bood8P"   `Ybod8P"            
+#                                                                     
+#                                                                     
+# Version 5.3.0 Revision 23935 Hash (prev commit) 901c81cc91          
+#                       Branch is 5.3                                 
+#          MPI+OpenMP+SLK+SLEPC+HDF5_MPI_IO Build                     
+#                 http://www.yambo-code.eu                            
+#
+#
+# [K] Identifier                                  :   717
+# [K] Dimension                                   :  112640
+# [K] Bands                                       :   22   42
+# [K] Exchange res                                : yes
+# [K] Correlation res                             : yes
+# [K] Kernel`s coupling                           : no
+# [K] Exchange cpl                                : no
+# [K] Correlation cpl                             : no
+# [K] W interaction is bare                       : no
+# [K] ALDA kernel in R-space                      : no
+# [K] RL vectors exchange                         :  117
+# [K] RL vectors correlation                      :  117
+# [K] E/h energy range                            :  -1.00000000     -1.00000000    [eV]
+# [K] Coupling range                              :   100.000000      100.000000    [o/o]
+# [W] Interaction is diagonal                     : no
+# [W] Matrix size                                 :  117
+# [W] Bands                                       :    1  120
+# [W] e/h energy range                            :  -1.00000000     -1.00000000    [eV]
+# [W] Poles                                       :   100.000000    [o/o]
+# [W] RL vectors in the sum                       :   4447
+# [W] [r,Vnl] included                            : yes
+# [W] Field direction                             :  0.999999975E-5   0.00000000      0.00000000   
+# [W] Coulomb Cutoff                              : none
+# [W] Hxc Kernel                                  : HARTREE
+# [RIM] RL components col                         : 0
+# [RIM] Random points col                         : 0
+# [SOC] Perturbative SOC                          : no
+# [X] Response Kind                               : BAR
+#
+#
+# Electron-Hole pairs that contribute to Excitonic State 47 for iq=1 more than  5.000000%
+#                       K-point [iku]                         Weight
+# :  -0.885764658       -0.511396468        0.833333358E-1     0.588619173   
+# :  -0.885764658        0.511396468        0.166666672        0.134666905   
+# :  -0.885764658       -0.511396468        0.208333343        0.949144721   
+# :   0.885764658        0.511396468        0.416666679E-1     0.238468751   
+# :    2.6572940          1.5341895         0.11204249E-13      1.0000000    
+# :    2.65729403        -1.53418946       -0.250000000        0.355976582   
+# :    2.65729403         1.53418946        0.125000000        0.878117383   
+#    
+#
+#    Band_V             Band_C             Kv-q ibz           Symm_kv            Kc q ibz           Symm_kc            Spin               Weight             Energy [eV]
+#
+         32                 33                 49                2                   49                2                 -1                  0.260595           1.321985
+         32                 33                 49                 5                  49                 5                -1                  0.260379           1.321985
+         32                 33                 49                3                   49                3                 -1                  0.260164           1.321985
+         32                 33                 49                1                   49                1                 -1                  0.259901           1.321985
+         32                 33                 62                2                   62                2                 -1                  0.229738           1.310375
+         32                 33                 62                 5                  62                 5                -1                  0.229551           1.310375
+         32                 33                 62                3                   62                3                 -1                  0.229364           1.310375
+         32                 33                 62                1                   62                1                 -1                  0.229126           1.310375
+         32                 33                24                 2                  24                 2                 -1                  0.223288           1.318571
+         32                 33                24                  5                 24                  5                -1                  0.223100           1.318571
+         32                 33                24                 3                  24                 3                 -1                  0.222927           1.318571
+         32                 33                24                 1                  24                 1                 -1                  0.222708           1.318571
+         32                 33                 49                 6                  49                 6                -1                  0.190023           1.321985
+         32                 33                 49                 4                  49                 4                -1                  0.188288           1.321985
+         32                 33                 62                 6                  62                 6                -1                  0.167532           1.310375
+         32                 33                 62                 4                  62                 4                -1                  0.166010           1.310375
+         32                 33                24                  6                 24                  6                -1                  0.162792           1.318571
+         32                 33                24                  4                 24                  4                -1                  0.161307           1.318571
+         32                 33                28                  4                 28                  4                 1                  0.113961           1.318022
+         32                 33                28                  6                 28                  6                 1                  0.110371           1.318022
+         32                 33                3                  2                  3                  2                 -1                  0.100080           1.325611
+         32                 33                3                   5                 3                   5                -1                  0.099997           1.325611
+         32                 33                3                  3                  3                  3                 -1                  0.099940           1.325611
+         32                 33                3                  1                  3                  1                 -1                  0.099843           1.325611
+         32                 33                3                   6                 3                   6                 1                  0.099542           1.325580
+         32                 33                3                   4                 3                   4                 1                  0.096407           1.325580
+         32                 33                 56                1                   56                1                 -1                  0.092985           1.299626
+         32                 33                 56                 4                  56                 4                -1                  0.092911           1.299626
+         32                 33                 56                 6                  56                 6                -1                  0.092858           1.299626
+         32                 33                 56                2                   56                2                 -1                  0.092757           1.299626
+         32                 33                3                   6                 3                   6                -1                  0.072949           1.325611
+         32                 33                3                   4                 3                   4                -1                  0.072298           1.325611
+         32                 33                 56                3                   56                3                 -1                  0.067807           1.299626
+         32                 33                 56                 5                  56                 5                -1                  0.067208           1.299626
+         32                 33                13                 3                  13                 3                  1                  0.064636           1.303450
+         32                 33                13                  5                 13                  5                 1                  0.062602           1.303450
+# 
+# 02/25/2026 at 18:01 ypp @ ln04 [start]
+# 02/25/2026 at 18:02            [end]
+#  
+# Timing   [Min/Max/Average]: 01m-16s/01m-16s/01m-16s
+#
+# .-Input file  ypp.in
+# | excitons                         # [R] Excitonic properties
+# | amplitude                        # [R] Amplitude
+# | States= "48 - 50"                # Index of the BS state(s)
+# | BSQindex= 1                      # Q-Index of the BS state(s)
+# | Degen_Step= 0.100000E-2    eV    # Maximum energy separation of two degenerate states
