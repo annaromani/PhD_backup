@@ -1,0 +1,415 @@
+.
+ |-- DG
+ |--  |-- LOG
+ |--  |--  |-- l-T300_gw0_dyson_el_ph_corr_CPU_4
+ |--  |--  |-- l-T150_gw0_dyson_el_ph_corr_CPU_4
+ |--  |--  |-- l-T300_gw0_dyson_el_ph_corr_CPU_19
+ |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_20
+ |--  |--  |-- l-T150_gw0_dyson_el_ph_corr_CPU_9
+ |--  |--  |-- l-T300_gw0_dyson_el_ph_corr_CPU_31
+ |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_8
+ |--  |--  |-- l-T150_gw0_dyson_el_ph_corr_CPU_21
+ |--  |--  |-- l-T300_gw0_dyson_el_ph_corr_CPU_28
+ |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_19
+ |--  |--  |-- l-T300_gw0_dyson_el_ph_corr_CPU_8
+ |--  |--  |-- l-T300_gw0_dyson_el_ph_corr_CPU_12
+ |--  |--  |-- l-T150_gw0_dyson_el_ph_corr_CPU_23
+ |--  |--  |-- l-T300_gw0_dyson_el_ph_corr_CPU_6
+ |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_17
+ |--  |--  |-- l-T300_gw0_dyson_el_ph_corr_CPU_11
+ |--  |--  |-- l-T300_gw0_dyson_el_ph_corr_CPU_27
+ |--  |--  |-- l-T150_gw0_dyson_el_ph_corr_CPU_10
+ |--  |--  |-- l-T300_gw0_dyson_el_ph_corr_CPU_29
+ |--  |--  |-- l-T300_gw0_dyson_el_ph_corr_CPU_32
+ |--  |--  |-- l-T300_gw0_dyson_el_ph_corr_CPU_15
+ |--  |--  |-- l-T150_gw0_dyson_el_ph_corr_CPU_32
+ |--  |--  |-- l-T300_gw0_dyson_el_ph_corr_CPU_20
+ |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_3
+ |--  |--  |-- l-T150_gw0_dyson_el_ph_corr_CPU_17
+ |--  |--  |-- l-T150_gw0_dyson_el_ph_corr_CPU_22
+ |--  |--  |-- l-T150_gw0_dyson_el_ph_corr_CPU_5
+ |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_27
+ |--  |--  |-- l-T150_gw0_dyson_el_ph_corr_CPU_27
+ |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_6
+ |--  |--  |-- l-T150_gw0_dyson_el_ph_corr_CPU_28
+ |--  |--  |-- l-T150_gw0_dyson_el_ph_corr_CPU_11
+ |--  |--  |-- l-T300_gw0_dyson_el_ph_corr_CPU_26
+ |--  |--  |-- l-T150_gw0_dyson_el_ph_corr_CPU_19
+ |--  |--  |-- l-T300_gw0_dyson_el_ph_corr_CPU_1
+ |--  |--  |-- l-T150_gw0_dyson_el_ph_corr_CPU_2
+ |--  |--  |-- l-T150_gw0_dyson_el_ph_corr_CPU_29
+ |--  |--  |-- l-T300_gw0_dyson_el_ph_corr_CPU_7
+ |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_13
+ |--  |--  |-- l-T300_gw0_dyson_el_ph_corr_CPU_30
+ |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_15
+ |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_23
+ |--  |--  |-- l-T150_gw0_dyson_el_ph_corr_CPU_13
+ |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_14
+ |--  |--  |-- l-T300_gw0_dyson_el_ph_corr_CPU_14
+ |--  |--  |-- l-T150_gw0_dyson_el_ph_corr_CPU_18
+ |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_31
+ |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_21
+ |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_24
+ |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_11
+ |--  |--  |-- l-T300_gw0_dyson_el_ph_corr_CPU_16
+ |--  |--  |-- l-T150_gw0_dyson_el_ph_corr_CPU_20
+ |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_2
+ |--  |--  |-- l-T300_gw0_dyson_el_ph_corr_CPU_2
+ |--  |--  |-- l-T150_gw0_dyson_el_ph_corr_CPU_30
+ |--  |--  |-- l-T150_gw0_dyson_el_ph_corr_CPU_31
+ |--  |--  |-- l-T300_gw0_dyson_el_ph_corr_CPU_10
+ |--  |--  |-- l-T150_gw0_dyson_el_ph_corr_CPU_24
+ |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_12
+ |--  |--  |-- l-T150_gw0_dyson_el_ph_corr_CPU_16
+ |--  |--  |-- l-T150_gw0_dyson_el_ph_corr_CPU_14
+ |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_4
+ |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_32
+ |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_16
+ |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_7
+ |--  |--  |-- l-T150_gw0_dyson_el_ph_corr_CPU_6
+ |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_28
+ |--  |--  |-- l-T300_gw0_dyson_el_ph_corr_CPU_22
+ |--  |--  |-- l-T300_gw0_dyson_el_ph_corr_CPU_23
+ |--  |--  |-- l-T300_gw0_dyson_el_ph_corr_CPU_18
+ |--  |--  |-- l-T300_gw0_dyson_el_ph_corr_CPU_3
+ |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_30
+ |--  |--  |-- l-T300_gw0_dyson_el_ph_corr_CPU_9
+ |--  |--  |-- l-T300_gw0_dyson_el_ph_corr_CPU_24
+ |--  |--  |-- l-T300_gw0_dyson_el_ph_corr_CPU_25
+ |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_10
+ |--  |--  |-- l-T300_gw0_dyson_el_ph_corr_CPU_17
+ |--  |--  |-- l-T150_gw0_dyson_el_ph_corr_CPU_8
+ |--  |--  |-- l-T150_gw0_dyson_el_ph_corr_CPU_7
+ |--  |--  |-- l-T150_gw0_dyson_el_ph_corr_CPU_3
+ |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_9
+ |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_26
+ |--  |--  |-- l-T150_gw0_dyson_el_ph_corr_CPU_25
+ |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_18
+ |--  |--  |-- l-T150_gw0_dyson_el_ph_corr_CPU_26
+ |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_1
+ |--  |--  |-- l-T150_gw0_dyson_el_ph_corr_CPU_15
+ |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_22
+ |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_5
+ |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_25
+ |--  |--  |-- l-T150_gw0_dyson_el_ph_corr_CPU_1
+ |--  |--  |-- l-T150_gw0_dyson_el_ph_corr_CPU_12
+ |--  |--  |-- l-T300_gw0_dyson_el_ph_corr_CPU_13
+ |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_29
+ |--  |--  |-- l-T300_gw0_dyson_el_ph_corr_CPU_21
+ |--  |--  |-- l-T300_gw0_dyson_el_ph_corr_CPU_5
+ |--  |-- QP.in
+ |--  |-- bash.sh
+ |--  |-- T300
+ |--  |--  |-- ns.kb_pp_pwscf_fragment_2
+ |--  |--  |-- ndb.elph_gkkp
+ |--  |--  |-- ns.wf_fragments_4_1
+ |--  |--  |-- ndb.elph_gkkp_fragment_6
+ |--  |--  |-- ns.wf_fragments_1_1
+ |--  |--  |-- ndb.elph_gkkp_fragment_7
+ |--  |--  |-- ndb.elph_gkkp_fragment_3
+ |--  |--  |-- ns.kb_pp_pwscf_fragment_6
+ |--  |--  |-- ns.wf_fragments_5_1
+ |--  |--  |-- ndb.elph_gkkp_fragment_1
+ |--  |--  |-- ndb.PH_Double_Grid
+ |--  |--  |-- SAVE
+ |--  |--  |--  |-- ns.kb_pp_pwscf_fragment_2
+ |--  |--  |--  |-- ndb.elph_gkkp
+ |--  |--  |--  |-- ns.wf_fragments_4_1
+ |--  |--  |--  |-- ndb.elph_gkkp_fragment_6
+ |--  |--  |--  |-- ns.wf_fragments_1_1
+ |--  |--  |--  |-- ndb.elph_gkkp_fragment_7
+ |--  |--  |--  |-- ndb.elph_gkkp_fragment_3
+ |--  |--  |--  |-- ns.kb_pp_pwscf_fragment_6
+ |--  |--  |--  |-- ns.wf_fragments_5_1
+ |--  |--  |--  |-- ndb.elph_gkkp_fragment_1
+ |--  |--  |--  |-- ndb.PH_Double_Grid
+ |--  |--  |--  |-- ns.wf_fragments_7_1
+ |--  |--  |--  |-- ns.wf_fragments_3_1
+ |--  |--  |--  |-- ndb.kindx
+ |--  |--  |--  |-- ns.wf_fragments_2_1
+ |--  |--  |--  |-- ns.kb_pp_pwscf_fragment_5
+ |--  |--  |--  |-- ns.nlcc_pp_pwscf
+ |--  |--  |--  |-- ns.db1
+ |--  |--  |--  |-- ndb.elph_gkkp_fragment_5
+ |--  |--  |--  |-- ns.kb_pp_pwscf_fragment_4
+ |--  |--  |--  |-- ndb.elph_gkkp_fragment_4
+ |--  |--  |--  |-- ns.kb_pp_pwscf_fragment_1
+ |--  |--  |--  |-- ns.kb_pp_pwscf
+ |--  |--  |--  |-- ns.wf
+ |--  |--  |--  |-- ndb.gops
+ |--  |--  |--  |-- ns.kb_pp_pwscf_fragment_3
+ |--  |--  |--  |-- ndb.QP
+ |--  |--  |--  |-- ns.wf_fragments_6_1
+ |--  |--  |--  |-- ns.kb_pp_pwscf_fragment_7
+ |--  |--  |--  |-- ndb.elph_gkkp_fragment_2
+ |--  |--  |-- ns.wf_fragments_7_1
+ |--  |--  |-- ns.wf_fragments_3_1
+ |--  |--  |-- ndb.kindx
+ |--  |--  |-- ns.wf_fragments_2_1
+ |--  |--  |-- o-T300.qp
+ |--  |--  |-- ns.kb_pp_pwscf_fragment_5
+ |--  |--  |-- ns.nlcc_pp_pwscf
+ |--  |--  |-- r-T300_gw0_dyson_el_ph_corr
+ |--  |--  |-- ns.db1
+ |--  |--  |-- ndb.elph_gkkp_fragment_5
+ |--  |--  |-- ns.kb_pp_pwscf_fragment_4
+ |--  |--  |-- ndb.elph_gkkp_fragment_4
+ |--  |--  |-- ns.kb_pp_pwscf_fragment_1
+ |--  |--  |-- ns.kb_pp_pwscf
+ |--  |--  |-- ns.wf
+ |--  |--  |-- ndb.gops
+ |--  |--  |-- ns.kb_pp_pwscf_fragment_3
+ |--  |--  |-- ns.wf_fragments_6_1
+ |--  |--  |-- ns.kb_pp_pwscf_fragment_7
+ |--  |--  |-- ndb.elph_gkkp_fragment_2
+ |--  |-- T0
+ |--  |--  |-- LOG
+ |--  |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_20
+ |--  |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_8
+ |--  |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_19
+ |--  |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_17
+ |--  |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_3
+ |--  |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_27
+ |--  |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_6
+ |--  |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_13
+ |--  |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_15
+ |--  |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_23
+ |--  |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_14
+ |--  |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_31
+ |--  |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_21
+ |--  |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_24
+ |--  |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_11
+ |--  |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_2
+ |--  |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_12
+ |--  |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_4
+ |--  |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_32
+ |--  |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_16
+ |--  |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_7
+ |--  |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_28
+ |--  |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_30
+ |--  |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_10
+ |--  |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_9
+ |--  |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_26
+ |--  |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_18
+ |--  |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_1
+ |--  |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_22
+ |--  |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_5
+ |--  |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_25
+ |--  |--  |--  |-- l-T0_gw0_dyson_el_ph_corr_CPU_29
+ |--  |--  |-- QP.in_T0
+ |--  |--  |-- SAVE
+ |--  |--  |--  |-- ns.kb_pp_pwscf_fragment_2
+ |--  |--  |--  |-- ndb.elph_gkkp
+ |--  |--  |--  |-- ns.wf_fragments_4_1
+ |--  |--  |--  |-- ndb.elph_gkkp_fragment_6
+ |--  |--  |--  |-- ns.wf_fragments_1_1
+ |--  |--  |--  |-- ndb.elph_gkkp_fragment_7
+ |--  |--  |--  |-- ndb.elph_gkkp_fragment_3
+ |--  |--  |--  |-- ns.kb_pp_pwscf_fragment_6
+ |--  |--  |--  |-- ns.wf_fragments_5_1
+ |--  |--  |--  |-- ndb.elph_gkkp_fragment_1
+ |--  |--  |--  |-- ndb.PH_Double_Grid
+ |--  |--  |--  |-- ns.wf_fragments_7_1
+ |--  |--  |--  |-- ns.wf_fragments_3_1
+ |--  |--  |--  |-- ndb.kindx
+ |--  |--  |--  |-- ns.wf_fragments_2_1
+ |--  |--  |--  |-- ns.kb_pp_pwscf_fragment_5
+ |--  |--  |--  |-- ns.nlcc_pp_pwscf
+ |--  |--  |--  |-- ns.db1
+ |--  |--  |--  |-- ndb.elph_gkkp_fragment_5
+ |--  |--  |--  |-- ns.kb_pp_pwscf_fragment_4
+ |--  |--  |--  |-- ndb.elph_gkkp_fragment_4
+ |--  |--  |--  |-- ns.kb_pp_pwscf_fragment_1
+ |--  |--  |--  |-- ns.kb_pp_pwscf
+ |--  |--  |--  |-- ns.wf
+ |--  |--  |--  |-- ndb.gops
+ |--  |--  |--  |-- ns.kb_pp_pwscf_fragment_3
+ |--  |--  |--  |-- ndb.QP
+ |--  |--  |--  |-- ns.wf_fragments_6_1
+ |--  |--  |--  |-- ns.kb_pp_pwscf_fragment_7
+ |--  |--  |--  |-- ndb.elph_gkkp_fragment_2
+ |--  |--  |-- r-T0_gw0_dyson_el_ph_corr
+ |--  |--  |-- o-T0.qp
+ |--  |-- T150
+ |--  |--  |-- r-T150_gw0_dyson_el_ph_corr
+ |--  |--  |-- yambo.in
+ |--  |--  |-- SAVE
+ |--  |--  |--  |-- ns.kb_pp_pwscf_fragment_2
+ |--  |--  |--  |-- ndb.elph_gkkp
+ |--  |--  |--  |-- ns.wf_fragments_4_1
+ |--  |--  |--  |-- ndb.elph_gkkp_fragment_6
+ |--  |--  |--  |-- ns.wf_fragments_1_1
+ |--  |--  |--  |-- ndb.elph_gkkp_fragment_7
+ |--  |--  |--  |-- ndb.elph_gkkp_fragment_3
+ |--  |--  |--  |-- ns.kb_pp_pwscf_fragment_6
+ |--  |--  |--  |-- ns.wf_fragments_5_1
+ |--  |--  |--  |-- ndb.elph_gkkp_fragment_1
+ |--  |--  |--  |-- ndb.PH_Double_Grid
+ |--  |--  |--  |-- ns.wf_fragments_7_1
+ |--  |--  |--  |-- ns.wf_fragments_3_1
+ |--  |--  |--  |-- ndb.kindx
+ |--  |--  |--  |-- ns.wf_fragments_2_1
+ |--  |--  |--  |-- ns.kb_pp_pwscf_fragment_5
+ |--  |--  |--  |-- ns.nlcc_pp_pwscf
+ |--  |--  |--  |-- ns.db1
+ |--  |--  |--  |-- ndb.elph_gkkp_fragment_5
+ |--  |--  |--  |-- ns.kb_pp_pwscf_fragment_4
+ |--  |--  |--  |-- ndb.elph_gkkp_fragment_4
+ |--  |--  |--  |-- ns.kb_pp_pwscf_fragment_1
+ |--  |--  |--  |-- ns.kb_pp_pwscf
+ |--  |--  |--  |-- ns.wf
+ |--  |--  |--  |-- ndb.gops
+ |--  |--  |--  |-- ns.kb_pp_pwscf_fragment_3
+ |--  |--  |--  |-- ndb.QP
+ |--  |--  |--  |-- ns.wf_fragments_6_1
+ |--  |--  |--  |-- ns.kb_pp_pwscf_fragment_7
+ |--  |--  |--  |-- ndb.elph_gkkp_fragment_2
+ |--  |--  |-- o-T150.qp
+ |--  |--  |-- r_nloptics
+ |-- database
+ |--  |-- SAVE
+ |--  |--  |-- ns.kb_pp_pwscf_fragment_2
+ |--  |--  |-- ndb.elph_gkkp
+ |--  |--  |-- ns.wf_fragments_4_1
+ |--  |--  |-- ndb.elph_gkkp_fragment_6
+ |--  |--  |-- ns.wf_fragments_1_1
+ |--  |--  |-- ndb.elph_gkkp_fragment_7
+ |--  |--  |-- ndb.elph_gkkp_fragment_3
+ |--  |--  |-- ns.kb_pp_pwscf_fragment_6
+ |--  |--  |-- ns.wf_fragments_5_1
+ |--  |--  |-- ndb.elph_gkkp_fragment_1
+ |--  |--  |-- ndb.PH_Double_Grid
+ |--  |--  |-- ns.wf_fragments_7_1
+ |--  |--  |-- ns.wf_fragments_3_1
+ |--  |--  |-- ndb.kindx
+ |--  |--  |-- ns.wf_fragments_2_1
+ |--  |--  |-- ns.kb_pp_pwscf_fragment_5
+ |--  |--  |-- ns.nlcc_pp_pwscf
+ |--  |--  |-- ns.db1
+ |--  |--  |-- ndb.elph_gkkp_fragment_5
+ |--  |--  |-- ns.kb_pp_pwscf_fragment_4
+ |--  |--  |-- ndb.elph_gkkp_fragment_4
+ |--  |--  |-- ns.kb_pp_pwscf_fragment_1
+ |--  |--  |-- ns.kb_pp_pwscf
+ |--  |--  |-- ns.wf
+ |--  |--  |-- ndb.gops
+ |--  |--  |-- ns.kb_pp_pwscf_fragment_3
+ |--  |--  |-- ns.wf_fragments_6_1
+ |--  |--  |-- ns.kb_pp_pwscf_fragment_7
+ |--  |--  |-- ndb.elph_gkkp_fragment_2
+ |-- yambo.in
+ |-- info
+ |-- T300
+ |--  |-- T300.in
+ |--  |-- SAVE
+ |--  |--  |-- ns.kb_pp_pwscf_fragment_2
+ |--  |--  |-- ndb.elph_gkkp
+ |--  |--  |-- ns.wf_fragments_4_1
+ |--  |--  |-- ndb.elph_gkkp_fragment_6
+ |--  |--  |-- ns.wf_fragments_1_1
+ |--  |--  |-- ndb.elph_gkkp_fragment_7
+ |--  |--  |-- ndb.elph_gkkp_fragment_3
+ |--  |--  |-- ns.kb_pp_pwscf_fragment_6
+ |--  |--  |-- ns.wf_fragments_5_1
+ |--  |--  |-- ndb.elph_gkkp_fragment_1
+ |--  |--  |-- ndb.PH_Double_Grid
+ |--  |--  |-- ns.wf_fragments_7_1
+ |--  |--  |-- ns.wf_fragments_3_1
+ |--  |--  |-- ndb.kindx
+ |--  |--  |-- ns.wf_fragments_2_1
+ |--  |--  |-- ns.kb_pp_pwscf_fragment_5
+ |--  |--  |-- ns.nlcc_pp_pwscf
+ |--  |--  |-- ns.db1
+ |--  |--  |-- ndb.elph_gkkp_fragment_5
+ |--  |--  |-- ns.kb_pp_pwscf_fragment_4
+ |--  |--  |-- ndb.elph_gkkp_fragment_4
+ |--  |--  |-- ns.kb_pp_pwscf_fragment_1
+ |--  |--  |-- ns.kb_pp_pwscf
+ |--  |--  |-- ns.wf
+ |--  |--  |-- ndb.gops
+ |--  |--  |-- ns.kb_pp_pwscf_fragment_3
+ |--  |--  |-- ndb.QP
+ |--  |--  |-- ns.wf_fragments_6_1
+ |--  |--  |-- ns.kb_pp_pwscf_fragment_7
+ |--  |--  |-- ndb.elph_gkkp_fragment_2
+ |--  |-- o-T300.qp
+ |--  |-- r-T300_gw0_dyson_el_ph_corr
+ |-- T0
+ |--  |-- r_gw0_dyson_el_ph_corr
+ |--  |-- T0.in
+ |--  |-- o.eps_q1_ip
+ |--  |-- yambo.in
+ |--  |-- SAVE
+ |--  |--  |-- ns.kb_pp_pwscf_fragment_2
+ |--  |--  |-- ndb.elph_gkkp
+ |--  |--  |-- ns.wf_fragments_4_1
+ |--  |--  |-- ndb.elph_gkkp_fragment_6
+ |--  |--  |-- ns.wf_fragments_1_1
+ |--  |--  |-- ndb.elph_gkkp_fragment_7
+ |--  |--  |-- ndb.elph_gkkp_fragment_3
+ |--  |--  |-- ns.kb_pp_pwscf_fragment_6
+ |--  |--  |-- ns.wf_fragments_5_1
+ |--  |--  |-- ndb.elph_gkkp_fragment_1
+ |--  |--  |-- ndb.PH_Double_Grid
+ |--  |--  |-- ns.wf_fragments_7_1
+ |--  |--  |-- ns.wf_fragments_3_1
+ |--  |--  |-- ndb.kindx
+ |--  |--  |-- ns.wf_fragments_2_1
+ |--  |--  |-- ns.kb_pp_pwscf_fragment_5
+ |--  |--  |-- ns.nlcc_pp_pwscf
+ |--  |--  |-- ns.db1
+ |--  |--  |-- ndb.elph_gkkp_fragment_5
+ |--  |--  |-- ns.kb_pp_pwscf_fragment_4
+ |--  |--  |-- ndb.elph_gkkp_fragment_4
+ |--  |--  |-- ns.kb_pp_pwscf_fragment_1
+ |--  |--  |-- ns.kb_pp_pwscf
+ |--  |--  |-- ns.wf
+ |--  |--  |-- ndb.gops
+ |--  |--  |-- ns.kb_pp_pwscf_fragment_3
+ |--  |--  |-- ndb.QP
+ |--  |--  |-- ns.wf_fragments_6_1
+ |--  |--  |-- ns.kb_pp_pwscf_fragment_7
+ |--  |--  |-- ndb.elph_gkkp_fragment_2
+ |--  |-- r-T0_gw0_dyson_el_ph_corr
+ |--  |-- o.SAVE.data
+ |--  |-- o-T0.qp
+ |--  |-- o.SAVE.fit
+ |--  |-- o.qp
+ |--  |-- r_optics_dipoles_chi
+ |--  |-- o.eel_q1_ip
+ |-- T150
+ |--  |-- r-T150_gw0_dyson_el_ph_corr
+ |--  |-- SAVE
+ |--  |--  |-- ns.kb_pp_pwscf_fragment_2
+ |--  |--  |-- ndb.elph_gkkp
+ |--  |--  |-- ns.wf_fragments_4_1
+ |--  |--  |-- ndb.elph_gkkp_fragment_6
+ |--  |--  |-- ns.wf_fragments_1_1
+ |--  |--  |-- ndb.elph_gkkp_fragment_7
+ |--  |--  |-- ndb.elph_gkkp_fragment_3
+ |--  |--  |-- ns.kb_pp_pwscf_fragment_6
+ |--  |--  |-- ns.wf_fragments_5_1
+ |--  |--  |-- ndb.elph_gkkp_fragment_1
+ |--  |--  |-- ndb.PH_Double_Grid
+ |--  |--  |-- ns.wf_fragments_7_1
+ |--  |--  |-- ns.wf_fragments_3_1
+ |--  |--  |-- ndb.kindx
+ |--  |--  |-- ns.wf_fragments_2_1
+ |--  |--  |-- ns.kb_pp_pwscf_fragment_5
+ |--  |--  |-- ns.nlcc_pp_pwscf
+ |--  |--  |-- ns.db1
+ |--  |--  |-- ndb.elph_gkkp_fragment_5
+ |--  |--  |-- ns.kb_pp_pwscf_fragment_4
+ |--  |--  |-- ndb.elph_gkkp_fragment_4
+ |--  |--  |-- ns.kb_pp_pwscf_fragment_1
+ |--  |--  |-- ns.kb_pp_pwscf
+ |--  |--  |-- ns.wf
+ |--  |--  |-- ndb.gops
+ |--  |--  |-- ns.kb_pp_pwscf_fragment_3
+ |--  |--  |-- ndb.QP
+ |--  |--  |-- ns.wf_fragments_6_1
+ |--  |--  |-- ns.kb_pp_pwscf_fragment_7
+ |--  |--  |-- ndb.elph_gkkp_fragment_2
+ |--  |-- o-T150.qp
+ |--  |-- T150.in
+ |-- map.txt

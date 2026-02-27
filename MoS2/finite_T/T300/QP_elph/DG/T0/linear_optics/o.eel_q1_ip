@@ -1,0 +1,88 @@
+#                                                                     
+# :   :::   :::     ::::    ::::  :::::::::   ::::::::                
+# :+:   :+: :+: :+:   +:+:+: :+:+:+ :+:    :+: :+:    :+              
+#  +:+ +:+ +:+   +:+  +:+ +:+:+ +:+ +:+    +:+ +:+    +:+             
+#   +#++: +#++:++#++: +#+  +:+  +#+ +#++:++#+  +#+    +:+             
+#    +#+  +#+     +#+ +#+       +#+ +#+    +#+ +#+    +#+             
+#    #+#  #+#     #+# #+#       #+# #+#    #+# #+#    #+#             
+#    ###  ###     ### ###       ### #########   ########              
+#                                                                     
+#                                                                     
+# Version 5.3.0 Revision 23935 Hash (prev commit) 901c81cc91          
+#                      Branch is 5.3                                  
+#         MPI+OpenMP+SLK+SLEPC+HDF5_MPI_IO Build                      
+#                http://www.yambo-code.eu                             
+#
+# Electron Energy Loss @ Q(1):  0.707106781     0.707106781      0.00000000    [q->0 direction]
+#
+# [ X ] Hartree size                              :  1
+# [GEN] GF Energies                               : Perdew, Burke & Ernzerhof SOL(X)+Perdew, Burke & Ernzerhof SOL(C)+ E W < SAVE/ndb.QP + @E @W Fit
+# [GEN] Green`s Function                          : T-ordered
+#
+# [GEN] Gauge                                     : Length
+# [GEN] [r,Vnl] included                          : yes
+#
+#    E[1] [eV]          Im(eel)            Re(eel)
+#
+        1.000000           0.018377          -0.171690
+        1.272727           0.024350          -0.156213
+        1.545455           0.044193          -0.134127
+        1.818182           0.084656          -0.154456
+        2.090909           0.053932          -0.159366
+        2.363636           0.050935          -0.125943
+        2.636364           0.071072          -0.089766
+        2.909091           0.110323          -0.068312
+        3.181818           0.145722          -0.066798
+        3.454545           0.159806          -0.068246
+        3.727273           0.176512          -0.035034
+        4.000000           0.254619          -0.008415
+# 
+# 02/27/2026 at 14:38 yambo_nl @ ln02 [start]
+# 02/27/2026 at 14:38                 [end]
+#  
+# Timing   [Min/Max/Average]: 47s/47s/47s
+#
+# .-Input file  yambo.in
+# | infver                           # [R] Input file variables verbosity
+# | optics                           # [R] Linear Response optical properties
+# | dipoles                          # [R] Oscillator strenghts (or dipoles)
+# | chi                              # [R][CHI] Dyson equation for Chi.
+# | #DegFix                        # Force the code to impose the energy levels to respect their degeneracy
+# | FFTGvecs= 18393            RL    # [FFT] Plane-waves
+# | DIP_Threads= 256                 # [OPENMP/X] Number of threads for dipoles
+# | X_Threads= 256                   # [OPENMP/X] Number of threads for response functions
+# | Chimod= "IP"                     # [X] IP/Hartree/ALDA/LRC/PF/BSfxc
+# | % DipBands
+# |   1 | 20 |                           # [DIP] Bands range for dipoles
+# | %
+# | DipComputed= "R V P [G-space]"   # [DIP] [default R P V; extra P2 Spin Orb]
+# | % QpntsRXd
+# |  1 | 1 |                             # [Xd] Transferred momenta
+# | %
+# | % BndsRnXd
+# |   1 | 20 |                           # [Xd] Polarization function bands
+# | %
+# | % EnRngeXd
+# |  1.000000 | 4.000000 |         eV    # [Xd] Energy range
+# | %
+# | % DmRngeXd
+# |  0.200000 | 0.200000 |         eV    # [Xd] Damping range
+# | %
+# | ETStpsXd= 12                     # [Xd] Total Energy steps
+# | % LongDrXd
+# |  1.000000 | 1.000000 | 0.000000 |        # [Xd] [cc] Electric Field
+# | %
+# | XfnQPdb= "E W < SAVE/ndb.QP"     # [EXTQP Xd] Database action
+# | % Field1_Freq
+# |  0.100000 | 0.100000 |         eV    # [RT Field1] Frequency
+# | %
+# | Field1_NFreqs= 1                 # [RT Field1] Frequency
+# | Field1_Int=  1000.00       kWLm2 # [RT Field1] Intensity
+# | Field1_Width= 0.000000     fs    # [RT Field1] Width
+# | Field1_FWHM= 0.000000      fs    # [RT Field1] Full Width at Half Maximum (overwrite width if set)
+# | Field1_kind= "SOFTSIN"           # [RT Field1] Kind(SIN|SOFTSIN| see more on src/modules/mod_fields.F)
+# | Field1_pol= "linear"             # [RT Field1] Pol(linear|circular)
+# | % Field1_Dir
+# |  0.000000 | 0.000000 | 0.000000 |        # [RT Field1] Versor
+# | %
+# | Field1_Tstart= 0.010000    fs    # [RT Field1] Initial Time

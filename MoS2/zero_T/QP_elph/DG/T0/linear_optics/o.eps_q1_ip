@@ -1,0 +1,75 @@
+#                                                                     
+#  ____  ____     _       ____    ____  ______      ___               
+# |_  _||_  _|   / \     |_   \  /   _||_   _ \   ."   `.             
+#   \ \  / /    / _ \      |   \/   |    | |_) | /  .-.  \            
+#    \ \/ /    / ___ \     | |\  /| |    |  __". | |   | |            
+#    _|  |_  _/ /   \ \_  _| |_\/_| |_  _| |__) |\  `-"  /            
+#   |______||____| |____||_____||_____||_______/  `.___."             
+#                                                                     
+#                                                                     
+#                                                                     
+# Version 5.3.0 Revision 23935 Hash (prev commit) 901c81cc91          
+#                      Branch is 5.3                                  
+#          MPI+OpenMP+SLK+SLEPC+HDF5_MPI_IO Build                     
+#                 http://www.yambo-code.eu                            
+#
+# Absorption @ Q(1):  0.707106769     0.707106769      0.00000000    [q->0 direction]
+#
+# [ X ] Hartree size                              :  1
+# [GEN] GF Energies                               : Perdew, Burke & Ernzerhof SOL(X)+Perdew, Burke & Ernzerhof SOL(C)+ E W < SAVE/ndb.QP + @E @W Fit
+# [GEN] Green`s Function                          : T-ordered
+#
+# [GEN] Gauge                                     : Length
+# [GEN] [r,Vnl] included                          : yes
+#
+#    E[1] [eV]          Im(eps)            Re(eps)
+#
+        1.000000           0.578148           5.763787
+        1.272727           0.883180           6.239285
+        1.545455           1.894018           6.847361
+        1.818182           3.002271           5.398773
+        2.090909           2.064217           5.784952
+        2.363636           3.073371           7.079831
+        2.636364           6.138360           6.539702
+        2.909091           6.253710           3.581113
+        3.181818           5.512365           2.703102
+        3.454545           5.422370           2.236887
+        3.727273           5.497024           0.882599
+        4.000000           3.746071           0.064010
+# 
+# 02/27/2026 at 15:02 yambo @ ln02 [start]
+# 02/27/2026 at 15:02              [end]
+#  
+# Timing   [Min/Max/Average]: 36s/36s/36s
+#
+# .-Input file  yambo.in
+# | infver                           # [R] Input file variables verbosity
+# | optics                           # [R] Linear Response optical properties
+# | dipoles                          # [R] Oscillator strenghts (or dipoles)
+# | chi                              # [R][CHI] Dyson equation for Chi.
+# | #DegFix                        # Force the code to impose the energy levels to respect their degeneracy
+# | FFTGvecs= 18321            RL    # [FFT] Plane-waves
+# | DIP_Threads= 256                 # [OPENMP/X] Number of threads for dipoles
+# | X_Threads= 256                   # [OPENMP/X] Number of threads for response functions
+# | Chimod= "IP"                     # [X] IP/Hartree/ALDA/LRC/PF/BSfxc
+# | % DipBands
+# |   1 | 20 |                           # [DIP] Bands range for dipoles
+# | %
+# | DipComputed= "R V P [G-space]"   # [DIP] [default R P V; extra P2 Spin Orb]
+# | % QpntsRXd
+# |  1 | 1 |                             # [Xd] Transferred momenta
+# | %
+# | % BndsRnXd
+# |   1 | 20 |                           # [Xd] Polarization function bands
+# | %
+# | % EnRngeXd
+# |  1.000000 | 4.000000 |         eV    # [Xd] Energy range
+# | %
+# | % DmRngeXd
+# |  0.200000 | 0.200000 |         eV    # [Xd] Damping range
+# | %
+# | ETStpsXd= 12                     # [Xd] Total Energy steps
+# | % LongDrXd
+# |  1.000000 | 1.000000 | 0.000000 |        # [Xd] [cc] Electric Field
+# | %
+# | XfnQPdb= "E W < SAVE/ndb.QP"     # [EXTQP Xd] Database action
