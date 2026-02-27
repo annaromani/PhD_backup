@@ -1,0 +1,588 @@
+
+     Program PHCG v.7.5 starts on 23Feb2026 at 12: 4:45 
+        Git branch: HEAD
+        Last git commit: 770a0b2d12928a67048e2f3da8d10d057e52179e
+        Last git commit date: Tue Aug 19 09:57:12 2025 +0000
+        Last git commit subject: Merge branch 'QE-7.5-RC' into 'master'
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     1 processors
+
+     MPI processes distributed on     1 nodes
+     124091 MiB available memory on the printing compute node when the environment starts
+
+
+     Reading xml data from directory:
+
+     tmp/MoS2.save/
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation= PBESOL
+                           (   1   4  10   8   0   0   0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+
+     G-vector sticks info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Sum         769     769    199               117995   117995   14855
+
+     Using Slab Decomposition
+
+ ----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D
+  The code is running with the 2D cutoff
+  Please refer to:
+  Sohier, T., Calandra, M., & Mauri, F. (2017), 
+  Density functional perturbation theory for gated two-dimensional heterostructures:
+  Theoretical developments and application to flexural phonons in graphene.
+  Physical Review B, 96(7), 75448. https://doi.org/10.1103/PhysRevB.96.075448
+ ----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D----2D
+     Reading collected, re-writing distributed wavefunctions
+  iter #   0  u_u = 0.7374E+01
+  iter #   1  u_u = 0.2568E+01
+  iter #   2  u_u = 0.1084E+01
+  iter #   3  u_u = 0.1024E+01
+  iter #   4  u_u = 0.5158E+00
+  iter #   5  u_u = 0.3240E+00
+  iter #   6  u_u = 0.3500E+00
+  iter #   7  u_u = 0.2562E+00
+  iter #   8  u_u = 0.1913E+00
+  iter #   9  u_u = 0.1034E+00
+  iter #  10  u_u = 0.4839E-01
+  iter #  11  u_u = 0.2352E-01
+  iter #  12  u_u = 0.8994E-02
+  iter #  13  u_u = 0.5291E-02
+  iter #  14  u_u = 0.3787E-02
+  iter #  15  u_u = 0.3955E-02
+  iter #  16  u_u = 0.5217E-02
+  iter #  17  u_u = 0.3875E-02
+  iter #  18  u_u = 0.3648E-02
+  iter #  19  u_u = 0.1760E-02
+  iter #  20  u_u = 0.5383E-03
+  iter #  21  u_u = 0.2922E-03
+  iter #  22  u_u = 0.2390E-03
+  iter #  23  u_u = 0.1357E-03
+  iter #  24  u_u = 0.7518E-04
+  iter #  25  u_u = 0.3675E-04
+  iter #  26  u_u = 0.4113E-04
+  iter #  27  u_u = 0.1561E-04
+  iter #  28  u_u = 0.1182E-04
+  iter #  29  u_u = 0.9565E-05
+  iter #  30  u_u = 0.5972E-05
+  iter #  31  u_u = 0.3642E-05
+  iter #  32  u_u = 0.2035E-05
+  iter #  33  u_u = 0.1097E-05
+  iter #  34  u_u = 0.7182E-06
+  iter #  35  u_u = 0.4235E-06
+  iter #  36  u_u = 0.2500E-06
+  iter #  37  u_u = 0.9638E-07
+  iter #  38  u_u = 0.4696E-07
+  iter #  39  u_u = 0.3099E-07
+  iter #  40  u_u = 0.2307E-07
+  iter #  41  u_u = 0.8046E-08
+  iter #  42  u_u = 0.3458E-08
+  iter #  43  u_u = 0.1717E-08
+  iter #  44  u_u = 0.8002E-09
+  iter #  45  u_u = 0.3725E-09
+  iter #  46  u_u = 0.1946E-09
+  iter #  47  u_u = 0.1010E-09
+  iter #  48  u_u = 0.5486E-10
+  iter #  49  u_u = 0.3359E-10
+  iter #  50  u_u = 0.2270E-10
+   *** Conjugate Gradient minimization not converged after  50 iterations
+ residual norm |Ax-b|^2 : 0.2270E-10
+  iter #   0  u_u = 0.7374E+01
+  iter #   1  u_u = 0.2568E+01
+  iter #   2  u_u = 0.1084E+01
+  iter #   3  u_u = 0.1024E+01
+  iter #   4  u_u = 0.5158E+00
+  iter #   5  u_u = 0.3240E+00
+  iter #   6  u_u = 0.3500E+00
+  iter #   7  u_u = 0.2562E+00
+  iter #   8  u_u = 0.1913E+00
+  iter #   9  u_u = 0.1034E+00
+  iter #  10  u_u = 0.4839E-01
+  iter #  11  u_u = 0.2352E-01
+  iter #  12  u_u = 0.8994E-02
+  iter #  13  u_u = 0.5291E-02
+  iter #  14  u_u = 0.3794E-02
+  iter #  15  u_u = 0.4063E-02
+  iter #  16  u_u = 0.6106E-02
+  iter #  17  u_u = 0.4005E-02
+  iter #  18  u_u = 0.3783E-02
+  iter #  19  u_u = 0.1684E-02
+  iter #  20  u_u = 0.8761E-03
+  iter #  21  u_u = 0.5235E-03
+  iter #  22  u_u = 0.1976E-03
+  iter #  23  u_u = 0.1233E-03
+  iter #  24  u_u = 0.8394E-04
+  iter #  25  u_u = 0.6940E-04
+  iter #  26  u_u = 0.2790E-04
+  iter #  27  u_u = 0.1517E-04
+  iter #  28  u_u = 0.1387E-04
+  iter #  29  u_u = 0.9025E-05
+  iter #  30  u_u = 0.5589E-05
+  iter #  31  u_u = 0.3829E-05
+  iter #  32  u_u = 0.2662E-05
+  iter #  33  u_u = 0.1932E-05
+  iter #  34  u_u = 0.8805E-06
+  iter #  35  u_u = 0.4820E-06
+  iter #  36  u_u = 0.3144E-06
+  iter #  37  u_u = 0.1528E-06
+  iter #  38  u_u = 0.7897E-07
+  iter #  39  u_u = 0.3793E-07
+  iter #  40  u_u = 0.1862E-07
+  iter #  41  u_u = 0.8651E-08
+  iter #  42  u_u = 0.5210E-08
+  iter #  43  u_u = 0.2181E-08
+  iter #  44  u_u = 0.9164E-09
+  iter #  45  u_u = 0.5183E-09
+  iter #  46  u_u = 0.2245E-09
+  iter #  47  u_u = 0.9642E-10
+  iter #  48  u_u = 0.5769E-10
+  iter #  49  u_u = 0.3780E-10
+  iter #  50  u_u = 0.2406E-10
+   *** Conjugate Gradient minimization not converged after  50 iterations
+ residual norm |Ax-b|^2 : 0.2406E-10
+  iter #   0  u_u = 0.5960E+01
+  iter #   1  u_u = 0.2384E+01
+  iter #   2  u_u = 0.1139E+01
+  iter #   3  u_u = 0.7993E+00
+  iter #   4  u_u = 0.6335E+00
+  iter #   5  u_u = 0.3327E+00
+  iter #   6  u_u = 0.3127E+00
+  iter #   7  u_u = 0.2652E+00
+  iter #   8  u_u = 0.1335E+00
+  iter #   9  u_u = 0.9230E-01
+  iter #  10  u_u = 0.7077E-01
+  iter #  11  u_u = 0.4128E-01
+  iter #  12  u_u = 0.2608E-01
+  iter #  13  u_u = 0.1625E-01
+  iter #  14  u_u = 0.7620E-02
+  iter #  15  u_u = 0.2638E-02
+  iter #  16  u_u = 0.1149E-02
+  iter #  17  u_u = 0.5819E-03
+  iter #  18  u_u = 0.2102E-03
+  iter #  19  u_u = 0.1287E-03
+  iter #  20  u_u = 0.9630E-04
+  iter #  21  u_u = 0.7843E-04
+  iter #  22  u_u = 0.4117E-04
+  iter #  23  u_u = 0.3361E-04
+  iter #  24  u_u = 0.1856E-04
+  iter #  25  u_u = 0.1076E-04
+  iter #  26  u_u = 0.6193E-05
+  iter #  27  u_u = 0.4979E-05
+  iter #  28  u_u = 0.1559E-05
+  iter #  29  u_u = 0.6419E-06
+  iter #  30  u_u = 0.2615E-06
+  iter #  31  u_u = 0.9345E-07
+  iter #  32  u_u = 0.5338E-07
+  iter #  33  u_u = 0.2220E-07
+  iter #  34  u_u = 0.1269E-07
+  iter #  35  u_u = 0.3565E-08
+  iter #  36  u_u = 0.1736E-08
+  iter #  37  u_u = 0.8047E-09
+  iter #  38  u_u = 0.3262E-09
+  iter #  39  u_u = 0.1350E-09
+  iter #  40  u_u = 0.8030E-10
+  iter #  41  u_u = 0.3005E-10
+  iter #  42  u_u = 0.9719E-11
+  iter #  43  u_u = 0.2843E-11
+  iter #  44  u_u = 0.9939E-12
+
+ ***  Starting Conjugate Gradient minimization         ***
+  iter #   0  u_u = 0.1344E+02
+  iter #   1  u_u = 0.7691E+01
+  iter #   2  u_u = 0.6654E+01
+  iter #   3  u_u = 0.6341E+01
+  iter #   4  u_u = 0.4981E+01
+  iter #   5  u_u = 0.3678E+01
+  iter #   6  u_u = 0.1668E+01
+  iter #   7  u_u = 0.9818E+00
+  iter #   8  u_u = 0.5445E+00
+  iter #   9  u_u = 0.2897E+00
+  iter #  10  u_u = 0.1507E+00
+  iter #  11  u_u = 0.8759E-01
+  iter #  12  u_u = 0.9693E-01
+  iter #  13  u_u = 0.1258E+00
+  iter #  14  u_u = 0.6736E-01
+  iter #  15  u_u = 0.4237E-01
+  iter #  16  u_u = 0.2521E-01
+  iter #  17  u_u = 0.1267E-01
+  iter #  18  u_u = 0.6569E-02
+  iter #  19  u_u = 0.4202E-02
+  iter #  20  u_u = 0.1554E-02
+  iter #  21  u_u = 0.9533E-03
+  iter #  22  u_u = 0.5382E-03
+  iter #  23  u_u = 0.2214E-03
+  iter #  24  u_u = 0.1358E-03
+  iter #  25  u_u = 0.8267E-04
+  iter #  26  u_u = 0.4096E-04
+  iter #  27  u_u = 0.3178E-04
+  iter #  28  u_u = 0.1638E-04
+  iter #  29  u_u = 0.7963E-05
+  iter #  30  u_u = 0.7866E-05
+  iter #  31  u_u = 0.4016E-05
+  iter #  32  u_u = 0.2592E-05
+  iter #  33  u_u = 0.1619E-05
+  iter #  34  u_u = 0.7983E-06
+  iter #  35  u_u = 0.4282E-06
+  iter #  36  u_u = 0.1601E-06
+  iter #  37  u_u = 0.6925E-07
+  iter #  38  u_u = 0.4044E-07
+  iter #  39  u_u = 0.2206E-07
+  iter #  40  u_u = 0.1120E-07
+  iter #  41  u_u = 0.6244E-08
+  iter #  42  u_u = 0.3889E-08
+  iter #  43  u_u = 0.2652E-08
+  iter #  44  u_u = 0.1380E-08
+  iter #  45  u_u = 0.7075E-09
+  iter #  46  u_u = 0.4129E-09
+  iter #  47  u_u = 0.2469E-09
+  iter #  48  u_u = 0.1431E-09
+  iter #  49  u_u = 0.1061E-09
+  iter #  50  u_u = 0.5488E-10
+   *** Conjugate Gradient minimization not converged after  50 iterations
+ residual norm |Ax-b|^2 : 0.5488E-10
+ ***  pol. #   1 :  50 iterations
+  iter #   0  u_u = 0.1344E+02
+  iter #   1  u_u = 0.7691E+01
+  iter #   2  u_u = 0.6654E+01
+  iter #   3  u_u = 0.6341E+01
+  iter #   4  u_u = 0.4981E+01
+  iter #   5  u_u = 0.3678E+01
+  iter #   6  u_u = 0.1668E+01
+  iter #   7  u_u = 0.9818E+00
+  iter #   8  u_u = 0.5445E+00
+  iter #   9  u_u = 0.2897E+00
+  iter #  10  u_u = 0.1506E+00
+  iter #  11  u_u = 0.8715E-01
+  iter #  12  u_u = 0.9206E-01
+  iter #  13  u_u = 0.1255E+00
+  iter #  14  u_u = 0.6953E-01
+  iter #  15  u_u = 0.4178E-01
+  iter #  16  u_u = 0.2476E-01
+  iter #  17  u_u = 0.1345E-01
+  iter #  18  u_u = 0.6435E-02
+  iter #  19  u_u = 0.4089E-02
+  iter #  20  u_u = 0.1632E-02
+  iter #  21  u_u = 0.9512E-03
+  iter #  22  u_u = 0.5040E-03
+  iter #  23  u_u = 0.2125E-03
+  iter #  24  u_u = 0.1410E-03
+  iter #  25  u_u = 0.8527E-04
+  iter #  26  u_u = 0.3768E-04
+  iter #  27  u_u = 0.2890E-04
+  iter #  28  u_u = 0.1738E-04
+  iter #  29  u_u = 0.7760E-05
+  iter #  30  u_u = 0.7013E-05
+  iter #  31  u_u = 0.4138E-05
+  iter #  32  u_u = 0.2500E-05
+  iter #  33  u_u = 0.1602E-05
+  iter #  34  u_u = 0.7145E-06
+  iter #  35  u_u = 0.4273E-06
+  iter #  36  u_u = 0.1605E-06
+  iter #  37  u_u = 0.6539E-07
+  iter #  38  u_u = 0.3061E-07
+  iter #  39  u_u = 0.1738E-07
+  iter #  40  u_u = 0.1209E-07
+  iter #  41  u_u = 0.6401E-08
+  iter #  42  u_u = 0.3624E-08
+  iter #  43  u_u = 0.2524E-08
+  iter #  44  u_u = 0.1515E-08
+  iter #  45  u_u = 0.7872E-09
+  iter #  46  u_u = 0.4457E-09
+  iter #  47  u_u = 0.2442E-09
+  iter #  48  u_u = 0.1396E-09
+  iter #  49  u_u = 0.1062E-09
+  iter #  50  u_u = 0.5630E-10
+   *** Conjugate Gradient minimization not converged after  50 iterations
+ residual norm |Ax-b|^2 : 0.5630E-10
+ ***  pol. #   2 :  50 iterations
+  iter #   0  u_u = 0.8566E+01
+  iter #   1  u_u = 0.9842E+00
+  iter #   2  u_u = 0.1980E+00
+  iter #   3  u_u = 0.8569E-01
+  iter #   4  u_u = 0.3330E-01
+  iter #   5  u_u = 0.1491E-01
+  iter #   6  u_u = 0.6489E-02
+  iter #   7  u_u = 0.4864E-02
+  iter #   8  u_u = 0.1746E-02
+  iter #   9  u_u = 0.6998E-03
+  iter #  10  u_u = 0.4773E-03
+  iter #  11  u_u = 0.2096E-03
+  iter #  12  u_u = 0.1104E-03
+  iter #  13  u_u = 0.7593E-04
+  iter #  14  u_u = 0.3591E-04
+  iter #  15  u_u = 0.2250E-04
+  iter #  16  u_u = 0.1151E-04
+  iter #  17  u_u = 0.7705E-05
+  iter #  18  u_u = 0.5927E-05
+  iter #  19  u_u = 0.3580E-05
+  iter #  20  u_u = 0.3016E-05
+  iter #  21  u_u = 0.1898E-05
+  iter #  22  u_u = 0.8482E-06
+  iter #  23  u_u = 0.4553E-06
+  iter #  24  u_u = 0.3767E-06
+  iter #  25  u_u = 0.1626E-06
+  iter #  26  u_u = 0.6435E-07
+  iter #  27  u_u = 0.3235E-07
+  iter #  28  u_u = 0.1626E-07
+  iter #  29  u_u = 0.8804E-08
+  iter #  30  u_u = 0.5328E-08
+  iter #  31  u_u = 0.1798E-08
+  iter #  32  u_u = 0.8690E-09
+  iter #  33  u_u = 0.3101E-09
+  iter #  34  u_u = 0.1420E-09
+  iter #  35  u_u = 0.5194E-10
+  iter #  36  u_u = 0.1511E-10
+  iter #  37  u_u = 0.8741E-11
+  iter #  38  u_u = 0.3962E-11
+  iter #  39  u_u = 0.2891E-11
+  iter #  40  u_u = 0.1215E-11
+  iter #  41  u_u = 0.4345E-12
+ ***  pol. #   3 :  41 iterations
+
+ATOMIC_POSITIONS
+Mo               0.0000000000        0.5773502115        3.3660074350
+S                0.5000000005        0.2886751343        3.8617060206
+S                0.5000000005        0.2886751343        2.8703088494
+
+
+
+     dielectric constant                    polarizability (A^3)
+  6.382830  0.000000 -0.000000       0.277744E+02  0.189449E-06 -0.702125E-08
+  0.000000  6.382827 -0.000000       0.189449E-06  0.277744E+02 -0.869233E-08
+ -0.000000 -0.000000  1.391195      -0.701977E-08 -0.937762E-08  0.498960E+01
+
+     z*( 1)   11.8844   -0.0000    0.0000
+              -0.0000   11.8844   -0.0000
+              -0.0000    0.0000   13.6101
+
+     z*( 2)    1.6690    0.0000   -0.0000
+               0.0000    1.6690   -0.0000
+               0.0000   -0.0000    5.1487
+
+     z*( 3)    1.6690   -0.0000   -0.0000
+              -0.0000    1.6690    0.0000
+               0.0000    0.0000    5.1487
+
+ ***  Starting Conjugate Gradient minimization         ***
+     d2ion: alpha =   0.50
+ ***  mode #   1 : using asr
+ ***  mode #   2 : using asr
+ ***  mode #   3 : using asr
+  iter #   0  u_u = 0.3639E+01
+  iter #   1  u_u = 0.4585E+00
+  iter #   2  u_u = 0.4838E-01
+  iter #   3  u_u = 0.1106E-01
+  iter #   4  u_u = 0.4867E-02
+  iter #   5  u_u = 0.2624E-02
+  iter #   6  u_u = 0.1109E-02
+  iter #   7  u_u = 0.1265E-02
+  iter #   8  u_u = 0.5475E-03
+  iter #   9  u_u = 0.3827E-03
+  iter #  10  u_u = 0.2871E-03
+  iter #  11  u_u = 0.2564E-03
+  iter #  12  u_u = 0.1467E-03
+  iter #  13  u_u = 0.1148E-03
+  iter #  14  u_u = 0.6518E-04
+  iter #  15  u_u = 0.2491E-04
+  iter #  16  u_u = 0.2010E-04
+  iter #  17  u_u = 0.1959E-04
+  iter #  18  u_u = 0.1511E-04
+  iter #  19  u_u = 0.1182E-04
+  iter #  20  u_u = 0.7711E-05
+  iter #  21  u_u = 0.4820E-05
+  iter #  22  u_u = 0.2883E-05
+  iter #  23  u_u = 0.1854E-05
+  iter #  24  u_u = 0.2112E-05
+  iter #  25  u_u = 0.8505E-06
+  iter #  26  u_u = 0.4652E-06
+  iter #  27  u_u = 0.5269E-06
+  iter #  28  u_u = 0.3296E-06
+  iter #  29  u_u = 0.1015E-06
+  iter #  30  u_u = 0.7376E-07
+  iter #  31  u_u = 0.4598E-07
+  iter #  32  u_u = 0.3419E-07
+  iter #  33  u_u = 0.2699E-07
+  iter #  34  u_u = 0.1746E-07
+  iter #  35  u_u = 0.1081E-07
+  iter #  36  u_u = 0.9540E-08
+  iter #  37  u_u = 0.5862E-08
+  iter #  38  u_u = 0.4764E-08
+  iter #  39  u_u = 0.4427E-08
+  iter #  40  u_u = 0.2427E-08
+  iter #  41  u_u = 0.1375E-08
+  iter #  42  u_u = 0.6734E-09
+  iter #  43  u_u = 0.3398E-09
+  iter #  44  u_u = 0.2494E-09
+  iter #  45  u_u = 0.1320E-09
+  iter #  46  u_u = 0.7620E-10
+  iter #  47  u_u = 0.4539E-10
+  iter #  48  u_u = 0.2714E-10
+  iter #  49  u_u = 0.1840E-10
+  iter #  50  u_u = 0.1564E-10
+   *** Conjugate Gradient minimization not converged after  50 iterations
+ residual norm |Ax-b|^2 : 0.1564E-10
+ ***  mode #   4 :  50 iterations
+  iter #   0  u_u = 0.3639E+01
+  iter #   1  u_u = 0.4585E+00
+  iter #   2  u_u = 0.4838E-01
+  iter #   3  u_u = 0.1106E-01
+  iter #   4  u_u = 0.4867E-02
+  iter #   5  u_u = 0.2624E-02
+  iter #   6  u_u = 0.1109E-02
+  iter #   7  u_u = 0.1265E-02
+  iter #   8  u_u = 0.5475E-03
+  iter #   9  u_u = 0.3827E-03
+  iter #  10  u_u = 0.2871E-03
+  iter #  11  u_u = 0.2564E-03
+  iter #  12  u_u = 0.1467E-03
+  iter #  13  u_u = 0.1148E-03
+  iter #  14  u_u = 0.6518E-04
+  iter #  15  u_u = 0.2491E-04
+  iter #  16  u_u = 0.2011E-04
+  iter #  17  u_u = 0.1933E-04
+  iter #  18  u_u = 0.1494E-04
+  iter #  19  u_u = 0.1177E-04
+  iter #  20  u_u = 0.7766E-05
+  iter #  21  u_u = 0.5140E-05
+  iter #  22  u_u = 0.3751E-05
+  iter #  23  u_u = 0.2765E-05
+  iter #  24  u_u = 0.1586E-05
+  iter #  25  u_u = 0.9600E-06
+  iter #  26  u_u = 0.6893E-06
+  iter #  27  u_u = 0.4287E-06
+  iter #  28  u_u = 0.3078E-06
+  iter #  29  u_u = 0.1523E-06
+  iter #  30  u_u = 0.9341E-07
+  iter #  31  u_u = 0.5791E-07
+  iter #  32  u_u = 0.2943E-07
+  iter #  33  u_u = 0.2442E-07
+  iter #  34  u_u = 0.1803E-07
+  iter #  35  u_u = 0.1218E-07
+  iter #  36  u_u = 0.1096E-07
+  iter #  37  u_u = 0.7267E-08
+  iter #  38  u_u = 0.5349E-08
+  iter #  39  u_u = 0.3872E-08
+  iter #  40  u_u = 0.2872E-08
+  iter #  41  u_u = 0.2218E-08
+  iter #  42  u_u = 0.1007E-08
+  iter #  43  u_u = 0.4126E-09
+  iter #  44  u_u = 0.2993E-09
+  iter #  45  u_u = 0.2012E-09
+  iter #  46  u_u = 0.8633E-10
+  iter #  47  u_u = 0.5641E-10
+  iter #  48  u_u = 0.3545E-10
+  iter #  49  u_u = 0.1880E-10
+  iter #  50  u_u = 0.1411E-10
+   *** Conjugate Gradient minimization not converged after  50 iterations
+ residual norm |Ax-b|^2 : 0.1411E-10
+ ***  mode #   5 :  50 iterations
+  iter #   0  u_u = 0.3845E+01
+  iter #   1  u_u = 0.4579E+00
+  iter #   2  u_u = 0.9351E-01
+  iter #   3  u_u = 0.3772E-01
+  iter #   4  u_u = 0.1566E-01
+  iter #   5  u_u = 0.7806E-02
+  iter #   6  u_u = 0.2158E-02
+  iter #   7  u_u = 0.1985E-02
+  iter #   8  u_u = 0.7612E-03
+  iter #   9  u_u = 0.3524E-03
+  iter #  10  u_u = 0.2887E-03
+  iter #  11  u_u = 0.1376E-03
+  iter #  12  u_u = 0.5860E-04
+  iter #  13  u_u = 0.2640E-04
+  iter #  14  u_u = 0.1835E-04
+  iter #  15  u_u = 0.8468E-05
+  iter #  16  u_u = 0.3465E-05
+  iter #  17  u_u = 0.2221E-05
+  iter #  18  u_u = 0.2173E-05
+  iter #  19  u_u = 0.1663E-05
+  iter #  20  u_u = 0.8483E-06
+  iter #  21  u_u = 0.6803E-06
+  iter #  22  u_u = 0.4378E-06
+  iter #  23  u_u = 0.2447E-06
+  iter #  24  u_u = 0.1255E-06
+  iter #  25  u_u = 0.7582E-07
+  iter #  26  u_u = 0.3912E-07
+  iter #  27  u_u = 0.1479E-07
+  iter #  28  u_u = 0.5309E-08
+  iter #  29  u_u = 0.2403E-08
+  iter #  30  u_u = 0.1250E-08
+  iter #  31  u_u = 0.5827E-09
+  iter #  32  u_u = 0.3422E-09
+  iter #  33  u_u = 0.1979E-09
+  iter #  34  u_u = 0.1009E-09
+  iter #  35  u_u = 0.7048E-10
+  iter #  36  u_u = 0.3711E-10
+  iter #  37  u_u = 0.2089E-10
+  iter #  38  u_u = 0.1335E-10
+  iter #  39  u_u = 0.8621E-11
+  iter #  40  u_u = 0.6252E-11
+  iter #  41  u_u = 0.3173E-11
+  iter #  42  u_u = 0.2366E-11
+  iter #  43  u_u = 0.1243E-11
+  iter #  44  u_u = 0.6148E-12
+ ***  mode #   6 :  44 iterations
+ ***  mode #   7 : using symmetry
+ ***  mode #   8 : using symmetry
+ ***  mode #   9 : using symmetry
+  Symmetry violation  sum_ij |D_ij-D_ji| :      43.772301
+  ASR violation  sum_i |D_ij| :      43.474310
+     diagonalizing the dynamical matrix ...
+
+
+ **************************************************************************
+     omega(  1) =-50.647622 [THz] =*********** [cm-1]
+     omega(  2) =-33.350073 [THz] =*********** [cm-1]
+     omega(  3) =-31.173181 [THz] =*********** [cm-1]
+     omega(  4) =-27.311636 [THz] =-911.018117 [cm-1]
+     omega(  5) =-25.746116 [THz] =-858.798004 [cm-1]
+     omega(  6) =-20.690771 [THz] =-690.169840 [cm-1]
+     omega(  7) =  0.000000 [THz] =   0.000008 [cm-1]
+     omega(  8) =  0.003219 [THz] =   0.107385 [cm-1]
+     omega(  9) =  0.003629 [THz] =   0.121063 [cm-1]
+ **************************************************************************
+
+     PHCG         :     34.05s CPU     47.04s WALL
+
+     cg_readin    :      1.23s CPU      1.50s WALL (       1 calls)
+     fft          :      5.54s CPU      6.37s WALL (    2103 calls)
+     init_vloc    :      0.10s CPU      0.13s WALL (       1 calls)
+     init_us_1    :      0.00s CPU      0.00s WALL (       1 calls)
+     v_of_rho     :      0.08s CPU      0.13s WALL (       1 calls)
+     v_xc         :      0.15s CPU      0.23s WALL (       2 calls)
+     v_h          :      0.00s CPU      0.01s WALL (       1 calls)
+     davcio       :      0.00s CPU      0.01s WALL (       2 calls)
+     cg_setup     :      0.23s CPU      0.41s WALL (       1 calls)
+     setup_dgc    :      0.18s CPU      0.31s WALL (       1 calls)
+     init_us_2    :      0.00s CPU      0.01s WALL (       1 calls)
+     dvpsi_e      :      4.70s CPU      5.86s WALL (       3 calls)
+     calbec       :      0.73s CPU      1.21s WALL (     960 calls)
+     cgsolve      :     31.08s CPU     43.07s WALL (       9 calls)
+     h_h          :      4.42s CPU      5.34s WALL (     144 calls)
+     vloc_psi     :     11.95s CPU     14.12s WALL (     465 calls)
+                                        0.00s GPU  (     465 calls)
+     fftw         :     17.65s CPU     19.31s WALL (   12495 calls)
+     add_vuspsi   :      0.47s CPU      0.69s WALL (     429 calls)
+     solve_e      :     12.94s CPU     17.69s WALL (       1 calls)
+     a_h          :     25.96s CPU     35.98s WALL (     285 calls)
+     dgradcorr    :      5.69s CPU     10.75s WALL (     285 calls)
+     dielec       :      0.23s CPU      0.34s WALL (       1 calls)
+     dvpsi_kb     :      1.24s CPU      1.48s WALL (      36 calls)
+     solve_ph     :     14.73s CPU     21.18s WALL (       1 calls)
+     dynmat_init  :      0.21s CPU      0.27s WALL (       1 calls)
+     rhod2vkb     :      0.05s CPU      0.05s WALL (       1 calls)
+     drhodv       :      0.92s CPU      1.11s WALL (       3 calls)
+     rdiaghg      :      0.00s CPU      0.00s WALL (       1 calls)

@@ -1,0 +1,359 @@
+.
+ |-- map.txt
+ |-- T150
+ |--  |-- QE_database
+ |--  |--  |-- relax
+ |--  |--  |--  |-- MoS2.relax.out
+ |--  |--  |--  |-- bash.sh
+ |--  |--  |--  |-- tmp
+ |--  |--  |--  |--  |-- MoS2.save.tar.zst
+ |--  |--  |--  |-- relaxed_coords.txt
+ |--  |--  |-- scf_gamma
+ |--  |--  |--  |-- MoS2.scf_relaxed.in
+ |--  |--  |--  |-- MoS2.scf_relaxed.out
+ |--  |--  |--  |-- MoS2.ph_gamma.in
+ |--  |--  |--  |-- MoS2.dyn
+ |--  |--  |--  |-- tmp
+ |--  |--  |--  |--  |-- MoS2.save.tar.zst
+ |--  |--  |--  |-- MoS2.ph_gamma.out
+ |--  |--  |-- phonon_calculation_script.sh
+ |--  |--  |-- scf
+ |--  |--  |--  |-- MoS2.scf_relaxed.in
+ |--  |--  |--  |-- MoS2.scf.out
+ |--  |--  |--  |-- tmp
+ |--  |--  |--  |--  |-- MoS2.save.tar.zst
+ |--  |--  |-- ph_yambo
+ |--  |--  |--  |-- MoS2.dyn4.xml
+ |--  |--  |--  |-- matdyn.out
+ |--  |--  |--  |-- MoS2.dyn3.xml
+ |--  |--  |--  |-- MoS2.dyn5.xml
+ |--  |--  |--  |-- input_tmp.in
+ |--  |--  |--  |-- _ph0.tar.zst
+ |--  |--  |--  |-- elph_dir.tar.zst
+ |--  |--  |--  |-- MoS2.ph_yambo_q.in
+ |--  |--  |--  |-- _ph0
+ |--  |--  |--  |--  |-- MoS2.save.tar.zst
+ |--  |--  |--  |-- MoS2.save
+ |--  |--  |--  |--  |-- r_gkkp_gkkp_dg
+ |--  |--  |--  |--  |-- r_bzgrids_Q_grid
+ |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |-- r_ypp
+ |--  |--  |--  |--  |-- r_setup_01
+ |--  |--  |--  |--  |-- ypp_find_q.out
+ |--  |--  |--  |--  |-- r_ypp_02
+ |--  |--  |--  |--  |-- r_setup
+ |--  |--  |--  |--  |-- r_gkkp_gkkp_dg_01
+ |--  |--  |--  |--  |-- ypp_dg.out
+ |--  |--  |--  |--  |-- r_ypp_01
+ |--  |--  |--  |--  |-- r_ypp_03
+ |--  |--  |--  |--  |-- r_gkkp_gkkp_db_02
+ |--  |--  |--  |--  |-- ypp_ph_import.out
+ |--  |--  |--  |--  |-- r_gkkp_gkkp_db
+ |--  |--  |--  |--  |-- r_gkkp_gkkp_db_01
+ |--  |--  |--  |-- MoS2.ph_yambo_q.out
+ |--  |--  |--  |-- MoS2.dyn0
+ |--  |--  |--  |-- MoS2.dyn2.xml
+ |--  |--  |--  |-- MoS2.save.tar.zst
+ |--  |--  |--  |-- MoS2.dyn7.xml
+ |--  |--  |--  |-- q2r.out
+ |--  |--  |--  |-- MoS2.dyn6.xml
+ |--  |--  |--  |-- MoS2.dyn1.xml
+ |--  |--  |-- ph_dvscf
+ |--  |--  |--  |-- MoS2.ph_dvscf_q.out
+ |--  |--  |--  |-- MoS2.dyn4.xml
+ |--  |--  |--  |-- MoS2.dyn3.xml
+ |--  |--  |--  |-- MoS2.dyn5.xml
+ |--  |--  |--  |-- MoS2.ph_dvscf_q.in
+ |--  |--  |--  |-- input_tmp.in
+ |--  |--  |--  |-- _ph0.tar.zst
+ |--  |--  |--  |-- _ph0
+ |--  |--  |--  |--  |-- MoS2.save.tar.zst
+ |--  |--  |--  |-- MoS2.dyn2.xml
+ |--  |--  |--  |-- MoS2.dyn7.xml
+ |--  |--  |--  |-- MoS2.dyn6.xml
+ |--  |--  |--  |-- MoS2.dyn1.xml
+ |--  |--  |-- ph_dvscf_old
+ |--  |--  |--  |-- MoS2.dyn4
+ |--  |--  |--  |-- MoS2.dyn1
+ |--  |--  |--  |-- MoS2.dyn3
+ |--  |--  |--  |-- MoS2.ph_dvscf_q.out
+ |--  |--  |--  |-- MoS2.dyn5
+ |--  |--  |--  |-- MoS2_forced.dyn1
+ |--  |--  |--  |-- MoS2.ph_dvscf_q.in
+ |--  |--  |--  |-- input_tmp.in
+ |--  |--  |--  |-- dynmat.out
+ |--  |--  |--  |-- _ph0.tar.zst
+ |--  |--  |--  |-- MoS2.dyn2
+ |--  |--  |--  |-- _ph0
+ |--  |--  |--  |--  |-- MoS2.save.tar.zst
+ |--  |--  |--  |-- MoS2.dyn6
+ |--  |--  |--  |-- MoS2.dyn7
+ |--  |--  |-- Inputs
+ |--  |--  |--  |-- MoS2.ph_dvscf.in
+ |--  |--  |--  |-- MoS2.relax.in
+ |--  |--  |--  |-- MoS2.ph_yambo.in
+ |--  |--  |--  |-- ypp_dg.in
+ |--  |--  |--  |-- ypp_ph_import.in
+ |--  |--  |--  |-- ypp_find_q.in
+ |--  |--  |--  |-- MoS2.scf.in
+ |--  |--  |--  |-- matdyn.in
+ |--  |--  |--  |-- dynmat.in
+ |--  |--  |--  |-- q2r.in
+ |--  |--  |--  |-- MoS2.nscf.in
+ |--  |--  |-- nscf
+ |--  |--  |--  |-- MoS2.nscf_relaxed.in
+ |--  |--  |--  |-- tmp
+ |--  |--  |--  |--  |-- MoS2.save
+ |--  |--  |--  |--  |--  |-- r_gkkp_gkkp_dg
+ |--  |--  |--  |--  |--  |-- r_bzgrids_Q_grid
+ |--  |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |--  |-- r_ypp
+ |--  |--  |--  |--  |--  |-- r_setup_01
+ |--  |--  |--  |--  |--  |-- ypp_find_q.out
+ |--  |--  |--  |--  |--  |-- r_ypp_02
+ |--  |--  |--  |--  |--  |-- r_setup
+ |--  |--  |--  |--  |--  |-- ypp_dg.out
+ |--  |--  |--  |--  |--  |-- r_ypp_01
+ |--  |--  |--  |--  |--  |-- r_ypp_03
+ |--  |--  |--  |--  |--  |-- ypp_ph_import.out
+ |--  |--  |--  |--  |--  |-- r_gkkp_gkkp_db
+ |--  |--  |--  |--  |--  |-- r_gkkp_gkkp_db_01
+ |--  |--  |--  |--  |-- MoS2.save.tar.zst
+ |--  |--  |--  |-- MoS2.nscf.out
+ |--  |--  |--  |-- Q-points_IBZ.txt
+ |--  |-- QP_elph
+ |--  |--  |-- T150
+ |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |-- o.qp
+ |--  |--  |--  |-- r_gw0_dyson_el_ph_corr
+ |--  |--  |-- yambo.in
+ |--  |--  |-- T300
+ |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |-- o.qp
+ |--  |--  |--  |-- r_gw0_dyson_el_ph_corr
+ |--  |--  |-- DG
+ |--  |--  |--  |-- T150
+ |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |-- ypp.in
+ |--  |--  |--  |--  |-- r_fixsyms
+ |--  |--  |--  |--  |-- FixSymm
+ |--  |--  |--  |--  |-- o.qp
+ |--  |--  |--  |--  |-- r_gw0_dyson_el_ph_corr
+ |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |-- T300
+ |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |-- r_ypp
+ |--  |--  |--  |--  |-- ypp.in
+ |--  |--  |--  |--  |-- r_fixsyms
+ |--  |--  |--  |--  |-- FixSymm
+ |--  |--  |--  |--  |-- o.qp
+ |--  |--  |--  |--  |-- r_gw0_dyson_el_ph_corr
+ |--  |--  |--  |-- T0
+ |--  |--  |--  |--  |-- yambo_nl.in
+ |--  |--  |--  |--  |-- linear_optics
+ |--  |--  |--  |--  |--  |-- o.eps_q1_ip
+ |--  |--  |--  |--  |--  |-- o.eel_q1_ip
+ |--  |--  |--  |--  |--  |-- o.SAVE.fit
+ |--  |--  |--  |--  |--  |-- o.SAVE.data
+ |--  |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |--  |-- r_optics_dipoles_chi
+ |--  |--  |--  |--  |-- setup.in
+ |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |-- r_fixsyms_01
+ |--  |--  |--  |--  |-- ypp.in
+ |--  |--  |--  |--  |-- r_setup
+ |--  |--  |--  |--  |-- bash.sh
+ |--  |--  |--  |--  |-- r_fixsyms
+ |--  |--  |--  |--  |-- script.sh
+ |--  |--  |--  |--  |-- r_gw0_dyson_el_el_corr
+ |--  |--  |--  |--  |-- FixSymm
+ |--  |--  |--  |--  |-- o.qp
+ |--  |--  |--  |--  |-- r_gw0_dyson_el_ph_corr
+ |--  |--  |--  |-- database
+ |--  |--  |-- T0
+ |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |-- o.qp
+ |--  |--  |--  |-- r_gw0_dyson_el_ph_corr
+ |--  |--  |-- database
+ |-- thermal_exp.txt
+ |-- thermal_expantion.txt
+ |-- STORE_REPORT.txt
+ |-- T300
+ |--  |-- QE_database
+ |--  |--  |-- ph_yambo_force_asr
+ |--  |--  |--  |-- MoS2.dyn4.xml
+ |--  |--  |--  |-- MoS2.dyn3.xml
+ |--  |--  |--  |-- MoS2.dyn5.xml
+ |--  |--  |--  |-- input_tmp.in
+ |--  |--  |--  |-- _ph0.tar.zst
+ |--  |--  |--  |-- elph_dir.tar.zst
+ |--  |--  |--  |-- MoS2.ph_yambo_q.in
+ |--  |--  |--  |-- _ph0
+ |--  |--  |--  |--  |-- MoS2.save.tar.zst
+ |--  |--  |--  |-- MoS2.save
+ |--  |--  |--  |--  |-- r_bzgrids_Q_grid
+ |--  |--  |--  |--  |-- r_setup_03
+ |--  |--  |--  |--  |-- r_bzgrids_Q_grid_02
+ |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |-- r_ypp
+ |--  |--  |--  |--  |-- r_setup_02
+ |--  |--  |--  |--  |-- r_setup_01
+ |--  |--  |--  |--  |-- ypp_find_q.out
+ |--  |--  |--  |--  |-- r_setup
+ |--  |--  |--  |--  |-- r_bzgrids_Q_grid_01
+ |--  |--  |--  |--  |-- ypp_ph_import.out
+ |--  |--  |--  |--  |-- r_gkkp_gkkp_db
+ |--  |--  |--  |--  |-- r_gkkp_gkkp_db_01
+ |--  |--  |--  |-- bash_try.sh
+ |--  |--  |--  |-- MoS2_forced.dyn1.xml
+ |--  |--  |--  |-- MoS2.ph_yambo_q.out
+ |--  |--  |--  |-- MoS2.dyn2.xml
+ |--  |--  |--  |-- MoS2.save.tar.zst
+ |--  |--  |--  |-- MoS2.dyn7.xml
+ |--  |--  |--  |-- MoS2.dyn6.xml
+ |--  |--  |--  |-- MoS2.dyn1.xml
+ |--  |--  |-- relax
+ |--  |--  |--  |-- MoS2.relax.out
+ |--  |--  |--  |-- tmp
+ |--  |--  |--  |--  |-- MoS2.save.tar.zst
+ |--  |--  |--  |-- relaxed_coords.txt
+ |--  |--  |-- phonon_calculation_script.sh
+ |--  |--  |-- scf
+ |--  |--  |--  |-- MoS2.scf_relaxed.in
+ |--  |--  |--  |-- MoS2.scf.out
+ |--  |--  |--  |-- tmp
+ |--  |--  |--  |--  |-- MoS2.save.tar.zst
+ |--  |--  |-- ph_yambo
+ |--  |--  |--  |-- MoS2.dyn4.xml
+ |--  |--  |--  |-- matdyn.out
+ |--  |--  |--  |-- MoS2.dyn3.xml
+ |--  |--  |--  |-- MoS2.dyn5.xml
+ |--  |--  |--  |-- input_tmp.in
+ |--  |--  |--  |-- _ph0.tar.zst
+ |--  |--  |--  |-- elph_dir.tar.zst
+ |--  |--  |--  |-- MoS2.ph_yambo_q.in
+ |--  |--  |--  |-- _ph0
+ |--  |--  |--  |--  |-- MoS2.save.tar.zst
+ |--  |--  |--  |-- MoS2.save
+ |--  |--  |--  |--  |-- r_gkkp_gkkp_dg
+ |--  |--  |--  |--  |-- r_bzgrids_Q_grid
+ |--  |--  |--  |--  |-- r_setup_03
+ |--  |--  |--  |--  |-- r_bzgrids_Q_grid_02
+ |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |-- r_ypp
+ |--  |--  |--  |--  |-- r_setup_02
+ |--  |--  |--  |--  |-- r_setup_01
+ |--  |--  |--  |--  |-- ypp_find_q.out
+ |--  |--  |--  |--  |-- r_setup
+ |--  |--  |--  |--  |-- r_bzgrids_Q_grid_01
+ |--  |--  |--  |--  |-- ypp_dg.out
+ |--  |--  |--  |--  |-- r_gkkp_gkkp_db_02
+ |--  |--  |--  |--  |-- ypp_ph_import.out
+ |--  |--  |--  |--  |-- r_gkkp_gkkp_db
+ |--  |--  |--  |--  |-- r_gkkp_gkkp_db_01
+ |--  |--  |--  |-- MoS2.ph_yambo_q.out
+ |--  |--  |--  |-- MoS2.dyn0
+ |--  |--  |--  |-- MoS2.dyn2.xml
+ |--  |--  |--  |-- MoS2.save.tar.zst
+ |--  |--  |--  |-- MoS2.dyn7.xml
+ |--  |--  |--  |-- q2r.out
+ |--  |--  |--  |-- MoS2.dyn6.xml
+ |--  |--  |--  |-- MoS2.dyn1.xml
+ |--  |--  |-- ph_dvscf
+ |--  |--  |--  |-- MoS2.ph_dvscf_q.out
+ |--  |--  |--  |-- MoS2.dyn4.xml
+ |--  |--  |--  |-- MoS2.dyn3.xml
+ |--  |--  |--  |-- MoS2.dyn5.xml
+ |--  |--  |--  |-- MoS2.ph_dvscf_q.in
+ |--  |--  |--  |-- input_tmp.in
+ |--  |--  |--  |-- _ph0.tar.zst
+ |--  |--  |--  |-- _ph0
+ |--  |--  |--  |--  |-- MoS2.save.tar.zst
+ |--  |--  |--  |-- MoS2.dyn2.xml
+ |--  |--  |--  |-- MoS2.dyn7.xml
+ |--  |--  |--  |-- MoS2.dyn6.xml
+ |--  |--  |--  |-- MoS2.dyn1.xml
+ |--  |--  |-- Inputs
+ |--  |--  |--  |-- MoS2.ph_dvscf.in
+ |--  |--  |--  |-- MoS2.relax.in
+ |--  |--  |--  |-- MoS2.ph_yambo.in
+ |--  |--  |--  |-- ypp_dg.in
+ |--  |--  |--  |-- ypp_ph_import.in
+ |--  |--  |--  |-- ypp_find_q.in
+ |--  |--  |--  |-- MoS2.scf.in
+ |--  |--  |--  |-- matdyn.in
+ |--  |--  |--  |-- dynmat.in
+ |--  |--  |--  |-- q2r.in
+ |--  |--  |--  |-- MoS2.nscf.in
+ |--  |--  |-- nscf
+ |--  |--  |--  |-- MoS2.nscf_relaxed.in
+ |--  |--  |--  |-- tmp
+ |--  |--  |--  |--  |-- MoS2.save
+ |--  |--  |--  |--  |--  |-- r_bzgrids_Q_grid
+ |--  |--  |--  |--  |--  |-- r_setup_03
+ |--  |--  |--  |--  |--  |-- r_bzgrids_Q_grid_02
+ |--  |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |--  |-- r_ypp
+ |--  |--  |--  |--  |--  |-- r_setup_02
+ |--  |--  |--  |--  |--  |-- r_setup_01
+ |--  |--  |--  |--  |--  |-- ypp_find_q.out
+ |--  |--  |--  |--  |--  |-- r_setup
+ |--  |--  |--  |--  |--  |-- r_bzgrids_Q_grid_01
+ |--  |--  |--  |--  |--  |-- ypp_ph_import.out
+ |--  |--  |--  |--  |--  |-- r_gkkp_gkkp_db
+ |--  |--  |--  |--  |--  |-- r_gkkp_gkkp_db_01
+ |--  |--  |--  |--  |-- MoS2.save.tar.zst
+ |--  |--  |--  |-- MoS2.nscf.out
+ |--  |--  |--  |-- Q-points_IBZ.txt
+ |--  |--  |-- Q-points_IBZ.txt
+ |--  |-- QP_elph
+ |--  |--  |-- T150
+ |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |-- o.qp
+ |--  |--  |--  |-- r_gw0_dyson_el_ph_corr
+ |--  |--  |-- r_setup
+ |--  |--  |-- T300
+ |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |-- o.qp
+ |--  |--  |--  |-- r_gw0_dyson_el_ph_corr
+ |--  |--  |-- DG
+ |--  |--  |--  |-- T150
+ |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |-- ypp.in
+ |--  |--  |--  |--  |-- r_fixsyms
+ |--  |--  |--  |--  |-- FixSymm
+ |--  |--  |--  |--  |-- o.qp
+ |--  |--  |--  |--  |-- r_gw0_dyson_el_ph_corr
+ |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |-- T300
+ |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |-- ypp.in
+ |--  |--  |--  |--  |-- r_fixsyms
+ |--  |--  |--  |--  |-- FixSymm
+ |--  |--  |--  |--  |-- o.qp
+ |--  |--  |--  |--  |-- r_gw0_dyson_el_ph_corr
+ |--  |--  |--  |-- T0
+ |--  |--  |--  |--  |-- linear_optics
+ |--  |--  |--  |--  |--  |-- o.eps_q1_ip
+ |--  |--  |--  |--  |--  |-- o.eel_q1_ip
+ |--  |--  |--  |--  |--  |-- o.SAVE.fit
+ |--  |--  |--  |--  |--  |-- o.SAVE.data
+ |--  |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |--  |-- r_optics_dipoles_chi
+ |--  |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |--  |-- r_ypp
+ |--  |--  |--  |--  |-- ypp.in
+ |--  |--  |--  |--  |-- r_fixsyms
+ |--  |--  |--  |--  |-- FixSymm
+ |--  |--  |--  |--  |-- o.qp
+ |--  |--  |--  |--  |-- r_gw0_dyson_el_ph_corr
+ |--  |--  |--  |-- database
+ |--  |--  |-- T0
+ |--  |--  |--  |-- yambo.in
+ |--  |--  |--  |-- r_setup_01
+ |--  |--  |--  |-- r_setup
+ |--  |--  |--  |-- o.qp
+ |--  |--  |--  |-- r_gw0_dyson_el_ph_corr
+ |--  |--  |-- database
+ |--  |--  |--  |-- r_setup_01
+ |--  |--  |--  |-- r_setup
