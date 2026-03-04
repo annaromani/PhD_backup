@@ -260,14 +260,8 @@ check_done "$PREFIX.ph_yambo_q.out" "PH_YAMBO"
  --- Optional Plotting Logic ---
 if [ "$PLOT_PH" = true ]; then
     echo "--> Plotting Gamma frequencies..."
-    cat > stability_check.in << EOF
-&input
-  fildyn = '$PREFIX.dyn1',
-  asr = '2d',
-/
-EOF
-    $DYNMAT_EXE < stability_check.in > stability.out
-    grep "freq" stability.out | awk '{print $7}' > freq_list.txt
+    $DYNMAT_EXE < ../$INPUT_DIR/matdyn.in > matdyn.out
+    grep "freq" matdyn.out | awk '{print $7}' > freq_list.txt
     # [Insert Python snippet from previous response here]
 fi
 
