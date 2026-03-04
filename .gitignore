@@ -10,6 +10,7 @@ database/
 ndb.*
 r_*
 STORE_REPORT.txt
+LOG/
 slurm-*
 # ====================================================================
 # 2. IGNORE LARGE REPORTS (Keep only the newest or specific ones)
