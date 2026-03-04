@@ -11,6 +11,7 @@ ndb.*
 r_*
 STORE_REPORT.txt
 LOG/
+overleaf/
 slurm-*
 # ====================================================================
 # 2. IGNORE LARGE REPORTS (Keep only the newest or specific ones)
