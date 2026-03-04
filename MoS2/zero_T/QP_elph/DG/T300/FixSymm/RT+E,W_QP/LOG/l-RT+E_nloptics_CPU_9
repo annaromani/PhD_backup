@@ -1,0 +1,167 @@
+
+
+$$\
+$$ |
+$$ |     $$\   $$\ $$$$$$\$$$$\   $$$$$$\  $$$$$$$\
+$$ |     $$ |  $$ |$$  _$$  _$$\ $$  __$$\ $$  __$$\
+$$ |     $$ |  $$ |$$ / $$ / $$ |$$$$$$$$ |$$ |  $$ |
+$$ |     $$ |  $$ |$$ | $$ | $$ |$$   ____|$$ |  $$ |
+$$$$$$$$\\$$$$$$  |$$ | $$ | $$ |\$$$$$$$\ $$ |  $$ |
+\________|\______/ \__| \__| \__| \_______|\__|  \__|
+
+ <---> P9: [01] MPI/OPENMP structure, Files & I/O Directories
+ <---> P9: MPI Cores-Threads   : 10(CPU)-12(threads)
+ <---> P9: MPI Cores-Threads   : NL(environment)-10 1(CPUs)-w k(ROLEs)
+ <---> P9: [02] CORE Variables Setup
+ <---> P9: [02.01] Unit cells
+ <02s> P9: [02.02] Symmetries
+ <02s> P9: [02.03] Reciprocal space
+ <02s> P9: [02.04] K-grid lattice
+ <02s> P9: Grid dimensions      :   6   6
+ <03s> P9: [02.05] Energies & Occupations
+ <03s> P9: [03] Transferred momenta grid and indexing
+ <03s> P9: [04] Dipoles
+ <03s> P9: [04.01] Setup: observables and procedures
+ <03s> P9: [PARALLEL DIPOLES for K(ibz) on 1 CPU] Loaded/Total (Percentual):36/36(100%)
+ <03s> P9: [PARALLEL DIPOLES for CON bands on 5 CPU] Loaded/Total (Percentual):4/20(20%)
+ <03s> P9: [PARALLEL DIPOLES for VAL bands on 2 CPU] Loaded/Total (Percentual):10/20(50%)
+ <03s> P9: Number of k-point in each direction:    6   6   1
+ <03s> P9: [PARALLEL DIPOLES for CON bands (OVLP) on 5 CPU] Loaded/Total (Percentual):4/20(20%)
+ <03s> P9: [PARALLEL DIPOLES for VAL bands (OVLP) on 2 CPU] Loaded/Total (Percentual):10/20(50%)
+ <04s> P9: [DIP] Database not correct or missing. To be computed
+ <05s> P9: [OVLPs] Overlaps not correct or missing. To be computed
+ <14m-02s> P9: [PARALLEL distribution for Wave-Function states] Loaded/Total(Percentual):720/720(100%)
+ <14m-06s> P9: Overlaps |                                        | [000%] --(E) --(X)
+ <14m-11s> P9: Overlaps |###########                             | [027%] 05s(E) 18s(X)
+ <14m-17s> P9: Overlaps |##########################              | [066%] 10s(E) 15s(X)
+ <14m-20s> P9: Overlaps |########################################| [100%] 14s(E) 14s(X)
+ <14m-20s> P9: [WARNING] Covariant Dipoles not in 3d. Assuming non periodic system.
+ <14m-20s> P9: Using forth order approximation for covariant dipoles
+ <14m-20s> P9: S R [covariant] |                                        | [000%] --(E) --(X)
+ <14m-20s> P9: S R [covariant] |########################################| [100%] --(E) --(X)
+ <14m-21s> P9: [PARALLEL distribution for Wave-Function states] Loaded/Total(Percentual):20/20(100%)
+ <14m-21s> P9: [FFT-Oscillators/R space/Real Space] Mesh size:   20   20  123
+ <14m-21s> P9:  R_z [x-space] |                                        | [000%] --(E) --(X)
+ <14m-27s> P9:  R_z [x-space] |###########                             | [027%] 06s(E) 22s(X)
+ <14m-33s> P9:  R_z [x-space] |################                        | [041%] 11s(E) 27s(X)
+ <14m-38s> P9:  R_z [x-space] |###########################             | [069%] 16s(E) 24s(X)
+ <14m-42s> P9:  R_z [x-space] |########################################| [100%] 21s(E) 21s(X)
+ <14m-42s> P9: [x,Vnl] computed using 54 projectors
+ <14m-42s> P9: [WARNING] [x,Vnl] slows the Dipoles computation. To neglect it rename the ns.kb_pp file
+ <14m-42s> P9: P V [g-space] |                                        | [000%] --(E) --(X)
+ <14m-42s> P9: [PARALLEL distribution for Wave-Function states] Loaded/Total(Percentual):20/20(100%)
+ <14m-47s> P9: P V [g-space] |#                                       | [003%] 05s(E) 02m-36s(X)
+ <14m-52s> P9: P V [g-space] |###                                     | [009%] 10s(E) 01m-44s(X)
+ <14m-57s> P9: P V [g-space] |#####                                   | [014%] 15s(E) 01m-45s(X)
+ <15m-04s> P9: P V [g-space] |########                                | [022%] 21s(E) 01m-34s(X)
+ <15m-10s> P9: P V [g-space] |############                            | [030%] 27s(E) 01m-30s(X)
+ <15m-15s> P9: P V [g-space] |##############                          | [036%] 32s(E) 01m-30s(X)
+ <15m-20s> P9: P V [g-space] |##################                      | [046%] 37s(E) 01m-21s(X)
+ <15m-27s> P9: P V [g-space] |####################                    | [050%] 44s(E) 01m-27s(X)
+ <15m-33s> P9: P V [g-space] |########################                | [061%] 50s(E) 01m-21s(X)
+ <15m-39s> P9: P V [g-space] |###########################             | [069%] 56s(E) 01m-21s(X)
+ <15m-44s> P9: P V [g-space] |###############################         | [077%] 01m-01s(E) 01m-18s(X)
+ <15m-49s> P9: P V [g-space] |##################################      | [086%] 01m-06s(E) 01m-17s(X)
+ <15m-55s> P9: P V [g-space] |####################################    | [091%] 01m-12s(E) 01m-18s(X)
+ <16m-01s> P9: P V [g-space] |######################################  | [097%] 01m-18s(E) 01m-20s(X)
+ <16m-01s> P9: P V [g-space] |########################################| [100%] 01m-18s(E) 01m-18s(X)
+ <16m-12s> P9: [05] NL Initialization
+ <16m-12s> P9: [05.01] External/Internal QP corrections
+ <16m-12s> P9: W<SAVE/ndb.QP[ E-P Fan + DW * Sphb 1-20]
+ <16m-13s> P9: [W_from_DB-Nearest K] Exact matches       :  100.0000 [o/o]
+ <16m-13s> P9: [WARNING] Wrong QP width sign fixed
+ <16m-13s> P9: [05.01.01] FIT on W < SAVE/ndb.QP
+ <16m-13s> P9: [QP_apply] Action to be applied: W<SAVE/ndb.QP[ E-P Fan + DW * Sphb 1-20]
+ <16m-13s> P9: [NL] Number of active fields : 1
+ <16m-13s> P9: [NL] Non-linear optics configuration
+ <16m-13s> P9: [NL] Loop on frequencies/angles of the first field
+ <16m-13s> P9: [WARNING] Variables Field1_Freq and Field1_NFreqs ignored
+ <16m-13s> P9: Radiative life-time sets equal to the phase lifetime: 6.582119 fs
+ <16m-13s> P9: Dephasing Time              :  39.49271 [fs]
+ <16m-13s> P9: Sampling  Time              :  4.185667 [fs]
+ <16m-13s> P9: Total simulation time       :  43.67838 [fs]
+ <16m-13s> P9: Simulation time step        :  0.010000 [fs]
+ <16m-13s> P9: Correlation in the reponse functions: IPA
+ <16m-13s> P9: [05.01] Messaging
+ <16m-13s> P9: Frequencies steps          :  10
+ <16m-13s> P9: Number of angles           : 0
+ <16m-14s> P9: [PARALLEL Non_Linear for Freqs on 10 CPU] Loaded/Total (Percentual):1/10(10%)
+ <16m-14s> P9: [PARALLEL Non_Linear for H(ibz) on 1 CPU] Loaded/Total (Percentual):36/36(100%)
+ <16m-14s> P9: [PARALLEL Non_Linear for QPs] Loaded/Total(Percentual):7560/7560(100%)
+ <16m-14s> P9: [06] NL Start and Restart
+ <16m-14s> P9: [NL] Frequencies |                                        | [000%] --(E) --(X)
+ <16m-58s> P9: [NL] Frequencies |#                                       | [002%] 43s(E) 28m-45s(X)
+ <17m-29s> P9: [NL] Frequencies |##                                      | [005%] 01m-14s(E) 24m-51s(X)
+ <18m-04s> P9: [NL] Frequencies |###                                     | [007%] 01m-49s(E) 24m-19s(X)
+ <18m-26s> P9: [NL] Frequencies |####                                    | [010%] 02m-11s(E) 21m-52s(X)
+ <28m-47s> P9: [NL] Frequencies |#####                                   | [012%] 12m-32s(E) 01h-40m(X)
+ <29m-13s> P9: [NL] Frequencies |######                                  | [015%] 12m-58s(E) 01h-26m(X)
+ <29m-28s> P9: [NL] Frequencies |#######                                 | [017%] 13m-13s(E) 01h-15m(X)
+ <29m-47s> P9: [NL] Frequencies |########                                | [020%] 13m-32s(E) 01h-07m(X)
+ <30m-18s> P9: [NL] Frequencies |#########                               | [022%] 14m-03s(E) 01h-02m(X)
+ <30m-39s> P9: [NL] Frequencies |##########                              | [025%] 14m-24s(E) 57m-37s(X)
+ <31m-05s> P9: [NL] Frequencies |###########                             | [027%] 14m-50s(E) 53m-56s(X)
+ <31m-31s> P9: [NL] Frequencies |############                            | [030%] 15m-16s(E) 50m-53s(X)
+ <31m-54s> P9: [NL] Frequencies |#############                           | [032%] 15m-39s(E) 48m-08s(X)
+ <32m-32s> P9: [NL] Frequencies |##############                          | [035%] 16m-17s(E) 46m-32s(X)
+ <33m-08s> P9: [NL] Frequencies |###############                         | [037%] 16m-53s(E) 45m-03s(X)
+ <33m-42s> P9: [NL] Frequencies |################                        | [040%] 17m-27s(E) 43m-38s(X)
+ <34m-09s> P9: [NL] Frequencies |#################                       | [042%] 17m-54s(E) 42m-08s(X)
+ <34m-39s> P9: [NL] Frequencies |##################                      | [045%] 18m-24s(E) 40m-54s(X)
+ <35m-04s> P9: [NL] Frequencies |###################                     | [047%] 18m-49s(E) 39m-37s(X)
+ <35m-34s> P9: [NL] Frequencies |####################                    | [050%] 19m-19s(E) 38m-39s(X)
+ <35m-54s> P9: [NL] Frequencies |#####################                   | [052%] 19m-39s(E) 37m-26s(X)
+ <36m-20s> P9: [NL] Frequencies |######################                  | [055%] 20m-05s(E) 36m-31s(X)
+ <36m-56s> P9: [NL] Frequencies |#######################                 | [057%] 20m-41s(E) 35m-58s(X)
+ <37m-23s> P9: [NL] Frequencies |########################                | [060%] 21m-08s(E) 35m-14s(X)
+ <37m-57s> P9: [NL] Frequencies |#########################               | [062%] 21m-42s(E) 34m-44s(X)
+ <38m-25s> P9: [NL] Frequencies |##########################              | [065%] 22m-10s(E) 34m-05s(X)
+ <38m-55s> P9: [NL] Frequencies |###########################             | [067%] 22m-40s(E) 33m-34s(X)
+ <39m-24s> P9: [NL] Frequencies |############################            | [070%] 23m-09s(E) 33m-05s(X)
+ <39m-58s> P9: [NL] Frequencies |#############################           | [072%] 23m-43s(E) 32m-43s(X)
+ <40m-29s> P9: [NL] Frequencies |##############################          | [075%] 24m-14s(E) 32m-19s(X)
+ <40m-56s> P9: [NL] Frequencies |###############################         | [077%] 24m-41s(E) 31m-51s(X)
+ <41m-30s> P9: [NL] Frequencies |################################        | [080%] 25m-15s(E) 31m-33s(X)
+ <41m-57s> P9: [NL] Frequencies |#################################       | [082%] 25m-42s(E) 31m-09s(X)
+ <42m-30s> P9: [NL] Frequencies |##################################      | [085%] 26m-15s(E) 30m-54s(X)
+ <43m-02s> P9: [NL] Frequencies |###################################     | [087%] 26m-47s(E) 30m-37s(X)
+ <43m-33s> P9: [NL] Frequencies |####################################    | [090%] 27m-18s(E) 30m-20s(X)
+ <43m-54s> P9: [NL] Frequencies |#####################################   | [092%] 27m-39s(E) 29m-53s(X)
+ <44m-24s> P9: [NL] Frequencies |######################################  | [095%] 28m-09s(E) 29m-38s(X)
+ <44m-54s> P9: [NL] Frequencies |####################################### | [097%] 28m-40s(E) 29m-24s(X)
+ <45m-18s> P9: [NL] Frequencies |########################################| [100%] 29m-03s(E) 29m-03s(X)
+ <45m-18s> P9: [07] Timing Overview
+ <45m-22s> P9: [TIMING]            io_ATMPROJ_pwscf :      0.0000s CPU
+ <45m-22s> P9: [TIMING]                io_KB_abinit :      0.0001s CPU
+ <45m-22s> P9: [TIMING]                  io_COL_CUT :      0.0001s CPU
+ <45m-22s> P9: [TIMING]            io_RT_components :      0.0002s CPU (   2 calls,   0.097 msec avg)
+ <45m-22s> P9: [TIMING]                       io_HF :      0.0002s CPU
+ <45m-22s> P9: [TIMING]               io_COLLISIONS :      0.0003s CPU (   3 calls,   0.091 msec avg)
+ <45m-22s> P9: [TIMING]              io_Double_Grid :      0.0003s CPU (   2 calls,   0.173 msec avg)
+ <45m-22s> P9: [TIMING]                        io_X :      0.0005s CPU (   5 calls,   0.095 msec avg)
+ <45m-22s> P9: [TIMING]                PP_uspp_init :      0.0254s CPU (  73 calls,   0.347 msec avg)
+ <45m-22s> P9: [TIMING]                    io_QINDX :      0.0301s CPU (   2 calls,  15.029 msec avg)
+ <45m-22s> P9: [TIMING]     IO_and_Messaging_switch :      0.0301s CPU ( 149 calls,   0.202 msec avg)
+ <45m-22s> P9: [TIMING]                       io_NL :      0.0497s CPU
+ <45m-22s> P9: [TIMING]                io_QP_and_GF :      0.0882s CPU (   2 calls,  44.081 msec avg)
+ <45m-22s> P9: [TIMING]                     io_GROT :      0.0895s CPU (   3 calls,  29.846 msec avg)
+ <45m-22s> P9: [TIMING]                 io_Overlaps :      0.0966s CPU (  79 calls,   1.223 msec avg)
+ <45m-22s> P9: [TIMING]            DIPOLE_covariant :      0.1015s CPU
+ <45m-22s> P9: [TIMING]                  io_DIPOLES :      0.1111s CPU (  80 calls,   1.388 msec avg)
+ <45m-22s> P9: [TIMING]                 io_KB_pwscf :      0.7295s CPU (  38 calls,  19.197 msec avg)
+ <45m-22s> P9: [TIMING]              eval_G_minus_G :      1.0777s CPU (   2 calls,   0.539 sec avg)
+ <45m-22s> P9: [TIMING]                 io_fragment :      2.9176s CPU ( 145 calls,   0.020 sec avg)
+ <45m-22s> P9: [TIMING]                       io_WF :      4.7019s CPU ( 255 calls,   0.018 sec avg)
+ <45m-22s> P9: [TIMING]                   FFT_setup :      5.2730s CPU (  37 calls,   0.143 sec avg)
+ <45m-22s> P9: [TIMING]                 WF_load_FFT :     18.4727s CPU (  73 calls,   0.253 sec avg)
+ <45m-22s> P9: [TIMING]              DIPOLE_x_space :     21.8689s CPU
+ <45m-22s> P9: [TIMING]                 NL build_dG :     45.8194s CPU (4368 calls,   0.010 sec avg)
+ <45m-22s> P9: [TIMING]         DIPOLE_g_space_proj :     61.5624s CPU (  36 calls,   1.710 sec avg)
+ <45m-22s> P9: [TIMING]              DIPOLE_g_space :     79.0967s CPU
+ <45m-22s> P9: [TIMING]            NL Berry Pol NEQ :    221.4236s CPU (4369 calls,   0.051 sec avg)
+ <45m-22s> P9: [TIMING]               NL Integrator :    447.2582s CPU (4368 calls,   0.102 sec avg)
+ <45m-22s> P9: [TIMING]              NL Hamiltonian :    464.4613s CPU (8736 calls,   0.053 sec avg)
+ <45m-22s> P9: [TIMING]             DIPOLE_overlaps :      12m-53s CPU
+ <45m-22s> P9: [TIMING]                     Dipoles :      16m-08s CPU
+ <45m-23s> P9: [08] Game Over & Game summary
+ <45m-23s> P9: [TIMING]            [Time-Profile]: 45m-23s

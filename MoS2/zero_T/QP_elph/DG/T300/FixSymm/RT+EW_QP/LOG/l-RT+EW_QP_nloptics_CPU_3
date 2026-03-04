@@ -1,0 +1,83 @@
+
+
+$$\
+$$ |
+$$ |     $$\   $$\ $$$$$$\$$$$\   $$$$$$\  $$$$$$$\
+$$ |     $$ |  $$ |$$  _$$  _$$\ $$  __$$\ $$  __$$\
+$$ |     $$ |  $$ |$$ / $$ / $$ |$$$$$$$$ |$$ |  $$ |
+$$ |     $$ |  $$ |$$ | $$ | $$ |$$   ____|$$ |  $$ |
+$$$$$$$$\\$$$$$$  |$$ | $$ | $$ |\$$$$$$$\ $$ |  $$ |
+\________|\______/ \__| \__| \__| \_______|\__|  \__|
+
+ <---> P3: [01] MPI/OPENMP structure, Files & I/O Directories
+ <---> P3: MPI Cores-Threads   : 6(CPU)-12(threads)
+ <---> P3: MPI Cores-Threads   : NL(environment)-6 1(CPUs)-w k(ROLEs)
+ <---> P3: [02] CORE Variables Setup
+ <---> P3: [02.01] Unit cells
+ <---> P3: [02.02] Symmetries
+ <---> P3: [02.03] Reciprocal space
+ <---> P3: [02.04] K-grid lattice
+ <---> P3: Grid dimensions      :   6   6
+ <---> P3: [02.05] Energies & Occupations
+ <---> P3: [03] Transferred momenta grid and indexing
+ <---> P3: [04] Dipoles
+ <---> P3: [04.01] Setup: observables and procedures
+ <---> P3: [PARALLEL DIPOLES for K(ibz) on 1 CPU] Loaded/Total (Percentual):36/36(100%)
+ <---> P3: [PARALLEL DIPOLES for CON bands on 3 CPU] Loaded/Total (Percentual):7/20(35%)
+ <---> P3: [PARALLEL DIPOLES for VAL bands on 2 CPU] Loaded/Total (Percentual):10/20(50%)
+ <---> P3: Number of k-point in each direction:    6   6   1
+ <---> P3: [PARALLEL DIPOLES for CON bands (OVLP) on 3 CPU] Loaded/Total (Percentual):7/20(35%)
+ <---> P3: [PARALLEL DIPOLES for VAL bands (OVLP) on 2 CPU] Loaded/Total (Percentual):10/20(50%)
+ <---> P3: [DIP] Database not correct or missing. To be computed
+ <02s> P3: [OVLPs] Overlaps not correct or missing. To be computed
+ <03s> P3: [PARALLEL distribution for Wave-Function states] Loaded/Total(Percentual):720/720(100%)
+ <05s> P3: Overlaps |                                        | [000%] --(E) --(X)
+ <10s> P3: Overlaps |########################################| [100%] 04s(E) 04s(X)
+ <10s> P3: [WARNING] Covariant Dipoles not in 3d. Assuming non periodic system.
+ <10s> P3: Using forth order approximation for covariant dipoles
+ <10s> P3: S R [covariant] |                                        | [000%] --(E) --(X)
+ <10s> P3: S R [covariant] |########################################| [100%] --(E) --(X)
+ <10s> P3: [PARALLEL distribution for Wave-Function states] Loaded/Total(Percentual):20/20(100%)
+ <10s> P3: [FFT-Oscillators/R space/Real Space] Mesh size:   20   20  123
+ <10s> P3:  R_z [x-space] |                                        | [000%] --(E) --(X)
+ <15s> P3:  R_z [x-space] |######################                  | [055%] 05s(E) 09s(X)
+ <19s> P3:  R_z [x-space] |########################################| [100%] 08s(E) 08s(X)
+ <19s> P3: [x,Vnl] computed using 54 projectors
+ <19s> P3: [WARNING] [x,Vnl] slows the Dipoles computation. To neglect it rename the ns.kb_pp file
+ <19s> P3: P V [g-space] |                                        | [000%] --(E) --(X)
+ <19s> P3: [PARALLEL distribution for Wave-Function states] Loaded/Total(Percentual):20/20(100%)
+ <24s> P3: P V [g-space] |#####                                   | [013%] 05s(E) 36s(X)
+ <30s> P3: P V [g-space] |############                            | [030%] 10s(E) 34s(X)
+ <35s> P3: P V [g-space] |##################                      | [047%] 16s(E) 34s(X)
+ <40s> P3: P V [g-space] |#########################               | [063%] 21s(E) 33s(X)
+ <46s> P3: P V [g-space] |################################        | [080%] 26s(E) 33s(X)
+ <51s> P3: P V [g-space] |########################################| [100%] 31s(E) 31s(X)
+ <51s> P3: [05] NL Initialization
+ <51s> P3: [05.01] External/Internal QP corrections
+ <51s> P3: EW<SAVE/ndb.QP[ E-P Fan + DW * Sphb 1-20]
+ <51s> P3: [WdE_from_DB-Nearest K] Exact matches       :  100.0000 [o/o]
+ <51s> P3: [WARNING] Wrong QP width sign fixed
+ <51s> P3: [05.01.01] FIT on E W < SAVE/ndb.QP
+ <51s> P3: [QP_apply] Action to be applied: EW<SAVE/ndb.QP[ E-P Fan + DW * Sphb 1-20]
+ <51s> P3: [05.02.01]  QP corrections report
+ <51s> P3: [NL] Number of active fields : 1
+ <51s> P3: [NL] Non-linear optics configuration
+ <51s> P3: [NL] Loop on frequencies/angles of the first field
+ <51s> P3: [WARNING] Variables Field1_Freq and Field1_NFreqs ignored
+ <51s> P3: Radiative life-time sets equal to the phase lifetime: 6.582119 fs
+ <51s> P3: Dephasing Time              :  39.49271 [fs]
+ <51s> P3: Sampling  Time              :  4.185667 [fs]
+ <51s> P3: Total simulation time       :  43.67838 [fs]
+ <51s> P3: Simulation time step        :  0.010000 [fs]
+ <51s> P3: Correlation in the reponse functions: IPA
+ <51s> P3: [05.01] Messaging
+ <51s> P3: Frequencies steps          :   50
+ <51s> P3: Number of angles           : 0
+ <51s> P3: [PARALLEL Non_Linear for Freqs on 6 CPU] Loaded/Total (Percentual):8/50(16%)
+ <51s> P3: [PARALLEL Non_Linear for H(ibz) on 1 CPU] Loaded/Total (Percentual):36/36(100%)
+ <51s> P3: [PARALLEL Non_Linear for QPs] Loaded/Total(Percentual):7560/7560(100%)
+ <51s> P3: [06] NL Start and Restart
+ <51s> P3: [NL] Frequencies |                                        | [000%] --(E) --(X)
+ <12m-21s> P3: [NL] Frequencies |#                                       | [002%] 11m-30s(E) 07h-39m(X)
+ <23m-37s> P3: [NL] Frequencies |##                                      | [005%] 22m-45s(E) 07h-35m(X)
+ <35m-02s> P3: [NL] Frequencies |###                                     | [007%] 34m-11s(E) 07h-35m(X)

@@ -1,0 +1,31 @@
+
+
+$$\
+$$ |
+$$ |     $$\   $$\ $$$$$$\$$$$\   $$$$$$\  $$$$$$$\
+$$ |     $$ |  $$ |$$  _$$  _$$\ $$  __$$\ $$  __$$\
+$$ |     $$ |  $$ |$$ / $$ / $$ |$$$$$$$$ |$$ |  $$ |
+$$ |     $$ |  $$ |$$ | $$ | $$ |$$   ____|$$ |  $$ |
+$$$$$$$$\\$$$$$$  |$$ | $$ | $$ |\$$$$$$$\ $$ |  $$ |
+\________|\______/ \__| \__| \__| \_______|\__|  \__|
+
+ <03s> P7: [01] MPI/OPENMP structure, Files & I/O Directories
+ <03s> P7: MPI Cores-Threads   : 10(CPU)-12(threads)
+ <03s> P7: MPI Cores-Threads   : NL(environment)-10 1(CPUs)-w k(ROLEs)
+ <03s> P7: [02] CORE Variables Setup
+ <03s> P7: [02.01] Unit cells
+ <05s> P7: [02.02] Symmetries
+ <05s> P7: [02.03] Reciprocal space
+ <05s> P7: [02.04] K-grid lattice
+ <05s> P7: Grid dimensions      :   6   6
+ <05s> P7: [02.05] Energies & Occupations
+ <05s> P7: [03] Transferred momenta grid and indexing
+ <05s> P7: [04] Dipoles
+ <06s> P7: [04.01] Setup: observables and procedures
+ <06s> P7: [PARALLEL DIPOLES for K(ibz) on 1 CPU] Loaded/Total (Percentual):36/36(100%)
+ <06s> P7: [PARALLEL DIPOLES for CON bands on 5 CPU] Loaded/Total (Percentual):4/20(20%)
+ <06s> P7: [PARALLEL DIPOLES for VAL bands on 2 CPU] Loaded/Total (Percentual):10/20(50%)
+ <06s> P7: Number of k-point in each direction:    6   6   1
+ <06s> P7: [PARALLEL DIPOLES for CON bands (OVLP) on 5 CPU] Loaded/Total (Percentual):4/20(20%)
+ <06s> P7: [PARALLEL DIPOLES for VAL bands (OVLP) on 2 CPU] Loaded/Total (Percentual):10/20(50%)
+ <07s> P7: [DIP] Database not correct or missing. To be computed
