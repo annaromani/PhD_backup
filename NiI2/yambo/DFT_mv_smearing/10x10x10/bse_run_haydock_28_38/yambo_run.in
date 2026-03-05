@@ -4,22 +4,21 @@ bse
 optics
 bss
 dipoles
-setup
 WRbsWF
 photolum
 WRbsWF
 StdoHash = 40.000000 
 Nelectro = 64.000000 
-ElecTemp = 0.000000 eV
-BoseTemp = 0.000000 eV
+ElecTemp = 0.0000 eV
+BoseTemp = 0.0000 eV
 OccTresh = 0.000010 
 NLogCPUs = 0.000000 
-MEM_tresh = 384503.000000 Kb
+MEM_tresh = 307603.000000 Kb
 FFTGvecs = 35 Ry
 DIP_Threads = 0.000000 
-X_and_IO_nCPU_LinAlg_INV = 64 
+X_and_IO_nCPU_LinAlg_INV = 64
 X_Threads = 0.000000 
-BS_nCPU_LinAlg_INV = 128 
+BS_nCPU_LinAlg_INV = 64 
 BS_nCPU_LinAlg_DIAGO = -1.000000 
 K_Threads = 0.000000 
 RandQpts = 0.000000 
@@ -70,10 +69,11 @@ ChiLinAlgMod =  'LIN_SYS'
 BSKmod =      'SEX'
 BSEmod = 'resonant'
 Lkind =      'BAR'
-BSSmod =        'd'
+BSSmod =        'h'
+BSHayTrs = -0.020000 
+BSHayItrIO = 100.000000 
+BSHayItrMAX = 1000.000000 
 Gauge =   'length'
-KfnQPdb =     'none'
-KfnQP_DbGd_INTERP_mode =       'NN'
 BSKIOmode = '2D_standard'
 BSEprop =      'abs'
 BSEdips =     'none'
@@ -137,7 +137,7 @@ DrudeWXs = (0.000000,0.000000) eV
  100.0 | 100.0 |   
 %
 % BEnRange
- 0.05 | 3.0 |  eV 
+ 0.05 | 10.0 |  eV 
 %
 % BDmRange
  0.1 | 0.1 |  eV 
@@ -178,7 +178,3 @@ DrudeWXs = (0.000000,0.000000) eV
 % KfnQP_E
  1.44 | 1.0 | 1.0 |   
 %
-BS_CPU =    '8 4 8'
-BS_ROLEs =   'k eh t'
-X_and_IO_CPU = '8 2 4 4 1'
-X_and_IO_ROLEs = 'q g k c v'

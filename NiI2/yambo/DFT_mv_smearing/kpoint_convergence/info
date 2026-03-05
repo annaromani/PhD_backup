@@ -4,7 +4,7 @@ input parameter
     y['BndsRnXs'] = [1,120]
     y['BSEBands'] = [28,38]
     y['BEnSteps'] = 50
-    y['BEnRange'] = [[0.05,5.0],'eV']
+    y['BEnRange'] = [[0.05,10.0],'eV']
     y['BSENGexx'] = [3,'Ry']
     y['BSENGBlk'] = [3, 'Ry']
 
