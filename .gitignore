@@ -30,5 +30,6 @@ r-*
 !*.py
 !*.pdf
 !*.png
+!*.svg
 !*.jpeg
 !*.sh
