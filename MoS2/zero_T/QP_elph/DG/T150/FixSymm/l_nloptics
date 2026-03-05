@@ -1,0 +1,85 @@
+
+
+ __   __  _______  __   __  _______  _______
+|  | |  ||   _   ||  |_|  ||  _    ||       |
+|  |_|  ||  |_|  ||       || |_|   ||   _   |
+|       ||       ||       ||       ||  | |  |
+|_     _||       ||       ||  _   | |  |_|  |
+  |   |  |   _   || ||_|| || |_|   ||       |
+  |___|  |__| |__||_|   |_||_______||_______|
+
+
+ <---> [01] MPI/OPENMP structure, Files & I/O Directories
+ <---> MPI Cores-Threads   : 1(CPU)-32(threads)-32(threads@DIP)-32(threads@NL)-32(threads@OSCLL)
+ <---> [02] CORE Variables Setup
+ <---> [02.01] Unit cells
+ <---> [02.02] Symmetries
+ <---> [02.03] Reciprocal space
+ <---> [02.04] K-grid lattice
+ <---> Grid dimensions      :   6   6
+ <---> [02.05] Energies & Occupations
+ <---> [03] Transferred momenta grid and indexing
+ <---> [04] Dipoles
+ <---> [04.01] Setup: observables and procedures
+ <---> Number of k-point in each direction:    6   6   1
+ <---> [DIP] Database not correct or missing. To be computed
+ <---> Overlaps |                                        | [000%] --(E) --(X)
+ <07s> Overlaps |###########################             | [069%] 05s(E) 07s(X)
+ <09s> Overlaps |########################################| [100%] 07s(E) 07s(X)
+ <09s> [WARNING] Covariant Dipoles not in 3d. Assuming non periodic system.
+ <09s> Using forth order approximation for covariant dipoles
+ <09s> S R [covariant] |                                        | [000%] --(E) --(X)
+ <09s> S R [covariant] |########################################| [100%] --(E) --(X)
+ <09s> [FFT-Oscillators/R space/Real Space] Mesh size:   20   20  123
+ <09s>  R_z [x-space] |                                        | [000%] --(E) --(X)
+ <14s>  R_z [x-space] |#################                       | [044%] 05s(E) 11s(X)
+ <15s>  R_z [x-space] |########################################| [100%] 05s(E) 05s(X)
+ <15s> [x,Vnl] computed using 54 projectors
+ <15s> [WARNING] [x,Vnl] slows the Dipoles computation. To neglect it rename the ns.kb_pp file
+ <15s> P V [g-space] |                                        | [000%] --(E) --(X)
+ <20s> P V [g-space] |##############                          | [035%] 05s(E) 13s(X)
+ <25s> P V [g-space] |############################            | [071%] 10s(E) 14s(X)
+ <29s> P V [g-space] |########################################| [100%] 13s(E) 13s(X)
+ <29s> [05] NL Initialization
+ <29s> [NL] Number of active fields : 1
+ <29s> [NL] Variables NLEnSteps,NLEnRange,NLAngSteps,NLrotaxis, are ignored
+ <29s> [NL] Pump and probe configuration: verbosity set to high
+ <29s> Radiative life-time sets equal to the phase lifetime: 131.6424 fs
+ <29s> Dephasing Time              :  789.8543 [fs]
+ <29s> Sampling  Time              :  4.185667 [fs]
+ <29s> Total simulation time       :  794.0399 [fs]
+ <29s> Simulation time step        :  0.010000 [fs]
+ <29s> Correlation in the reponse functions: IPA
+ <29s> [05.01] Messaging
+ <29s> Frequencies steps          : 0
+ <29s> Number of angles           : 0
+ <29s> [06] NL Start and Restart
+ <29s> [NL] Time-steps |                                        | [000%] --(E) --(X)
+ <01m-25s> [NL] Time-steps |#                                       | [002%] 55s(E) 37m-05s(X)
+ <02m-20s> [NL] Time-steps |##                                      | [005%] 01m-51s(E) 37m-04s(X)
+ <03m-16s> [NL] Time-steps |###                                     | [007%] 02m-46s(E) 37m-03s(X)
+ <04m-11s> [NL] Time-steps |####                                    | [010%] 03m-42s(E) 37m-03s(X)
+ <05m-07s> [NL] Time-steps |#####                                   | [012%] 04m-37s(E) 37m-03s(X)
+ <06m-03s> [NL] Time-steps |######                                  | [015%] 05m-33s(E) 37m-04s(X)
+ <06m-58s> [NL] Time-steps |#######                                 | [017%] 06m-29s(E) 37m-04s(X)
+ <07m-54s> [NL] Time-steps |########                                | [020%] 07m-24s(E) 37m-04s(X)
+ <08m-49s> [NL] Time-steps |#########                               | [022%] 08m-20s(E) 37m-04s(X)
+ <09m-45s> [NL] Time-steps |##########                              | [025%] 09m-16s(E) 37m-04s(X)
+ <10m-41s> [NL] Time-steps |###########                             | [027%] 10m-11s(E) 37m-04s(X)
+ <11m-36s> [NL] Time-steps |############                            | [030%] 11m-07s(E) 37m-04s(X)
+ <12m-32s> [NL] Time-steps |#############                           | [032%] 12m-03s(E) 37m-04s(X)
+ <13m-28s> [NL] Time-steps |##############                          | [035%] 12m-58s(E) 37m-04s(X)
+ <14m-23s> [NL] Time-steps |###############                         | [037%] 13m-54s(E) 37m-04s(X)
+ <15m-19s> [NL] Time-steps |################                        | [040%] 14m-49s(E) 37m-04s(X)
+ <16m-14s> [NL] Time-steps |#################                       | [042%] 15m-45s(E) 37m-04s(X)
+ <17m-10s> [NL] Time-steps |##################                      | [045%] 16m-41s(E) 37m-04s(X)
+ <18m-06s> [NL] Time-steps |###################                     | [047%] 17m-36s(E) 37m-04s(X)
+ <19m-01s> [NL] Time-steps |####################                    | [050%] 18m-32s(E) 37m-04s(X)
+ <19m-57s> [NL] Time-steps |#####################                   | [052%] 19m-28s(E) 37m-05s(X)
+ <20m-53s> [NL] Time-steps |######################                  | [055%] 20m-23s(E) 37m-04s(X)
+ <21m-48s> [NL] Time-steps |#######################                 | [057%] 21m-19s(E) 37m-04s(X)
+ <22m-44s> [NL] Time-steps |########################                | [060%] 22m-15s(E) 37m-05s(X)
+ <23m-40s> [NL] Time-steps |#########################               | [062%] 23m-10s(E) 37m-05s(X)
+ <24m-35s> [NL] Time-steps |##########################              | [065%] 24m-06s(E) 37m-05s(X)
+ <25m-31s> [NL] Time-steps |###########################             | [067%] 25m-01s(E) 37m-05s(X)
+ <26m-26s> [NL] Time-steps |############################            | [070%] 25m-57s(E) 37m-05s(X)

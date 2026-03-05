@@ -1,0 +1,67 @@
+#                                                                     
+# $$\                                                                 
+# $$ |                                                                
+# $$ |     $$\   $$\ $$$$$$\$$$$\   $$$$$$\  $$$$$$$\                 
+# $$ |     $$ |  $$ |$$  _$$  _$$\ $$  __$$\ $$  __$$\                
+# $$ |     $$ |  $$ |$$ / $$ / $$ |$$$$$$$$ |$$ |  $$ |               
+# $$ |     $$ |  $$ |$$ | $$ | $$ |$$   ____|$$ |  $$ |               
+# $$$$$$$$\\$$$$$$  |$$ | $$ | $$ |\$$$$$$$\ $$ |  $$ |               
+# \________|\______/ \__| \__| \__| \_______|\__|  \__|               
+#                                                                     
+#                   Fork Lumen 2.0.0                                  
+#                  Branch is bug-fixes                                
+#             MPI+OpenMP+HDF5_MPI_IO Build                            
+#               http://www.lumen-code.org                             
+#
+nloptics                         # [R] Non-linear spectroscopy
+% NLBands
+   1 | 20 |                         # [NL] Bands range
+%
+NLverbosity= "high"              # [NL] Verbosity level (low | high)
+NLtime=55.000000           fs    # [NL] Simulation Time
+NLintegrator= "INVINT"           # [NL] Integrator ("EULEREXP/RK2/RK4/RK2EXP/HEUN/INVINT/CRANKNIC")
+NLCorrelation= "IPA"             # [NL] Correlation ("IPA/HARTREE/TDDFT/LRC/LRW/JGM/SEX/LSEX/LHF")
+NLLrcAlpha= 0.000000             # [NL] Long Range Correction
+% IOtime
+ 2.000000 | 5.000000 | 0.100000 |  fs    # [RT] Time between two consecutive I/O (CARRIERs - GF/WF - OUTPUT)
+%
+NLDamping= 0.000000        eV    # [NL] Damping (or dephasing)
+RADLifeTime=55.000000      fs    # [RT] Radiative life-time (if negative RADLifeTime=Phase_LifeTime)
+#EvalCurrent                   # [NL] Evaluate the current
+HARRLvcs= 117923           RL    # [HA] Hartree     RL components
+EXXRLvcs= 117923           RL    # [XX] Exchange    RL components
+CORRLvcs= 117923           RL    # [GW] Correlation RL components
+GfnQPdb= "W <./SAVE/ndb.QP"                  # [EXTQP G] Database action
+GfnQP_INTERP_NN= 1               # [EXTQP G] Interpolation neighbours (NN mode)
+GfnQP_INTERP_shells= 20.00000    # [EXTQP G] Interpolation shells (BOLTZ mode)
+GfnQP_DbGd_INTERP_mode= "NN"     # [EXTQP G] Interpolation DbGd mode
+% GfnQP_E
+ 0.000000 | 1.000000 | 1.000000 |        # [EXTQP G] E parameters  (c/v) eV|adim|adim
+%
+GfnQP_Z= ( 1.000000 , 0.000000 )         # [EXTQP G] Z factor  (c/v)
+GfnQP_Wv_E= 0.000000       eV    # [EXTQP G] W Energy reference  (valence)
+% GfnQP_Wv
+ 0.000000 | 0.000000 | 0.000000 |        # [EXTQP G] W parameters  (valence) eV| 1|eV^-1
+%
+GfnQP_Wv_dos= 0.000000     eV    # [EXTQP G] W dos pre-factor  (valence)
+GfnQP_Wc_E= 0.000000       eV    # [EXTQP G] W Energy reference  (conduction)
+% GfnQP_Wc
+ 0.000000 | 0.000000 | 0.000000 |        # [EXTQP G] W parameters  (conduction) eV| 1 |eV^-1
+%
+GfnQP_Wc_dos= 0.000000     eV    # [EXTQP G] W dos pre-factor  (conduction)
+Field1_Freq= 0.100000      eV    # [RT Field1] Frequency
+Field1_Int=  1000.00       kWLm2 # [RT Field1] Intensity
+Field1_Width= 0.000000     fs    # [RT Field1] Width
+Field1_kind= "DELTA"           # [RT Field1] Kind(SIN|COS|RES|ANTIRES|GAUSS|DELTA|QSSIN)
+Field1_pol= "linear"             # [RT Field1] Pol(linear|circular)
+% Field1_Dir
+ 1.000000 | 1.000000 | 0.000000 |        # [RT Field1] Versor
+%
+Field2_Freq= 0.100000      eV    # [RT Field2] Frequency
+Field2_Int= 0.000000       kWLm2 # [RT Field2] Intensity
+Field2_Width= 0.000000     fs    # [RT Field2] Width
+Field2_kind= "none"              # [RT Field2] Kind(SIN|COS|RES|ANTIRES|GAUSS|DELTA|QSSIN)
+Field2_pol= "linear"             # [RT Field2] Pol(linear|circular)
+% Field2_Dir
+ 0.000000 | 0.000000 | 0.000000 |        # [RT Field2] Versor
+%

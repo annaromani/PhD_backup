@@ -1,0 +1,69 @@
+#                                                                     
+# $$\                                                                 
+# $$ |                                                                
+# $$ |     $$\   $$\ $$$$$$\$$$$\   $$$$$$\  $$$$$$$\                 
+# $$ |     $$ |  $$ |$$  _$$  _$$\ $$  __$$\ $$  __$$\                
+# $$ |     $$ |  $$ |$$ / $$ / $$ |$$$$$$$$ |$$ |  $$ |               
+# $$ |     $$ |  $$ |$$ | $$ | $$ |$$   ____|$$ |  $$ |               
+# $$$$$$$$\\$$$$$$  |$$ | $$ | $$ |\$$$$$$$\ $$ |  $$ |               
+# \________|\______/ \__| \__| \__| \_______|\__|  \__|               
+#                                                                     
+#                   Fork Lumen 2.0.0                                  
+#                  Branch is bug-fixes                                
+#             MPI+OpenMP+HDF5_MPI_IO Build                            
+#               http://www.lumen-code.org                             
+#
+nloptics                         # [R] Non-linear spectroscopy
+NLogCPUs=0                       # [PARALLEL] Live-timing CPU`s (0 for all)
+PAR_def_mode= "balanced"         # [PARALLEL] Default distribution mode ("balanced"/"memory"/"workload"/"KQmemory")
+BZINDX_CPU= ""                   # [PARALLEL] CPUs for each role
+BZINDX_ROLEs= ""                 # [PARALLEL] CPUs roles (k)
+NL_CPU= "6 1"                       # [PARALLEL] CPUs for each role
+NL_ROLEs= "w k"                     # [PARALLEL] CPUs roles (w,k)
+DIP_CPU= ""                      # [PARALLEL] CPUs for each role
+DIP_ROLEs= ""                    # [PARALLEL] CPUs roles (k,c,v)
+OSCLL_CPU= ""                    # [PARALLEL] CPUs for each role
+OSCLL_ROLEs= ""                  # [PARALLEL] CPUs roles (k,b)
+DIP_Threads=0                    # [OPENMP/X] Number of threads for dipoles
+NL_Threads=0                     # [OPENMP/NL] Number of threads for nl-optics
+OSCLL_Threads=0                  # [OPENMP/X] Number of threads for Oscillators
+% NLBands
+  1 | 20 |                           # [NL] Bands range
+%
+NLverbosity= "high"              # [NL] Verbosity level (low | high)
+NLtime=-1.000000           fs    # [NL] Simulation Time
+NLintegrator= "INVINT"           # [NL] Integrator ("EULEREXP/RK2/RK4/RK2EXP/HEUN/INVINT/CRANKNIC")
+NLCorrelation= "IPA"             # [NL] Correlation ("IPA/HARTREE/TDDFT/LRC/LRW/JGM/SEX/LSEX/LHF")
+NLLrcAlpha= 0.000000             # [NL] Long Range Correction
+% NLEnRange
+ 1.000000 | 4.000000 |         eV    # [NL] Energy range (for loop on frequencies NLEnSteps/=0
+%
+NLEnSteps=  50                   # [NL] Energy steps for the loop on frequencies
+% NLrotaxis
+ 0.000000 | 0.000000 | 0.000000 |        # [NL] Rotation axis (for the loop on angles NLAngSteps/=0)
+%
+NLAngSteps=0                     # [NL] Angular steps (if NLAngSteps/=0 field versor will be ignored)
+NLMaxAng= 360.0000               # [NL] Max angle in degree (default 360 degree)
+NLDamping= 0.200000        eV    # [NL] Damping (or dephasing)
+RADLifeTime=-1.000000      fs    # [RT] Radiative life-time (if negative RADLifeTime=Phase_LifeTime)
+#EvalCurrent                   # [NL] Evaluate the current
+HARRLvcs= 117923           RL    # [HA] Hartree     RL components
+EXXRLvcs= 117923           RL    # [XX] Exchange    RL components
+CORRLvcs= 117923           RL    # [GW] Correlation RL components
+GfnQPdb= "E W < SAVE/ndb.QP"     # [EXTQP G] Database action
+Field1_Freq= 0.100000      eV    # [RT Field1] Frequency
+Field1_Int=  1000.00       kWLm2 # [RT Field1] Intensity
+Field1_Width= 0.000000     fs    # [RT Field1] Width
+Field1_kind= "SOFTSIN"           # [RT Field1] Kind(SIN|COS|RES|ANTIRES|GAUSS|DELTA|QSSIN)
+Field1_pol= "linear"             # [RT Field1] Pol(linear|circular)
+% Field1_Dir
+ 1.000000 | 1.000000 | 0.000000 |        # [RT Field1] Versor
+%
+Field2_Freq= 0.100000      eV    # [RT Field2] Frequency
+Field2_Int= 0.000000       kWLm2 # [RT Field2] Intensity
+Field2_Width= 0.000000     fs    # [RT Field2] Width
+Field2_kind= "none"              # [RT Field2] Kind(SIN|COS|RES|ANTIRES|GAUSS|DELTA|QSSIN)
+Field2_pol= "linear"             # [RT Field2] Pol(linear|circular)
+% Field2_Dir
+ 0.000000 | 0.000000 | 0.000000 |        # [RT Field2] Versor
+%

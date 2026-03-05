@@ -1,0 +1,54 @@
+#                                                                     
+# $$\                                                                 
+# $$ |                                                                
+# $$ |     $$\   $$\ $$$$$$\$$$$\   $$$$$$\  $$$$$$$\                 
+# $$ |     $$ |  $$ |$$  _$$  _$$\ $$  __$$\ $$  __$$\                
+# $$ |     $$ |  $$ |$$ / $$ / $$ |$$$$$$$$ |$$ |  $$ |               
+# $$ |     $$ |  $$ |$$ | $$ | $$ |$$   ____|$$ |  $$ |               
+# $$$$$$$$\\$$$$$$  |$$ | $$ | $$ |\$$$$$$$\ $$ |  $$ |               
+# \________|\______/ \__| \__| \__| \_______|\__|  \__|               
+#                                                                     
+#                   Fork Lumen 2.0.0                                  
+#                  Branch is bug-fixes                                
+#             MPI+OpenMP+HDF5_MPI_IO Build                            
+#               http://www.lumen-code.org                             
+#
+optics                           # [R] Linear Response optical properties
+infver                           # [R] Input file variables verbosity
+chi                              # [R][CHI] Dyson equation for Chi.
+dipoles                          # [R] Oscillator strenghts (or dipoles)
+Chimod= "IP"                     # [X] IP/Hartree/ALDA/LRC/PF/BSfxc
+% QpntsRXd
+  1 |  1 |                           # [Xd] Transferred momenta
+%
+% BndsRnXd
+   1 | 20 |                         # [Xd] Polarization function bands
+%
+% EnRngeXd
+  1.00000 | 4.00000 |         eV    # [Xd] Energy range
+%
+% DmRngeXd
+ 0.200000 | 0.200000 |         eV    # [Xd] Damping range
+%
+ETStpsXd= 100                   # [Xd] Total Energy steps
+% LongDrXd
+ 1.000000 | 1.000000 | 0.000000 |        # [Xd] [cc] Electric Field
+%
+XfnQPdb= "E W < ./SAVE/ndb.QP"                  # [EXTQP Xd] Database action
+XfnQP_INTERP_NN= 1               # [EXTQP Xd] Interpolation neighbours (NN mode)
+XfnQP_INTERP_shells= 20.00000    # [EXTQP Xd] Interpolation shells (BOLTZ mode)
+XfnQP_DbGd_INTERP_mode= "NN"     # [EXTQP Xd] Interpolation DbGd mode
+% XfnQP_E
+ 0.000000 | 1.000000 | 1.000000 |        # [EXTQP Xd] E parameters  (c/v) eV|adim|adim
+%
+XfnQP_Z= ( 1.000000 , 0.000000 )         # [EXTQP Xd] Z factor  (c/v)
+XfnQP_Wv_E= 0.000000       eV    # [EXTQP Xd] W Energy reference  (valence)
+% XfnQP_Wv
+ 0.000000 | 0.000000 | 0.000000 |        # [EXTQP Xd] W parameters  (valence) eV| 1|eV^-1
+%
+XfnQP_Wv_dos= 0.000000     eV    # [EXTQP Xd] W dos pre-factor  (valence)
+XfnQP_Wc_E= 0.000000       eV    # [EXTQP Xd] W Energy reference  (conduction)
+% XfnQP_Wc
+ 0.000000 | 0.000000 | 0.000000 |        # [EXTQP Xd] W parameters  (conduction) eV| 1 |eV^-1
+%
+XfnQP_Wc_dos= 0.000000     eV    # [EXTQP Xd] W dos pre-factor  (conduction)

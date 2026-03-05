@@ -1,0 +1,27 @@
+#                                                                     
+# $$\                                                                 
+# $$ |                                                                
+# $$ |     $$\   $$\ $$$$$$\$$$$\   $$$$$$\  $$$$$$$\                 
+# $$ |     $$ |  $$ |$$  _$$  _$$\ $$  __$$\ $$  __$$\                
+# $$ |     $$ |  $$ |$$ / $$ / $$ |$$$$$$$$ |$$ |  $$ |               
+# $$ |     $$ |  $$ |$$ | $$ | $$ |$$   ____|$$ |  $$ |               
+# $$$$$$$$\\$$$$$$  |$$ | $$ | $$ |\$$$$$$$\ $$ |  $$ |               
+# \________|\______/ \__| \__| \__| \_______|\__|  \__|               
+#                                                                     
+#                   Fork Lumen 2.0.0                                  
+#                  Branch is bug-fixes                                
+#             MPI+OpenMP+HDF5_MPI_IO Build                            
+#               http://www.lumen-code.org                             
+#
+nonlinear                        # [R] Non-linear response analysis
+Xorder= 1                        # Max order of the response/exc functions
+% TimeRange
+.000000 |.000000 |         fs    # Time-window where processing is done
+%
+ETStpsRt= 12                    # Total Energy steps
+% EnRngeRt
+  0.00000 | 8.00000 |         eV    # Energy range
+%
+DampMode= "NONE"                 # Damping type ( NONE | LORENTZIAN | GAUSSIAN )
+DampFactor= 0.000000       eV    # Damping parameter
+PumpPATH= "none"                 # Path of the simulation with the Pump only

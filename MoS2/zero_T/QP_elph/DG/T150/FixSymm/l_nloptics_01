@@ -1,0 +1,43 @@
+
+
+ __   __  _______  __   __  _______  _______
+|  | |  ||   _   ||  |_|  ||  _    ||       |
+|  |_|  ||  |_|  ||       || |_|   ||   _   |
+|       ||       ||       ||       ||  | |  |
+|_     _||       ||       ||  _   | |  |_|  |
+  |   |  |   _   || ||_|| || |_|   ||       |
+  |___|  |__| |__||_|   |_||_______||_______|
+
+
+ <---> [01] MPI/OPENMP structure, Files & I/O Directories
+ <---> MPI Cores-Threads   : 1(CPU)-32(threads)-32(threads@DIP)-32(threads@NL)-32(threads@OSCLL)
+ <---> [02] CORE Variables Setup
+ <---> [02.01] Unit cells
+ <---> [02.02] Symmetries
+ <---> [02.03] Reciprocal space
+ <---> [02.04] K-grid lattice
+ <---> Grid dimensions      :   6   6
+ <---> [02.05] Energies & Occupations
+ <---> [03] Transferred momenta grid and indexing
+ <---> [04] Dipoles
+ <---> [04.01] Setup: observables and procedures
+ <---> Number of k-point in each direction:    6   6   1
+ <---> [05] NL Initialization
+ <---> [NL] Number of active fields : 1
+ <---> [NL] Non-linear optics configuration
+ <---> [NL] Loop on frequencies/angles of the first field
+ <---> [WARNING] Variables Field1_Freq and Field1_NFreqs ignored
+ <---> Radiative life-time sets equal to the phase lifetime: 131.6424 fs
+ <---> Dephasing Time              :  789.8543 [fs]
+ <---> Sampling  Time              :  41.40667 [fs]
+ <---> Total simulation time       :  831.2609 [fs]
+ <---> Simulation time step        :  0.010000 [fs]
+ <---> Correlation in the reponse functions: IPA
+ <---> [05.01] Messaging
+ <---> Frequencies steps          : 0
+ <---> Number of angles           : 0
+
+
+ <---> [06] NL Start and Restart
+[ERROR] STOP signal received while in[06] NL Start and Restart
+[ERROR] Wrong input: use pump-probe mode 'yambo_nl -u p' or set a number of frequencie/angles with 'yambo_nl -u n'
