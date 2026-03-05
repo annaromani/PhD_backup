@@ -5,21 +5,20 @@ optics
 bss
 dipoles
 setup
-WRbsWF
 photolum
 WRbsWF
 StdoHash = 40.000000 
 Nelectro = 64.000000 
-ElecTemp = 0.025869 eV
-BoseTemp = 0.025861 eV
+ElecTemp = 0.000000 eV
+BoseTemp = 0.000000 eV
 OccTresh = 0.000010 
 NLogCPUs = 0.000000 
-MEM_tresh = 307603.000000 Kb
+MEM_tresh = 103400.000000 Kb
 FFTGvecs = 35 Ry
 DIP_Threads = 0.000000 
-X_and_IO_nCPU_LinAlg_INV = 64 
+X_and_IO_nCPU_LinAlg_INV = -1.000000 
 X_Threads = 0.000000 
-BS_nCPU_LinAlg_INV = 128 
+BS_nCPU_LinAlg_INV = -1.000000 
 BS_nCPU_LinAlg_DIAGO = -1.000000 
 K_Threads = 0.000000 
 RandQpts = 0.000000 
@@ -47,6 +46,9 @@ BoseCut = 0.100000
 BSKCut = 0.000000 
 BDmERef = 0.000000 eV
 BEnSteps = 100 
+BSHayTrs = -0.020000 
+BSHayItrIO = 100.000000 
+BSHayItrMAX = 1000.000000 
 XfnQP_INTERP_NN = 1.000000 
 XfnQP_INTERP_shells = 20.000000 
 XfnQP_up_Wv_E = 0.000000 eV
@@ -70,7 +72,7 @@ ChiLinAlgMod =  'LIN_SYS'
 BSKmod =      'SEX'
 BSEmod = 'resonant'
 Lkind =      'BAR'
-BSSmod =        'd'
+BSSmod =        'h'
 Gauge =   'length'
 KfnQPdb =     'none'
 KfnQP_DbGd_INTERP_mode =       'NN'
@@ -79,7 +81,7 @@ BSEprop =      'abs'
 BSEdips =     'none'
 XfnQPdb =     'none'
 XfnQP_DbGd_INTERP_mode =       'NN'
-GrFnTpXs =        'R'
+GrFnTpXs =        'T'
 XTermKind =     'none'
 kind =       'BG'
 KfnQP_up_Z = (1.000000,0.000000) 
@@ -98,7 +100,7 @@ DrudeWXs = (0.000000,0.000000) eV
  0.0 | 0.0 | 0.0 |   
 %
 % DipBands
- 1 | 160 |   
+ 1 | 200 |   
 %
 % Qdirection
  0.0 | 0.0 | 0.0 |   
@@ -137,7 +139,7 @@ DrudeWXs = (0.000000,0.000000) eV
  100.0 | 100.0 |   
 %
 % BEnRange
- 0.05 | 3.0 |  eV 
+ 0.1 | 10.0 |  eV 
 %
 % BDmRange
  0.1 | 0.1 |  eV 
@@ -167,7 +169,7 @@ DrudeWXs = (0.000000,0.000000) eV
  0.0 | 0.0 | 0.0 |   
 %
 % QpntsRXs
- 1 | 116 |   
+ 1 | 32 |   
 %
 % BndsRnXs
  1 | 120 |   
@@ -178,7 +180,3 @@ DrudeWXs = (0.000000,0.000000) eV
 % KfnQP_E
  1.44 | 1.0 | 1.0 |   
 %
-BS_CPU =    '8 4 8'
-BS_ROLEs =   'k eh t'
-X_and_IO_CPU = '8 2 4 4 1'
-X_and_IO_ROLEs = 'q g k c v'
