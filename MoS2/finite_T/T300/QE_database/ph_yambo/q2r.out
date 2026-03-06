@@ -1,5 +1,9 @@
 
-     Program Q2R v.7.3.1 starts on 25Feb2026 at 13:55:29 
+     Program Q2R v.7.5 starts on  5Mar2026 at 16:59: 9 
+        Git branch: HEAD
+        Last git commit: 770a0b2d12928a67048e2f3da8d10d057e52179e
+        Last git commit date: Tue Aug 19 09:57:12 2025 +0000
+        Last git commit subject: Merge branch 'QE-7.5-RC' into 'master'
 
      This program is part of the open-source Quantum ESPRESSO suite
      for quantum simulation of materials; please cite
@@ -13,7 +17,7 @@
      Parallel version (MPI), running on     1 processors
 
      MPI processes distributed on     1 nodes
-     231957 MiB available memory on the printing compute node when the environment starts
+     239271 MiB available memory on the printing compute node when the environment starts
 
 
   file MoS2.dyn0.xml not found
@@ -21,65 +25,4 @@
   reading grid info from file MoS2.dyn0
 
   reading force constants from file MoS2.dyn1
-  nqs=            1
- q=   0.00000000  0.00000000  0.00000000
-  reading force constants from file MoS2.dyn2
-  nqs=            6
- q=  -0.00000000 -0.19245000  0.00000000
- q=   0.00000000  0.19245000 -0.00000000
- q=  -0.16666659  0.09622500  0.00000000
- q=   0.16666659 -0.09622500 -0.00000000
- q=   0.16666659  0.09622500 -0.00000000
- q=  -0.16666659 -0.09622500  0.00000000
-  reading force constants from file MoS2.dyn3
-  nqs=            6
- q=  -0.00000001 -0.38490000  0.00000000
- q=   0.00000001  0.38490000 -0.00000000
- q=  -0.33333317  0.19245001  0.00000000
- q=   0.33333317 -0.19245001 -0.00000000
- q=   0.33333318  0.19244999 -0.00000000
- q=  -0.33333318 -0.19244999  0.00000000
-  reading force constants from file MoS2.dyn4
-  nqs=            3
- q=   0.00000001  0.57735000  0.00000000
- q=   0.49999976 -0.28867501  0.00000000
- q=  -0.49999977 -0.28867499  0.00000000
-  reading force constants from file MoS2.dyn5
-  nqs=            6
- q=  -0.16666700 -0.28867500  0.00000000
- q=   0.16666700 -0.28867500 -0.00000000
- q=  -0.16666638  0.28867536  0.00000000
- q=   0.33333338 -0.00000036 -0.00000000
- q=   0.16666638  0.28867536  0.00000000
- q=  -0.33333338 -0.00000036  0.00000000
-  reading force constants from file MoS2.dyn6
-  nqs=           12
- q=  -0.16666700 -0.48112500  0.00000000
- q=   0.16666700  0.48112500 -0.00000000
- q=   0.16666700 -0.48112500 -0.00000000
- q=  -0.16666700  0.48112500  0.00000000
- q=  -0.33333297  0.38490036  0.00000000
- q=   0.33333297 -0.38490036 -0.00000000
- q=   0.49999997  0.09622464 -0.00000000
- q=  -0.49999997 -0.09622464  0.00000000
- q=   0.33333297  0.38490036  0.00000000
- q=  -0.33333297 -0.38490036 -0.00000000
- q=  -0.49999997  0.09622464  0.00000000
- q=   0.49999997 -0.09622464 -0.00000000
-  reading force constants from file MoS2.dyn7
-  nqs=            2
- q=  -0.33333300 -0.57735000  0.00000000
- q=   0.33333300 -0.57735000 -0.00000000
-
-      q-space grid ok, #points =   36
-
-      fft-check warning: sum of imaginary terms = 1.296598E-05
-
-     Q2R          :      0.02s CPU      0.04s WALL
-
-
-   This run was terminated on:  13:55:29  25Feb2026            
-
-=------------------------------------------------------------------------------=
-   JOB DONE.
-=------------------------------------------------------------------------------=
+ end of file reached, tag Root not found

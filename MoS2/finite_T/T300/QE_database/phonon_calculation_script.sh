@@ -1,29 +1,29 @@
 #!/bin/bash
 #SBATCH --nodes=4
-#SBATCH --ntasks-per-node=32
-#SBATCH --cpus-per-task=4
+#SBATCH --ntasks-per-node=16
+#SBATCH --cpus-per-task=1
 #SBATCH --job-name=phonon
 #SBATCH --account=e89-qub_p
 #SBATCH --partition=standard
 #SBATCH --qos=short
 #SBATCH --time=00:20:0
 
-module purge
-module load craype-x86-rome \
-            libfabric/1.12.1.2.2.0.0 \
-            craype-network-ofi \
-            perftools-base/23.09.0 \
-            xpmem/0.2.119-1.3_0_gnoinfo \
-            cce/16.0.1 \
-            craype/2.7.23 \
-            cray-dsmml/0.2.2 \
-            cray-mpich/8.1.27 \
-            cray-libsci/23.09.1.1 \
-            PrgEnv-cray/8.4.0 \
-            bolt/0.8 \
-            epcc-setup-env \
-            load-epcc-module
-module load quantum_espresso/7.3.1
+#module purge
+#module load craype-x86-rome \
+#            libfabric/1.12.1.2.2.0.0 \
+#            craype-network-ofi \
+#            perftools-base/23.09.0 \
+#            xpmem/0.2.119-1.3_0_gnoinfo \
+#            cce/16.0.1 \
+#            craype/2.7.23 \
+#            cray-dsmml/0.2.2 \
+#            cray-mpich/8.1.27 \
+#            cray-libsci/23.09.1.1 \
+#            PrgEnv-cray/8.4.0 \
+#            bolt/0.8 \
+#            epcc-setup-env \
+#            load-epcc-module
+module load quantum_espresso/7.5
 
 # Run the parallel program
 export OMP_NUM_THREADS=1 #$SLURM_CPUS_PER_TASK
@@ -45,6 +45,7 @@ INPUT_GP="MoS2.freq.gp"
 SVG_OUT="ars_matdyn_check.svg"
 
 RELAX=true
+DOUBLE_RELAX=true
 # Binaries
 RUN_PATH=$(pwd)
 QE_PATH=''
@@ -151,7 +152,7 @@ matdyn_step() {
 #    update_coords() {
 #        local template=$1
 #        local output=$2
-#        local coord_data="relax/relaxed_coords.txt"
+#        local coord_data="relaxed_coords.txt"
 #    
 #        awk -v cfile="$coord_data" '
 #            /ATOMIC_POSITIONS/ {
@@ -165,12 +166,19 @@ matdyn_step() {
 #        ' "$template" > "$output"
 #    }
 # 
-#    cd ..
+#    
+#    if [ "$DOUBLE_RELAX" = true ]; then
+#	    update_coords "../$INPUT_DIR/$PREFIX.relax.in" "$PREFIX.relax_relax.in"
+#	    $RUNNER $PW_EXE < $PREFIX.relax_relax.in > $PREFIX.relax_relax.out
+#	    awk '/Begin final coordinates/,/End final coordinates/ {if ($2 ~ /^-?[0-9]/) print $0}' $PREFIX.relax_relax.out > relaxed_coords.txt
+#    fi
 #
 #    echo "--> Generating relaxed SCF and NSCF inputs..."
-#    update_coords "$INPUT_DIR/$PREFIX.scf.in" "scf/$PREFIX.scf_relaxed.in"
-#    update_coords "$INPUT_DIR/$PREFIX.nscf.in" "nscf/$PREFIX.nscf_relaxed.in"
-#
+#    update_coords "../$INPUT_DIR/$PREFIX.scf.in" "../scf/$PREFIX.scf_relaxed.in"
+#    update_coords "../$INPUT_DIR/$PREFIX.nscf.in" "../nscf/$PREFIX.nscf_relaxed.in"
+#    
+#    cd ..
+#    
 #    echo "--> Running SCF with relaxed coordinates..."
 #    cd scf
 #    $RUNNER $PW_EXE < $PREFIX.scf_relaxed.in > $PREFIX.scf.out
@@ -207,24 +215,27 @@ matdyn_step() {
 #$YPP_EXE -F ../../../$INPUT_DIR/ypp_find_q.in > ypp_find_q.out
 #
 #   #Advanced Extraction: Flip signs, Keep 4th col, Count lines
-#awk '/Q-points \(IBZ\) PW-formatted/ {flag=1; next} /\[/ {flag=0} flag {if($1!="") print -$1, -$2, -$3, $4}' l_bzgrids_Q_grid > tmp_q.txt
+##awk '/Q-points \(IBZ\) PW-formatted/ {flag=1; next} /\[/ {flag=0} flag {if($1!="") print -$1, -$2, -$3, $4}' l_bzgrids_Q_grid > tmp_q.txt
+#
+#awk '/Q-points \(IBZ\) PW-formatted/ {flag=1; next} /\[/ {flag=0} flag {if($1!="") printf "%.9f %.9f %.9f %i\n", -$1, -$2, -$3, $4}' l_bzgrids_Q_grid > tmp_q.txt
+#
 #NQ_IBZ=$(wc -l < tmp_q.txt)
 #echo "$NQ_IBZ" > ../../"Q-points_IBZ.txt"
 #cat tmp_q.txt >> ../../"Q-points_IBZ.txt"
 #rm tmp_q.txt
 #cd ../../..
-#
-## ==============================================================================
-## 3. PH_DVSCF STEP
-## ==============================================================================
+
+# ==============================================================================
+# 3. PH_DVSCF STEP
+# ==============================================================================
 echo "--> Running PH_DVSCF..."
 cd ph_dvscf
 #ln -fs ../scf/$OUTDIR/$PREFIX.save 
 #cp ../$INPUT_DIR/$PREFIX.ph_dvscf.in $PREFIX.ph_dvscf_q.in
 #cat ../nscf/"Q-points_IBZ.txt" >> $PREFIX.ph_dvscf_q.in
-#
-#$RUNNER $PH_EXE -nk 1 < $PREFIX.ph_dvscf_q.in > $PREFIX.ph_dvscf_q.out
-#check_done "$PREFIX.ph_dvscf_q.out" "PH_DVSCF"
+
+$RUNNER $PH_EXE -nk 1 < $PREFIX.ph_dvscf_q.in > $PREFIX.ph_dvscf_q.out
+check_done "$PREFIX.ph_dvscf_q.out" "PH_DVSCF"
 	
 echo "check phonon energy at all kpoints:"
 
@@ -255,45 +266,45 @@ cd ..
 # ==============================================================================
 # 4. PH_YAMBO STEP
 # ==============================================================================
-#echo "--> Running PH_YAMBO..."
-#mkdir -p ph_yambo 
-#cd ph_yambo
-#cp ../$INPUT_DIR/$PREFIX.ph_yambo.in $PREFIX.ph_yambo_q.in
-#cat ../nscf/"Q-points_IBZ.txt" >> $PREFIX.ph_yambo_q.in
-#cp -r  ../ph_dvscf/_ph0 .
-#cp ../ph_dvscf/$PREFIX.dyn* .
-#cp -r ../nscf/$OUTDIR/$PREFIX.save . 
-#$RUNNER $PH_EXE -nk 1 < $PREFIX.ph_yambo_q.in > $PREFIX.ph_yambo_q.out
-#check_done "$PREFIX.ph_yambo_q.out" "PH_YAMBO"
-#
-#
-#echo "--> Step 4.5: Checking elph_dir and importing to Yambo"
-#
-## Verify elph_dir exists (usually created in the current directory or outdir)
-#if [ -d "elph_dir" ]; then
-#    echo "SUCCESS: elph_dir found."
-#
-#    cd $PREFIX.save
-#    if [ -d "SAVE" ]; then
-#        echo "--> Running ypp_ph el-ph import..."
-#        # Running import using the input file from your Inputs directory
-#        $YPP_EXE -F $RUN_PATH/$INPUT_DIR/ypp_ph_import.in > ypp_ph_import.out
-#	grep "Uniform sampling" l_gkkp_gkkp_db 
-#        # Verification: check if elph databases were created
-#        if ls SAVE/ndb.elph* 1> /dev/null 2>&1; then
-#            echo "SUCCESS: Electron-phonon databases imported to Yambo SAVE."
-#        else
-#            echo "WARNING: ypp_ph ran but ndb.elph files were not found in SAVE/."
-#        fi
-#    else
-#        echo "ERROR: Yambo SAVE directory not found inside $PREFIX.save"
-#    fi
-#    cd ..
-#else
-#    echo "ERROR: elph_dir was not created by ph.x. Check ph_yambo_q.out for errors."
-#fi
-#
-#cd ..
+echo "--> Running PH_YAMBO..."
+mkdir -p ph_yambo 
+cd ph_yambo
+cp ../$INPUT_DIR/$PREFIX.ph_yambo.in $PREFIX.ph_yambo_q.in
+cat ../nscf/"Q-points_IBZ.txt" >> $PREFIX.ph_yambo_q.in
+cp -r  ../ph_dvscf/_ph0 .
+cp ../ph_dvscf/$PREFIX.dyn* .
+cp -r ../nscf/$OUTDIR/$PREFIX.save . 
+$RUNNER $PH_EXE -nk 1 < $PREFIX.ph_yambo_q.in > $PREFIX.ph_yambo_q.out
+check_done "$PREFIX.ph_yambo_q.out" "PH_YAMBO"
+
+
+echo "--> Step 4.5: Checking elph_dir and importing to Yambo"
+
+# Verify elph_dir exists (usually created in the current directory or outdir)
+if [ -d "elph_dir" ]; then
+    echo "SUCCESS: elph_dir found."
+
+    cd $PREFIX.save
+    if [ -d "SAVE" ]; then
+        echo "--> Running ypp_ph el-ph import..."
+        # Running import using the input file from your Inputs directory
+        $YPP_EXE -F $RUN_PATH/$INPUT_DIR/ypp_ph_import.in > ypp_ph_import.out
+	grep "Uniform sampling" l_gkkp_gkkp_db 
+        # Verification: check if elph databases were created
+        if ls SAVE/ndb.elph* 1> /dev/null 2>&1; then
+            echo "SUCCESS: Electron-phonon databases imported to Yambo SAVE."
+        else
+            echo "WARNING: ypp_ph ran but ndb.elph files were not found in SAVE/."
+        fi
+    else
+        echo "ERROR: Yambo SAVE directory not found inside $PREFIX.save"
+    fi
+    cd ..
+else
+    echo "ERROR: elph_dir was not created by ph.x. Check ph_yambo_q.out for errors."
+fi
+
+cd ..
 
 # ==============================================================================
 # 5. DOUBLE GRID STEP (IF DG=TRUE)
@@ -302,17 +313,6 @@ cd ..
 if [ "$DG" = true ]; then
     echo "--> Starting Double Grid Calculation..."
     cd ph_yambo 
-   # # Create .dyn0 file
-   # echo "${PHONON_QGRID[0]} ${PHONON_QGRID[1]} ${PHONON_QGRID[2]}" > $PREFIX.dyn0
-   # 
-   # head -n 1 ../nscf/"Q-points_IBZ.txt" >> $PREFIX.dyn0
-   # 
-   # # Copy q-coords only (columns 1, 2, 3) from the formatted text file
-   # tail -n +2 ../nscf/"Q-points_IBZ.txt" | awk '{print $1, $2, $3}' >> $PREFIX.dyn0
-   # # Run q2r and matdyn
-   # echo "--> Running q2r.x and matdyn.x..."
-   # $Q2R_EXE < ../$INPUT_DIR/q2r.in > q2r.out
-   # $MATDYN_EXE < ../$INPUT_DIR/matdyn.in > matdyn.out
     if  [ ! -f "$INPUT_GP" ]; then    
     	matdyn_step
     fi     
@@ -321,9 +321,9 @@ if [ "$DG" = true ]; then
     cd $PREFIX.save
     if [ -d "SAVE" ]; then
         echo "--> Running ypp_ph Double Grid..."
-#       $P2Y_EXE
-#	$YAMBO_EXE
-#	$YPP_EXE -F $RUN_PATH/$INPUT_DIR/ypp_dg.in > ypp_dg.out
+        $P2Y_EXE
+	$YAMBO_EXE
+	$YPP_EXE -F $RUN_PATH/$INPUT_DIR/ypp_dg.in > ypp_dg.out
         
         if [ -f "SAVE/ndb.PH_Double_Grid" ]; then
             echo "SUCCESS: ndb.PH_Double_Grid created."

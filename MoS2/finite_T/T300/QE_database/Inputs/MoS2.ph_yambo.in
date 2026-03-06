@@ -5,7 +5,7 @@
             fildvscf = 'MoS2-dvscf',
 	      fildyn = 'MoS2.dyn.xml',
      electron_phonon = 'yambo',
-               epsil = .false.
+               epsil = .true.
                trans = .false.
                ldisp = .false.
                qplot = .true.
