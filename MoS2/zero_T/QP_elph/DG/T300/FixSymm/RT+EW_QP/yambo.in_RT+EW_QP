@@ -18,14 +18,14 @@ NLogCPUs=0                       # [PARALLEL] Live-timing CPU`s (0 for all)
 PAR_def_mode= "balanced"         # [PARALLEL] Default distribution mode ("balanced"/"memory"/"workload"/"KQmemory")
 BZINDX_CPU= ""                   # [PARALLEL] CPUs for each role
 BZINDX_ROLEs= ""                 # [PARALLEL] CPUs roles (k)
-NL_CPU= "6 1"                       # [PARALLEL] CPUs for each role
+NL_CPU= "10 1"                       # [PARALLEL] CPUs for each role
 NL_ROLEs= "w k"                     # [PARALLEL] CPUs roles (w,k)
 DIP_CPU= ""                      # [PARALLEL] CPUs for each role
 DIP_ROLEs= ""                    # [PARALLEL] CPUs roles (k,c,v)
 OSCLL_CPU= ""                    # [PARALLEL] CPUs for each role
 OSCLL_ROLEs= ""                  # [PARALLEL] CPUs roles (k,b)
 DIP_Threads=0                    # [OPENMP/X] Number of threads for dipoles
-NL_Threads=0                     # [OPENMP/NL] Number of threads for nl-optics
+NL_Threads=-1                     # [OPENMP/NL] Number of threads for nl-optics
 OSCLL_Threads=0                  # [OPENMP/X] Number of threads for Oscillators
 % NLBands
   1 | 20 |                           # [NL] Bands range
@@ -38,7 +38,7 @@ NLLrcAlpha= 0.000000             # [NL] Long Range Correction
 % NLEnRange
  1.000000 | 4.000000 |         eV    # [NL] Energy range (for loop on frequencies NLEnSteps/=0
 %
-NLEnSteps= 12                    # [NL] Energy steps for the loop on frequencies
+NLEnSteps=  12                  # [NL] Energy steps for the loop on frequencies
 % NLrotaxis
  0.000000 | 0.000000 | 0.000000 |        # [NL] Rotation axis (for the loop on angles NLAngSteps/=0)
 %
@@ -50,7 +50,7 @@ RADLifeTime=-1.000000      fs    # [RT] Radiative life-time (if negative RADLife
 HARRLvcs= 117923           RL    # [HA] Hartree     RL components
 EXXRLvcs= 117923           RL    # [XX] Exchange    RL components
 CORRLvcs= 117923           RL    # [GW] Correlation RL components
-GfnQPdb= "E W < ./SAVE/ndb.QP"                  # [EXTQP Xd] Database action
+GfnQPdb= "E W < SAVE/ndb.QP"     # [EXTQP G] Database action
 Field1_Freq= 0.100000      eV    # [RT Field1] Frequency
 Field1_Int=  1000.00       kWLm2 # [RT Field1] Intensity
 Field1_Width= 0.000000     fs    # [RT Field1] Width
