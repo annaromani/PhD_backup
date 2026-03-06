@@ -23,13 +23,8 @@
   starting_magnetization(2) = -0.6   ! Ni2
   starting_magnetization(3) =  0.0   ! I
 
-  occupations = 'smearing'
-  smearing    = 'mv'
-  degauss     = 0.0020   ! Ry  (try 0.001–0.005 Ry)
+  occupations = 'fixed'
 
-  ! (optional but often helpful for tricky cases)
-  ! nosym = .true.
-  ! noinv = .true.
 /
 
 &ELECTRONS
