@@ -17,7 +17,7 @@
   degauss = 1.0d-2
 
   nspin = 2
-  nbnd = 160
+  nbnd = 200
 /
 &ELECTRONS
   conv_thr = 1.0d-10
