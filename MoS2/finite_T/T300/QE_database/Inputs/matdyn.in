@@ -1,7 +1,7 @@
 &input
     flfrc='MoS2.fc.xml',
     flfrq='MoS2.freq',
-    asr='crystal',
+    asr='simple',
     q_in_cryst_coord=.true.
     q_in_band_form=.true.
     fleig='MoS2.eig'

@@ -1,5 +1,6 @@
 &input
     fildyn='MoS2.dyn.xml'
-    zasr='crystal', 
+    zasr='simple', 
+    loto_2d=.true.,
     flfrc='MoS2.fc'
 /
