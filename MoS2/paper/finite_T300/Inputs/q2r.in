@@ -1,0 +1,6 @@
+&input
+    fildyn='MoS2.dyn'
+    zasr='simple', 
+    loto_2d=.true.,
+    flfrc='MoS2.fc'
+/

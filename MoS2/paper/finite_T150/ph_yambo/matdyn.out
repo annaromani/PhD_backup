@@ -1,0 +1,32 @@
+
+     Program MATDYN v.7.5 starts on 19Mar2026 at 11:57:24 
+        Git branch: HEAD
+        Last git commit: 770a0b2d12928a67048e2f3da8d10d057e52179e
+        Last git commit date: Tue Aug 19 09:57:12 2025 +0000
+        Last git commit subject: Merge branch 'QE-7.5-RC' into 'master'
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     1 processors
+
+     MPI processes distributed on     1 nodes
+     243016 MiB available memory on the printing compute node when the environment starts
+
+ mass for atomic type   1 not given; uses mass from file MoS2.fc                                                                                                                                                                                                                                                         
+ mass for atomic type   2 not given; uses mass from file MoS2.fc                                                                                                                                                                                                                                                         
+
+     MATDYN       :      8.62s CPU      8.74s WALL
+
+
+   This run was terminated on:  11:57:32  19Mar2026            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

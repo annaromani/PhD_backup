@@ -1,0 +1,13 @@
+&input
+    flfrc='MoS2.fc.xml',
+    flfrq='MoS2.freq',
+    asr='simple',
+    dos = .true.,
+    deltaE=1.d0,
+    fleig='MoS2.eig'
+    nk1=60, nk2=60, nk3=1
+    loto_2d=.true.
+    amass(1) = 95.95,     ! Mass for Mo
+    amass(2) = 32.065,    ! Mass for S
+/
+0

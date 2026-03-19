@@ -1,0 +1,111 @@
+
+     Program Q2R v.7.5 starts on 13Mar2026 at 16:25:29 
+        Git branch: HEAD
+        Last git commit: 770a0b2d12928a67048e2f3da8d10d057e52179e
+        Last git commit date: Tue Aug 19 09:57:12 2025 +0000
+        Last git commit subject: Merge branch 'QE-7.5-RC' into 'master'
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     1 processors
+
+     MPI processes distributed on     1 nodes
+     244137 MiB available memory on the printing compute node when the environment starts
+
+
+  reading grid info from file MoS2.dyn0    
+
+  reading force constants from file MoS2.dyn1
+ macroscopic fields = T
+   5.00694  -0.00000   0.00000
+  -0.00000   5.00694   0.00000
+   0.00000   0.00000   1.24096
+  na=            1
+  -1.11930   0.00000   0.00000
+   0.00000  -1.11930   0.00000
+   0.00000   0.00000  -0.08091
+  na=            2
+   0.55964  -0.00000   0.00000
+  -0.00000   0.55964  -0.00000
+   0.00000  -0.00000   0.04032
+  na=            3
+   0.55964  -0.00000   0.00000
+  -0.00000   0.55964   0.00000
+   0.00000   0.00000   0.04032
+  Norm of the difference between old and new effective charges:    0.00015340181055684092
+  alpha Ewald:   0.89427352263581494     
+  nqs=            1
+ q=   0.00000000  0.00000000  0.00000000
+  reading force constants from file MoS2.dyn2
+  alpha Ewald:   0.89427352263581494     
+  nqs=            6
+ q=   0.00000000 -0.19245006  0.00000000
+ q=  -0.00000000  0.19245006 -0.00000000
+ q=   0.16666664  0.09622503  0.00000000
+ q=  -0.16666664 -0.09622503 -0.00000000
+ q=  -0.16666664  0.09622503  0.00000000
+ q=   0.16666664 -0.09622503 -0.00000000
+  reading force constants from file MoS2.dyn3
+  alpha Ewald:   0.89427352263581494     
+  nqs=            6
+ q=   0.00000000 -0.38490012  0.00000000
+ q=  -0.00000000  0.38490012 -0.00000000
+ q=   0.33333329  0.19245006  0.00000000
+ q=  -0.33333329 -0.19245006 -0.00000000
+ q=  -0.33333328  0.19245006  0.00000000
+ q=   0.33333328 -0.19245006 -0.00000000
+  reading force constants from file MoS2.dyn4
+  alpha Ewald:   0.89427352263581494     
+  nqs=            3
+ q=  -0.00000000  0.57735020  0.00000000
+ q=  -0.49999994 -0.28867510  0.00000000
+ q=   0.49999994 -0.28867510  0.00000000
+  reading force constants from file MoS2.dyn5
+  alpha Ewald:   0.89427352263581494     
+  nqs=            6
+ q=  -0.16666664 -0.28867510  0.00000000
+ q=   0.16666664 -0.28867510  0.00000000
+ q=   0.16666665  0.28867510  0.00000000
+ q=  -0.33333329  0.00000000  0.00000000
+ q=   0.33333329  0.00000000 -0.00000000
+ q=  -0.16666665  0.28867510  0.00000000
+  reading force constants from file MoS2.dyn6
+  alpha Ewald:   0.89427352263581494     
+  nqs=           12
+ q=  -0.16666664 -0.48112524  0.00000000
+ q=   0.16666664  0.48112524 -0.00000000
+ q=   0.16666664 -0.48112524  0.00000000
+ q=  -0.16666664  0.48112524 -0.00000000
+ q=   0.33333336  0.38490016  0.00000000
+ q=  -0.33333336 -0.38490016 -0.00000000
+ q=  -0.50000000  0.09622507  0.00000000
+ q=   0.50000000 -0.09622507 -0.00000000
+ q=   0.50000000  0.09622507 -0.00000000
+ q=  -0.50000000 -0.09622507  0.00000000
+ q=  -0.33333336  0.38490016  0.00000000
+ q=   0.33333336 -0.38490016 -0.00000000
+  reading force constants from file MoS2.dyn7
+  alpha Ewald:   0.89427352263581494     
+  nqs=            2
+ q=  -0.33333328 -0.57735020  0.00000000
+ q=   0.33333328 -0.57735020  0.00000000
+
+      q-space grid ok, #points =   36
+
+      fft-check warning: sum of imaginary terms = 2.215091E-06
+
+     Q2R          :      0.02s CPU      0.03s WALL
+
+
+   This run was terminated on:  16:25:29  13Mar2026            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

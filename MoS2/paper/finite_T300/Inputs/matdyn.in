@@ -1,0 +1,11 @@
+&input
+    flfrc='MoS2.fc',
+    flfrq='MoS2.freq',
+    asr='simple',
+    deltaE=1.d0,
+    dos=.true.,
+    fleig='MoS2.eig'
+    nk1=60, nk2=60, nk3=1
+    loto_2d=.true.
+/
+0

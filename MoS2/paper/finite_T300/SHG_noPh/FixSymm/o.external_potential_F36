@@ -1,0 +1,63 @@
+#                                                                     
+#  **    **    **     ****     ****  ******     *******               
+# //**  **    ****   /**/**   **/** /*////**   **/////**              
+#  //****    **//**  /**//** ** /** /*   /**  **     //**             
+#   //**    **  //** /** //***  /** /******  /**      /**             
+#    /**   **********/**  //*   /** /*//// **/**      /**             
+#    /**  /**//////**/**   /    /** /*    /**//**     **              
+#    /**  /**     /**/**        /** /*******  //*******               
+#    //   //      // //         //  ///////    ///////                
+#                                                                     
+# Version 5.3.0 Revision 23935 Hash (prev commit) 901c81cc91          
+#                      Branch is 5.3                                  
+#         MPI+OpenMP+SLK+SLEPC+HDF5_MPI_IO Build                      
+#                http://www.yambo-code.eu                             
+#
+#
+# [RT] Time steps                                 :   5501
+# [RT] Time step                                  :  0.999999978E-2 [fs]
+# [NL] Damping                                    :  0.100000000    [eV]
+# [NL] Bands  range                               :   1  20
+# [NL] Energy range                               :  0.500000000      6.00000000   
+# [NL] Number of freqs                            :   36
+# Rotation axis                                   :   0.00000000      0.00000000      0.00000000   
+# Initial versor (for rotation)                   :   0.00000000      0.00000000      0.00000000   
+# [NL] Number of angles                           : 0
+# [NL] Force 2nd approx                           : no
+# [NL] Use DIPOLES                                : no
+# [NL] Evaluate currrent and store on disk        : no
+# [NL] Induced Field                              : no
+# [NL] Number of G in HARTREE                     :  117995
+# [NL] Number of G in EXCHANGE(DFT)               :  117995
+# [NL] Number of G in LSEX                        : 0
+# [NL] Radiative Life-Time                        :   544.227668   
+# [RT] Integrator                                 : INVINT
+# [NL] Correlation                                : IPA
+# [FIELDs] Type                                   : SOFTSIN
+# [FIELDs] Versor                                 :  0.707106781     0.707106781      0.00000000   
+# [FIELDs] Intensity                              :   1000.00000    [kWCMm2]
+# [FIELDs] Damping                                :   0.00000000    [fs]
+# [FIELDs] Frequency range                        :  0.100000000     0.100000000    [eV]
+# [FIELDs] Frequency steps                        :  1
+# [FIELDs] Frequency step                         :   0.00000000    [eV]
+# [FIELDs] Initial time                           :  0.999999978E-2 [fs]
+# [FIELDs] Type                                   : none
+# [FIELDs] Versor                                 :   0.00000000      0.00000000      0.00000000   
+# [FIELDs] Intensity                              :   0.00000000    [kWCMm2]
+# [FIELDs] Damping                                :   0.00000000    [fs]
+# [FIELDs] Frequency range                        :  0.100000000     0.100000000    [eV]
+# [FIELDs] Frequency steps                        :  1
+# [FIELDs] Frequency step                         :   0.00000000    [eV]
+# [FIELDs] Initial time                           :  0.100000000E-1 [fs]
+# [FIELDs] Type                                   : none
+# [FIELDs] Versor                                 :   0.00000000      0.00000000      0.00000000   
+# [FIELDs] Intensity                              :   0.00000000    [kWCMm2]
+# [FIELDs] Damping                                :   0.00000000    [fs]
+# [FIELDs] Frequency range                        :  0.100000000     0.100000000    [eV]
+# [FIELDs] Frequency steps                        :  1
+# [FIELDs] Frequency step                         :   0.00000000    [eV]
+# [FIELDs] Initial time                           :  0.100000000E-1 [fs]
+#
+#
+# Frequency number    :   36
+# Frequency value [ev]:   5.84722222   

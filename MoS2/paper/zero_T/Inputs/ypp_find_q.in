@@ -1,0 +1,12 @@
+bzgrids                          # [R] BZ Grid generator
+Q_grid                           # [R] Q-grid analysis
+OutputAlat= 0.000000             # [a.u.] Lattice constant used for "alat" ouput format
+#NoWeights                     #  Do not print points weight
+cooIn= "rlu"                     # Points coordinates (in) cc/rlu/iku/alat
+cooOut= "alat"                    # Points coordinates (out) cc/rlu/iku/alat
+ListPts                       #  List the internal q/k points also in the parser format
+#ExpandPts                     #  Expand the internal q/k points in the BZ
+#ForceUserPts                  #  Do not check the correcteness of the user points
+%Qpts                            # Q points list
+ 0.000000| 0.000000| 0.000000|
+

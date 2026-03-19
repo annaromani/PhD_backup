@@ -1,0 +1,9 @@
+gkkp                             # [R] gkkp databases
+gkkp_dg                          # [R] GKKP double grid
+PHfreqF= "../MoS2.freq"            # PWscf format file containing the phonon frequencies
+PHmodeF= "none"                  # PWscf format file containing the phonon modes
+FineGd_mode= "mixed"             # Fine Grid mode. Symmetry expanded, unexpanded or mixed.
+#SkipBorderPts                 # Skip points in the Fine Grid that are on the surface of coarse gride smal BZ`s
+EkplusQmode= "interp"            # E(k+q) energies calculation mode (interp | dftp )
+#TestPHDGrid                   # Test double-grid: set all values of the fine grid equal to the couse ones
+

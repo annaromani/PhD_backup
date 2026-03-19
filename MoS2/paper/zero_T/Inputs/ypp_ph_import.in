@@ -1,0 +1,9 @@
+gkkp                             # [R] gkkp databases
+gkkp_db                          # [R] GKKP database
+#GkkpReadBare                  # Read the bare gkkp
+DBsPATH= "../elph_dir/"          # Path to the PW el-ph databases
+PHfreqF= "none"                  # PWscf format file containing the phonon frequencies
+PHmodeF= "none"                  # PWscf format file containing the phonon modes
+#GkkpExpand                    # Expand the gkkp in the whole BZ
+#UseQindxB                     # Use qindx_B to expand gkkp (for testing purposes)
+
