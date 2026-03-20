@@ -8751,20 +8751,20 @@
       87.2899980       -0.858284596E-6    -0.858284596E-6     -0.00000000   
       87.2999980       -0.877457426E-6    -0.877457426E-6     -0.00000000   
 # 
-# 03/13/2026 at 18:11 yambo_nl @ nid004457 [start]
-# 03/13/2026 at 18:13                      [end]
+# 03/20/2026 at 16:51 yambo_nl @ nid001245 [start]
+# 03/20/2026 at 16:58                      [end]
 #  
-# Timing   [Min/Max/Average]: 01m-33s/01m-33s/01m-33s
+# Timing   [Min/Max/Average]: 07m-24s/07m-25s/07m-25s
 #
 # .-Input file  yambo.in
 # | nloptics                         # [R] Non-linear spectroscopy
 # | BoseTemp= 0.000000         eV    # Bosonic Temperature
-# | NL_CPU= "16.8"                   # [PARALLEL] CPUs for each role
+# | NL_CPU= "8.12"                   # [PARALLEL] CPUs for each role
 # | NL_ROLEs= "k.w"                  # [PARALLEL] CPUs roles (w,k)
-# | DIP_CPU= "8.4.4"                 # [PARALLEL] CPUs for each role
+# | DIP_CPU= "4.4.6"                 # [PARALLEL] CPUs for each role
 # | DIP_ROLEs= "v.c.k"               # [PARALLEL] CPUs roles (k,c,v)
-# | DIP_Threads=  8                  # [OPENMP/X] Number of threads for dipoles
-# | NL_Threads=  8                   # [OPENMP/NL] Number of threads for nl-optics
+# | DIP_Threads= 1                   # [OPENMP/X] Number of threads for dipoles
+# | NL_Threads= 1                    # [OPENMP/NL] Number of threads for nl-optics
 # | % NLBands
 # |   1 | 20 |                           # [NL] Bands range
 # | %
@@ -8776,7 +8776,7 @@
 # | % NLEnRange
 # |  0.500000 | 6.000000 |         eV    # [NL] Energy range (for loop on frequencies NLEnSteps/=0
 # | %
-# | NLEnSteps= 12                    # [NL] Energy steps for the loop on frequencies
+# | NLEnSteps=  72                   # [NL] Energy steps for the loop on frequencies
 # | % NLrotaxis
 # |  0.000000 | 0.000000 | 0.000000 |        # [NL] Rotation axis (for the loop on angles NLAngSteps/=0)
 # | %
@@ -8788,7 +8788,7 @@
 # | HARRLvcs= 118115           RL    # [HA] Hartree     RL components
 # | EXXRLvcs= 118115           RL    # [XX] Exchange    RL components
 # | CORRLvcs= 118115           RL    # [GW] Correlation RL components
-# | Field1_Freq= 2.333333      eV    # [RT Field1] Frequency
+# | Field1_Freq= 5.083333      eV    # [RT Field1] Frequency
 # | Field1_Int=  1000.00       kWLm2 # [RT Field1] Intensity
 # | Field1_Width= 0.000000     fs    # [RT Field1] Width
 # | Field1_FWHM= 0.000000      fs    # [RT Field1] Full Width at Half Maximum (overwrite width if set)

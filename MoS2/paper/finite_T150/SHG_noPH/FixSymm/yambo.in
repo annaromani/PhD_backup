@@ -18,8 +18,8 @@ NLogCPUs=0                       # [PARALLEL] Live-timing CPU`s (0 for all)
 PAR_def_mode= "balanced"         # [PARALLEL] Default distribution mode ("balanced"/"memory"/"workload"/"KQmemory")
 BZINDX_CPU= ""                   # [PARALLEL] CPUs for each role
 BZINDX_ROLEs= ""                 # [PARALLEL] CPUs roles (k)
-NL_CPU= ""                       # [PARALLEL] CPUs for each role
-NL_ROLEs= ""                     # [PARALLEL] CPUs roles (w,k)
+NL_CPU= "12 8"                       # [PARALLEL] CPUs for each role
+NL_ROLEs= "w k"                     # [PARALLEL] CPUs roles (w,k)
 DIP_CPU= ""                      # [PARALLEL] CPUs for each role
 DIP_ROLEs= ""                    # [PARALLEL] CPUs roles (k,c,v)
 OSCLL_CPU= ""                    # [PARALLEL] CPUs for each role
@@ -38,7 +38,7 @@ NLLrcAlpha= 0.000000             # [NL] Long Range Correction
 % NLEnRange
 0.5.000000 |6.000000 |         eV    # [NL] Energy range (for loop on frequencies NLEnSteps/=0
 %
-NLEnSteps=12                  # [NL] Energy steps for the loop on frequencies
+NLEnSteps=72             # [NL] Energy steps for the loop on frequencies
 % NLrotaxis
  0.000000 | 0.000000 | 0.000000 |        # [NL] Rotation axis (for the loop on angles NLAngSteps/=0)
 %
