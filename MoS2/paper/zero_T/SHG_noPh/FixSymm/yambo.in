@@ -18,7 +18,7 @@ NLogCPUs=0                       # [PARALLEL] Live-timing CPU`s (0 for all)
 PAR_def_mode= "balanced"         # [PARALLEL] Default distribution mode ("balanced"/"memory"/"workload"/"KQmemory")
 BZINDX_CPU= ""                   # [PARALLEL] CPUs for each role
 BZINDX_ROLEs= ""                 # [PARALLEL] CPUs roles (k)
-NL_CPU= "6 1"                       # [PARALLEL] CPUs for each role
+NL_CPU= "24 4"                       # [PARALLEL] CPUs for each role
 NL_ROLEs= "w k"                     # [PARALLEL] CPUs roles (w,k)
 DIP_CPU= ""                      # [PARALLEL] CPUs for each role
 DIP_ROLEs= ""                    # [PARALLEL] CPUs roles (k,c,v)
@@ -31,14 +31,14 @@ OSCLL_Threads=0                  # [OPENMP/X] Number of threads for Oscillators
   1 | 20 |                           # [NL] Bands range
 %
 NLverbosity= "high"              # [NL] Verbosity level (low | high)
-NLtime=55.000000           fs    # [NL] Simulation Time
+NLtime=-1.000000           fs    # [NL] Simulation Time
 NLintegrator= "INVINT"           # [NL] Integrator ("EULEREXP/RK2/RK4/RK2EXP/HEUN/INVINT/CRANKNIC")
 NLCorrelation= "IPA"             # [NL] Correlation ("IPA/HARTREE/TDDFT/LRC/LRW/JGM/SEX/LSEX/LHF")
 NLLrcAlpha= 0.000000             # [NL] Long Range Correction
 % NLEnRange
  0.500000 | 6.000000 |         eV    # [NL] Energy range (for loop on frequencies NLEnSteps/=0
 %
-NLEnSteps=  12                   # [NL] Energy steps for the loop on frequencies
+NLEnSteps= 72               # [NL] Energy steps for the loop on frequencies
 % NLrotaxis
  0.000000 | 0.000000 | 0.000000 |        # [NL] Rotation axis (for the loop on angles NLAngSteps/=0)
 %

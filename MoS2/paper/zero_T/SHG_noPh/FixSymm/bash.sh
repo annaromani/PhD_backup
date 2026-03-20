@@ -1,12 +1,12 @@
 #!/bin/bash
-#SBATCH --nodes=3
-#SBATCH --ntasks-per-node=12
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=96
 #SBATCH --cpus-per-task=1
-#SBATCH --job-name=shg
+#SBATCH --job-name=shg_noPhT0
 #SBATCH --account=e89-qub_p
 #SBATCH --partition=standard
 #SBATCH --qos=standard
-#SBATCH --time=03:20:0
+#SBATCH --time=3:20:0
 
 
 module purge
@@ -24,4 +24,5 @@ module load cray-netcdf-hdf5parallel
 module load cray-python/3.10.10
 
 module load quantum_espresso/7.5
+export OMP_NUM_THREADS=1
 srun /work/e89/e89/aromani/source-code/lumen-2.0.1/bin/yambo_nl  
