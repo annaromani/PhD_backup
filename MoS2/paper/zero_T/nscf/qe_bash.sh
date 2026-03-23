@@ -40,5 +40,5 @@ module load cray-netcdf-hdf5parallel
 module load cray-python/3.10.10
 
 module load quantum_espresso/7.5
-srun pw.x -nk 8 < MoS2.bands.in >  MoS2.bands.out
+srun pw.x -nk 8 < MoS2.bands.in >  MoS2.bands.out  &&
 srun bands.x -nk 8 < MoS2.bands_pp.in > MoS2.bands_pp.out 
