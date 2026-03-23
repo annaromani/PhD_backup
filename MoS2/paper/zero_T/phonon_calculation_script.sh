@@ -1,12 +1,12 @@
 #!/bin/bash
-#SBATCH --nodes=4
-#SBATCH --ntasks-per-node=16
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=1
 #SBATCH --job-name=phonon
 #SBATCH --account=e89-qub_p
 #SBATCH --partition=standard
-#SBATCH --qos=standard
-#SBATCH --time=02:20:0
+#SBATCH --qos=short
+#SBATCH --time=00:20:0
 
 #module purge
 #module load craype-x86-rome \
@@ -285,15 +285,15 @@ matdyn_step() {
 # ==============================================================================
 # 4. PH_YAMBO STEP
 # ==============================================================================
-echo "--> Running PH_YAMBO..."
-mkdir -p ph_yambo 
+#echo "--> Running PH_YAMBO..."
+#mkdir -p ph_yambo 
 cd ph_yambo
 #cp $RUN_PATH/$INPUT_DIR/$PREFIX.ph_yambo.in $PREFIX.ph_yambo_q.in
 #cat $RUN_PATH/nscf/"Q-points_IBZ.txt" >> $PREFIX.ph_yambo_q.in
 #cp -r  $RUN_PATH/ph_dvscf/_ph0 .
 #cp $RUN_PATH/ph_dvscf/$PREFIX.dyn* .
 #cp -r $RUN_PATH/nscf/$OUTDIR/$PREFIX.save . 
-$RUNNER $PH_EXE -nk 1 < $PREFIX.ph_yambo_q.in > $PREFIX.ph_yambo_q.out
+#$RUNNER $PH_EXE -nk 1 < $PREFIX.ph_yambo_q.in > $PREFIX.ph_yambo_q.out
 check_done "$PREFIX.ph_yambo_q.out" "PH_YAMBO"
 
 

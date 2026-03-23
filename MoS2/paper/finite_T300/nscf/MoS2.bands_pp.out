@@ -1,5 +1,5 @@
 
-     Program BANDS v.7.5 starts on 19Mar2026 at 14:44:34 
+     Program BANDS v.7.5 starts on 23Mar2026 at 13:33:49 
         Git branch: HEAD
         Last git commit: 770a0b2d12928a67048e2f3da8d10d057e52179e
         Last git commit date: Tue Aug 19 09:57:12 2025 +0000
@@ -19,7 +19,7 @@
      MPI processes distributed on     4 nodes
      K-points division:     npool     =       8
      R & G space division:  proc/nbgrp/npool/nimage =       8
-     240219 MiB available memory on the printing compute node when the environment starts
+     240533 MiB available memory on the printing compute node when the environment starts
 
 
      Reading xml data from directory:
@@ -25324,10 +25324,10 @@ E''    2.00 -1.00  0.00 -2.00  1.00  0.00
 
  **************************************************************************
 
-     BANDS        :   1m 7.28s CPU   1m10.75s WALL
+     BANDS        :   1m 6.41s CPU   1m 9.94s WALL
 
 
-   This run was terminated on:  14:45:45  19Mar2026            
+   This run was terminated on:  13:34:59  23Mar2026            
 
 =------------------------------------------------------------------------------=
    JOB DONE.
